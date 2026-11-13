@@ -1,0 +1,35 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Artefak canvas desain (hasil generate, bukan source aplikasi).
+# Aset final yang benar-benar dipakai situs tetap di public/assets/.
+.design-sig
+identitas-sig-header-hero.html
+
+# QA Playwright transient snapshots & logs
+docs/qa-evidence/**/*.yml
+docs/qa-evidence/**/*.log
+docs/qa-evidence/**/page-*
+docs/qa-evidence/**/element-*
