@@ -1,9 +1,18 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { computed, ref, onMounted, onUnmounted } from 'vue';
 import { useContent } from '~/composables/useContent';
 
 const { content, wa } = useContent();
+
 const isMenuOpen = ref(false);
+const isScrolled = ref(false);
+
+const navItems = computed(() =>
+  (content.meta?.nav || []).filter((item) => !item.isCta)
+);
+const ctaItem = computed(() =>
+  (content.meta?.nav || []).find((item) => item.isCta)
+);
 
 const closeMenu = () => {
   isMenuOpen.value = false;
@@ -19,119 +28,192 @@ const onKeydown = (e) => {
   }
 };
 
+let heroObserver = null;
+let scrollFallbackActive = false;
+
+const updateScrollFallback = () => {
+  const heroEl = document.getElementById('beranda');
+  const threshold = heroEl ? Math.max(heroEl.offsetHeight - 80, 120) : 400;
+  isScrolled.value = window.scrollY > threshold;
+};
+
 onMounted(() => {
   window.addEventListener('keydown', onKeydown);
+
+  const heroEl = document.getElementById('beranda');
+  if ('IntersectionObserver' in window && heroEl) {
+    heroObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry) {
+          isScrolled.value = !entry.isIntersecting;
+        }
+      },
+      {
+        rootMargin: '-80px 0px 0px 0px',
+        threshold: 0,
+      }
+    );
+    heroObserver.observe(heroEl);
+  } else {
+    scrollFallbackActive = true;
+    updateScrollFallback();
+    window.addEventListener('scroll', updateScrollFallback, { passive: true });
+  }
 });
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown);
+  if (heroObserver) {
+    heroObserver.disconnect();
+    heroObserver = null;
+  }
+  if (scrollFallbackActive) {
+    window.removeEventListener('scroll', updateScrollFallback);
+  }
 });
 </script>
 
 <template>
-  <header class="site-header sticky top-0 z-50 bg-[rgba(246,245,239,0.91)] backdrop-blur-[18px] border-b border-[rgba(38,53,46,0.08)]">
-    <div class="container nav h-[76px] max-[680px]:h-[67px] flex items-center justify-between">
-      <!-- Brand -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    :class="
+      isScrolled
+        ? 'bg-white text-[#111111] border-b border-black/10 shadow-sm'
+        : 'bg-black/15 backdrop-blur-[4px] text-white border-b border-white/25'
+    "
+  >
+    <div
+      class="container h-[68px] lg:h-[76px] flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] gap-4"
+    >
+      <!-- Left: Logo + Project Name -->
       <a
-        class="brand inline-flex items-center gap-2 sm:gap-2.5 min-w-0"
         href="#beranda"
+        class="inline-flex items-center gap-2.5 sm:gap-3 min-w-0 justify-self-start"
         :aria-label="`${content.meta.projectName} — Beranda`"
         @click="closeMenu"
       >
         <img
           :src="content.meta.logo"
           :alt="`Logo ${content.meta.projectName}`"
-          class="h-7 sm:h-9 w-auto object-contain shrink-0"
+          class="h-9 sm:h-10 w-auto object-contain shrink-0 rounded"
         />
-        <span class="h-5 sm:h-6 w-px bg-[var(--line)] shrink-0 self-center" aria-hidden="true"></span>
-        <img
-          :src="content.meta.logoGroupDark"
-          :alt="`Logo ${content.meta.developer}`"
-          class="h-5 sm:h-6 w-auto object-contain shrink-0"
-        />
-        <span class="brand-name grid gap-0.5 leading-none min-w-0">
-          <strong class="text-[11px] sm:text-[13px] tracking-[-0.03em] text-[var(--ink)] font-bold truncate">
-            {{ content.meta.projectName }}
-          </strong>
-          <small class="text-[7.5px] sm:text-[8px] tracking-[0.12em] sm:tracking-[0.15em] uppercase text-[var(--muted)] truncate">
-            by {{ content.meta.developer }}
-          </small>
+        <span
+          class="font-display font-bold text-sm sm:text-base lg:text-lg tracking-[-0.015em] whitespace-nowrap transition-colors duration-300"
+          :class="isScrolled ? 'text-[#111111]' : 'text-white'"
+        >
+          {{ content.meta.projectName }}
         </span>
       </a>
 
-      <!-- Mobile Menu Toggle Button -->
-      <button
-        class="menu-toggle max-[680px]:grid hidden place-items-center w-[42px] h-[42px] border border-[var(--line)] rounded-full bg-transparent text-[var(--ink)] text-xl cursor-pointer"
-        :aria-expanded="isMenuOpen"
-        aria-label="Toggle navigasi menu"
-        @click="toggleMenu"
-      >
-        <span aria-hidden="true">{{ isMenuOpen ? '✕' : '☰' }}</span>
-      </button>
-
-      <!-- Nav Links (Desktop + Mobile Dropdown) -->
+      <!-- Center: Desktop Navigation -->
       <nav
-        class="nav-links flex items-center gap-[33px] text-[11px] font-semibold text-[#536057] max-[900px]:gap-[19px] max-[680px]:absolute max-[680px]:top-[66px] max-[680px]:left-0 max-[680px]:right-0 max-[680px]:p-5 max-[680px]:bg-[rgba(246,245,239,0.98)] max-[680px]:border-b max-[680px]:border-[var(--line)] max-[680px]:flex-col max-[680px]:items-stretch max-[680px]:shadow-[0_18px_30px_rgba(39,54,45,0.08)]"
-        :class="{ 'max-[680px]:hidden': !isMenuOpen, 'max-[680px]:flex': isMenuOpen }"
+        class="hidden lg:flex items-center justify-center gap-7 justify-self-center"
         aria-label="Navigasi utama"
       >
-        <template v-for="item in content.meta.nav" :key="item.id">
-          <a
-            v-if="!item.isCta"
-            :href="`#${item.id}`"
-            class="nav-item relative py-[9px] max-[680px]:py-[13px] max-[680px]:px-[7px] text-inherit hover:text-[var(--ink)] transition-colors"
-            @click="closeMenu"
-          >
-            {{ item.label }}
-          </a>
-          <a
-            v-else
-            :href="wa('konsultasi')"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-cta btn-primary rounded-full px-[18px] py-[12px] text-white text-center flex items-center justify-center gap-2 max-[680px]:mt-2"
-            @click="closeMenu"
-          >
-            {{ item.label }} <span class="arrow text-[17px] leading-none">↗</span>
-          </a>
-        </template>
+        <a
+          v-for="item in navItems"
+          :key="item.id"
+          :href="`#${item.id}`"
+          class="nav-link relative py-2 text-xs font-semibold tracking-[0.02em] whitespace-nowrap transition-colors duration-200"
+          :class="
+            isScrolled
+              ? 'text-black/80 hover:text-black nav-link--dark'
+              : 'text-white/90 hover:text-white nav-link--light'
+          "
+        >
+          {{ item.label }}
+        </a>
       </nav>
+
+      <!-- Right: Desktop CTA + Mobile/Tablet Hamburger -->
+      <div class="flex items-center justify-end gap-2 justify-self-end">
+        <a
+          v-if="ctaItem"
+          :href="wa('konsultasi')"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden lg:inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold tracking-[0.02em] whitespace-nowrap transition-all duration-300"
+          :class="
+            isScrolled
+              ? 'bg-[var(--green)] text-white hover:bg-[var(--green-deep)] shadow-sm'
+              : 'bg-white text-[#111111] hover:bg-white/90 shadow-sm'
+          "
+        >
+          {{ ctaItem.label }}
+        </a>
+
+        <button
+          type="button"
+          class="lg:hidden grid place-items-center w-10 h-10 rounded-full border transition-colors duration-300 cursor-pointer"
+          :class="
+            isScrolled
+              ? 'border-black/15 text-[#111111] hover:bg-black/5'
+              : 'border-white/30 text-white hover:bg-white/10'
+          "
+          :aria-expanded="isMenuOpen"
+          aria-controls="mobile-nav-menu"
+          aria-label="Toggle navigasi menu"
+          @click="toggleMenu"
+        >
+          <span class="text-lg leading-none" aria-hidden="true">{{ isMenuOpen ? '✕' : '☰' }}</span>
+        </button>
+      </div>
     </div>
+
+    <!-- Mobile / Tablet Dropdown Menu (always white background for guaranteed legibility) -->
+    <nav
+      v-show="isMenuOpen"
+      id="mobile-nav-menu"
+      class="lg:hidden bg-white text-[#111111] border-t border-black/10 shadow-lg"
+      aria-label="Navigasi mobile"
+    >
+      <div class="container py-4 flex flex-col gap-1">
+        <a
+          v-for="item in navItems"
+          :key="item.id"
+          :href="`#${item.id}`"
+          class="py-3 px-2 text-sm font-semibold text-[#111111] hover:text-[var(--green)] border-b border-black/5 last:border-b-0 transition-colors"
+          @click="closeMenu"
+        >
+          {{ item.label }}
+        </a>
+
+        <a
+          v-if="ctaItem"
+          :href="wa('konsultasi')"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-3 rounded-full px-5 py-3 text-center text-sm font-semibold bg-[var(--green)] text-white hover:bg-[var(--green-deep)] transition-colors"
+          @click="closeMenu"
+        >
+          {{ ctaItem.label }}
+        </a>
+      </div>
+    </nav>
   </header>
 </template>
 
 <style scoped>
-.nav-item::after {
+.nav-link::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 2px;
-  height: 1px;
+  bottom: 4px;
+  height: 1.5px;
   width: 0;
-  background-color: var(--green);
-  transition: width 0.25s ease;
+  transition: width 0.25s ease, background-color 0.25s ease;
 }
 
-.nav-item:hover::after {
+.nav-link--light::after {
+  background-color: #ffffff;
+}
+
+.nav-link--dark::after {
+  background-color: #111111;
+}
+
+.nav-link:hover::after {
   width: 100%;
-}
-
-@media (max-width: 680px) {
-  .nav-item::after {
-    bottom: 6px;
-  }
-}
-
-.nav-cta {
-  background-color: var(--green);
-  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-}
-
-.nav-cta:hover {
-  background-color: var(--green-deep);
-}
-
-.nav-cta:hover .arrow {
-  transform: translateX(3px);
 }
 </style>

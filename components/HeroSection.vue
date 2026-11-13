@@ -1,423 +1,239 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useContent } from '~/composables/useContent';
 
 const { content } = useContent();
+
+const bankHeightClass = {
+  BCA: 'h-5 sm:h-6',
+  BTN: 'h-4 sm:h-5',
+};
+
+const heroRef = ref(null);
+const bgParallaxRef = ref(null);
+const titleParallaxRef = ref(null);
+const titleInnerRef = ref(null);
+const houseParallaxRef = ref(null);
+const houseInnerRef = ref(null);
+const uiCopyRef = ref(null);
+const uiBankRef = ref(null);
+
+let ctx = null;
+
+onMounted(() => {
+  if (!heroRef.value) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  ctx = gsap.context(() => {
+    if (titleInnerRef.value) {
+      gsap.from(titleInnerRef.value, {
+        y: 44,
+        opacity: 0,
+        duration: 1.0,
+        delay: 0.2,
+        ease: 'power3.out',
+        clearProps: 'transform',
+      });
+    }
+
+    if (houseInnerRef.value) {
+      gsap.from(houseInnerRef.value, {
+        y: 80,
+        opacity: 0,
+        scale: 1.04,
+        duration: 1.15,
+        delay: 0.35,
+        ease: 'power3.out',
+        clearProps: 'transform',
+      });
+    }
+
+    const uiTargets = [uiCopyRef.value, uiBankRef.value].filter(Boolean);
+    if (uiTargets.length) {
+      gsap.from(uiTargets, {
+        y: 28,
+        opacity: 0,
+        duration: 0.85,
+        stagger: 0.12,
+        delay: 0.55,
+        ease: 'power2.out',
+        clearProps: 'transform',
+      });
+    }
+
+    const scrollTrigger = {
+      trigger: heroRef.value,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 0.6,
+    };
+
+    if (bgParallaxRef.value) {
+      gsap.to(bgParallaxRef.value, {
+        yPercent: 12,
+        ease: 'none',
+        scrollTrigger,
+      });
+    }
+
+    if (titleParallaxRef.value) {
+      gsap.to(titleParallaxRef.value, {
+        y: 165,
+        ease: 'none',
+        scrollTrigger,
+      });
+    }
+
+    if (houseParallaxRef.value) {
+      gsap.to(houseParallaxRef.value, {
+        y: -48,
+        ease: 'none',
+        scrollTrigger,
+      });
+    }
+  }, heroRef.value);
+});
+
+onUnmounted(() => {
+  ctx?.revert();
+});
 </script>
 
 <template>
-  <section class="hero" id="beranda">
-    <div class="container hero-grid">
-      <!-- Left Column: Copy -->
-      <div class="hero-copy reveal">
-        <span class="eyebrow">{{ content.hero.eyebrow }}</span>
-        <h1 class="serif">
-          {{ content.hero.headlineLines[0] }}<br>
-          <em>{{ content.hero.headlineLines[1] }}</em>
-        </h1>
-        <p class="hero-lead">{{ content.hero.sub }}</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#tipe">
-            {{ content.hero.primaryCta }} <span class="arrow">↗</span>
-          </a>
-          <a class="btn btn-outline" href="#tentang">
-            {{ content.hero.secondaryCta }}
-          </a>
-        </div>
-        <div class="hero-note">
-          <div class="avatar-stack">
-            <span>SI</span>
-            <span>家</span>
-            <span>+</span>
-          </div>
-          <span>{{ content.hero.note }}</span>
-        </div>
-      </div>
+  <section
+    id="beranda"
+    ref="heroRef"
+    class="relative min-h-[100dvh] w-full overflow-hidden flex flex-col justify-end bg-[#1d281f]"
+  >
+    <!-- Layer 1: Background Photo (with top/bottom bleed for parallax) + Soft Top/Bottom Scrim -->
+    <div
+      ref="bgParallaxRef"
+      data-parallax="bg"
+      class="pointer-events-none select-none absolute inset-x-0 -top-[16%] h-[118%] z-0 will-change-transform"
+      aria-hidden="true"
+    >
+      <img
+        :src="content.hero.bgImage"
+        alt=""
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        class="w-full h-full object-cover object-center"
+      />
+    </div>
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 z-[5] h-40 bg-gradient-to-b from-black/50 via-black/20 to-transparent"
+      aria-hidden="true"
+    />
+    <div
+      class="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-t from-black/40 via-transparent to-transparent"
+      aria-hidden="true"
+    />
 
-      <!-- Right Column: Visual -->
-      <div class="hero-visual reveal">
-        <div class="hero-photo-wrap">
-          <img
-            class="hero-photo"
-            :src="content.hero.image"
-            alt="Foto Sanggar Indah Palastri"
-            loading="eager"
-            decoding="async"
-          />
-          <div class="hero-caption">
-            <div>
-              <strong>{{ content.hero.caption.title }}</strong>
-              <small>{{ content.hero.caption.sub }}</small>
-            </div>
+    <!-- Layer 2: Giant Sky Typography (outer parallax wrapper + inner entrance element) -->
+    <div
+      ref="titleParallaxRef"
+      data-parallax="title"
+      class="pointer-events-none select-none absolute inset-x-0 top-[14dvh] sm:top-[18dvh] lg:top-[20dvh] z-10 flex justify-center px-3 sm:px-6 will-change-transform"
+      aria-hidden="true"
+    >
+      <p
+        ref="titleInnerRef"
+        class="font-display font-bold uppercase text-center text-white/95 leading-[0.9] md:leading-[0.94] tracking-[-0.025em] drop-shadow-[0_4px_24px_rgba(0,0,0,0.35)] text-[clamp(3rem,13vw,5.25rem)] md:text-[clamp(3.2rem,9.2vw,9.25rem)] md:whitespace-nowrap max-w-full"
+      >
+        {{ content.hero.giantTitle }}
+      </p>
+    </div>
+
+    <!-- Layer 3: Foreground Houses (outer parallax wrapper with bottom bleed + inner entrance image) -->
+    <div
+      ref="houseParallaxRef"
+      data-parallax="house"
+      class="pointer-events-none select-none absolute inset-x-0 -bottom-16 z-20 h-[calc(68dvh+4rem)] sm:h-[calc(78dvh+4rem)] lg:h-[calc(90dvh+4rem)] will-change-transform"
+    >
+      <img
+        ref="houseInnerRef"
+        :src="content.hero.image"
+        :alt="content.meta.projectName"
+        loading="eager"
+        decoding="async"
+        class="w-full h-full object-cover object-[28%_bottom] lg:object-bottom"
+      />
+    </div>
+
+    <!-- Bottom Scrim above foreground ground for crisp UI legibility -->
+    <div
+      class="pointer-events-none absolute inset-x-0 bottom-0 z-[25] h-[58%] sm:h-[52%] bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+      aria-hidden="true"
+    />
+
+    <!-- Layer 4: Overlay UI (Bottom-Left Headline + CTA, Bottom-Right Bank Info; Top-Left stays empty) -->
+    <div class="relative z-30 w-full pt-24 pb-24 sm:pb-10 lg:pb-12">
+      <div class="container flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
+        <!-- Bottom-Left: Stacked Headline + Architectural Split CTA -->
+        <div ref="uiCopyRef" class="max-w-xl">
+          <h1
+            class="font-display font-bold uppercase text-white text-[clamp(1.75rem,3.6vw,3.15rem)] leading-[1.03] tracking-[-0.015em] drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)]"
+          >
+            <span
+              v-for="(line, idx) in content.hero.headlineLines"
+              :key="idx"
+              class="block"
+            >
+              {{ line }}
+            </span>
+          </h1>
+
+          <div class="mt-4 sm:mt-5">
+            <a
+              href="#tipe"
+              class="group inline-flex items-stretch border border-white/40 bg-white text-[#1a1a1a] hover:bg-white/90 shadow-[0_12px_32px_rgba(0,0,0,0.3)] transition-all duration-300 rounded-sm overflow-hidden"
+            >
+              <span class="px-5 py-3 sm:py-3.5 text-[11px] sm:text-xs font-semibold tracking-[0.08em] uppercase flex items-center">
+                {{ content.hero.primaryCta }}
+              </span>
+              <span
+                class="px-4 py-3 sm:py-3.5 border-l border-black/15 bg-black/5 flex items-center justify-center text-base font-semibold transition-transform duration-300 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              >
+                &raquo;
+              </span>
+            </a>
           </div>
         </div>
-        <div class="hero-stamp" aria-hidden="true">
-          <span>{{ content.hero.stamp }}</span>
+
+        <!-- Bottom-Right: KPR Partner Bank Info Panel -->
+        <div
+          v-if="content.hero.bankInfo && content.banks?.length"
+          ref="uiBankRef"
+          class="w-full sm:max-w-md lg:max-w-[360px] bg-black/45 backdrop-blur-md border border-white/15 rounded-xl p-4 sm:p-5 text-white shadow-[0_16px_40px_rgba(0,0,0,0.28)]"
+        >
+          <p class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.14em] text-white/80">
+            {{ content.hero.bankInfo.label }}
+          </p>
+
+          <div class="mt-3 flex flex-wrap items-center gap-5">
+            <img
+              v-for="bank in content.banks"
+              :key="bank.name"
+              :src="bank.imageWhite"
+              :alt="`Bank ${bank.name}`"
+              loading="eager"
+              decoding="async"
+              class="w-auto object-contain"
+              :class="bankHeightClass[bank.name] || 'h-5'"
+            />
+          </div>
+
+          <p class="mt-3 text-[11px] sm:text-xs text-white/90 leading-relaxed">
+            {{ content.hero.bankInfo.desc }}
+          </p>
         </div>
-        <div class="hero-float">
-          <span class="float-icon" aria-hidden="true">⌂</span>
-          <strong>{{ content.hero.float.title }}</strong>
-          <small>{{ content.hero.float.sub }}</small>
-        </div>
-        <div class="hero-deco" aria-hidden="true"></div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.hero {
-  padding: 36px 0 72px;
-  overflow: hidden;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 0.88fr 1.12fr;
-  gap: 44px;
-  align-items: center;
-  min-height: 560px;
-}
-
-.hero-copy {
-  position: relative;
-  z-index: 2;
-  padding: 28px 0 26px 2px;
-}
-
-.hero-copy .eyebrow {
-  margin-bottom: 23px;
-}
-
-.hero h1 {
-  max-width: 570px;
-  margin: 0;
-  font-size: clamp(50px, 6vw, 83px);
-  line-height: 0.99;
-}
-
-.hero h1 em {
-  color: var(--green);
-  font-style: normal;
-}
-
-.hero-lead {
-  max-width: 390px;
-  margin: 26px 0 27px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.85;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.hero-note {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  margin-top: 50px;
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.avatar-stack {
-  display: flex;
-  padding-left: 5px;
-}
-
-.avatar-stack span {
-  display: grid;
-  place-items: center;
-  width: 27px;
-  height: 27px;
-  margin-left: -5px;
-  border: 2px solid var(--paper);
-  border-radius: 50%;
-  background: #d2dfcd;
-  color: var(--green-deep);
-  font-size: 8px;
-  font-weight: 700;
-}
-
-.hero-visual {
-  position: relative;
-  min-width: 0;
-  width: 100%;
-  max-width: 440px;
-  margin-left: auto;
-}
-
-.hero-photo-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 440px;
-  height: 535px;
-  aspect-ratio: 0.82;
-  border-radius: 48% 48% 20px 20px / 36% 36% 20px 20px;
-  overflow: hidden;
-  background: #cbd6c4;
-}
-
-.hero-photo-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 35% 0 0;
-  background: linear-gradient(transparent, rgba(20, 34, 25, 0.30));
-  pointer-events: none;
-}
-
-.hero-photo {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hero-stamp {
-  position: absolute;
-  z-index: 3;
-  top: 28px;
-  right: -19px;
-  width: 104px;
-  height: 104px;
-  display: grid;
-  place-items: center;
-  padding: 13px;
-  border-radius: 50%;
-  color: var(--green-deep);
-  background: #e4e9d9;
-  border: 1px solid rgba(52, 75, 60, 0.17);
-  text-align: center;
-  transform: rotate(10deg);
-}
-
-.hero-stamp span {
-  max-width: 70px;
-  font-family: var(--serif);
-  font-size: 15px;
-  line-height: 1.05;
-}
-
-.hero-caption {
-  position: absolute;
-  z-index: 4;
-  left: 23px;
-  right: 23px;
-  bottom: 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  color: white;
-}
-
-.hero-caption strong {
-  display: block;
-  font-family: var(--serif);
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.hero-caption small {
-  display: block;
-  margin-top: 4px;
-  opacity: 0.83;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.hero-float {
-  position: absolute;
-  z-index: 5;
-  left: -35px;
-  bottom: 76px;
-  width: 190px;
-  padding: 17px;
-  border-radius: 16px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.hero-float .float-icon {
-  width: 31px;
-  height: 31px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--sage-pale);
-  color: var(--green);
-  font-size: 15px;
-}
-
-.hero-float strong {
-  display: block;
-  margin: 12px 0 4px;
-  font-family: var(--serif);
-  font-size: 19px;
-  font-weight: 500;
-}
-
-.hero-float small {
-  color: var(--muted);
-  font-size: 9px;
-  line-height: 1.5;
-}
-
-.hero-deco {
-  position: absolute;
-  z-index: -1;
-  right: -100px;
-  bottom: -70px;
-  width: 270px;
-  height: 270px;
-  border: 1px solid rgba(83, 107, 85, 0.18);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.hero-deco::before,
-.hero-deco::after {
-  content: '';
-  position: absolute;
-  border: 1px solid rgba(83, 107, 85, 0.16);
-  border-radius: 50%;
-  inset: 22px;
-}
-
-.hero-deco::after {
-  inset: 47px;
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    padding: clamp(10px, 1.8vh, 24px) 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .hero-grid {
-    height: 100%;
-    min-height: 0;
-    align-items: center;
-    align-content: center;
-  }
-
-  .hero-visual {
-    width: auto;
-    max-width: 440px;
-    margin-left: auto;
-  }
-
-  .hero-photo-wrap {
-    width: auto;
-    max-width: 440px;
-    height: clamp(500px, 58vh, 535px);
-    aspect-ratio: 0.82;
-    max-height: 100%;
-  }
-
-  .hero-lead {
-    margin-top: clamp(14px, 1.8vh, 22px);
-    margin-bottom: clamp(16px, 2vh, 24px);
-  }
-
-  .hero-note {
-    margin-top: clamp(16px, 2.5vh, 32px);
-  }
-}
-
-@media (max-width: 900px) {
-  .hero-grid {
-    gap: 25px;
-    min-height: 490px;
-  }
-  .hero-photo-wrap {
-    height: 470px;
-    aspect-ratio: auto;
-  }
-  .hero h1 {
-    font-size: clamp(48px, 7vw, 68px);
-  }
-  .hero-float {
-    left: -20px;
-    width: 165px;
-  }
-}
-
-@media (max-width: 680px) {
-  .hero {
-    padding: 31px 0 48px;
-  }
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
-    min-height: 0;
-  }
-  .hero-copy {
-    padding: 9px 0 0;
-  }
-  .hero-copy .eyebrow {
-    margin-bottom: 17px;
-  }
-  .hero h1 {
-    max-width: 480px;
-    font-size: clamp(51px, 13vw, 72px);
-  }
-  .hero-lead {
-    margin: 18px 0 22px;
-    font-size: 12px;
-  }
-  .hero-note {
-    margin-top: 25px;
-  }
-  .hero-visual {
-    max-width: 100%;
-    margin: 0 9px 0 17px;
-  }
-  .hero-photo-wrap {
-    max-width: 100%;
-    aspect-ratio: auto;
-    height: min(112vw, 470px);
-    border-radius: 47% 47% 15px 15px / 28% 28% 15px 15px;
-  }
-  .hero-stamp {
-    width: 82px;
-    height: 82px;
-    right: -14px;
-    top: 15px;
-  }
-  .hero-stamp span {
-    font-size: 12px;
-  }
-  .hero-float {
-    left: -17px;
-    bottom: 52px;
-    width: 145px;
-    padding: 13px;
-  }
-  .hero-float strong {
-    font-size: 16px;
-  }
-  .hero-float small {
-    font-size: 8px;
-  }
-  .hero-caption {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-  }
-  .hero-caption strong {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 380px) {
-  .hero-caption strong {
-    font-size: 17px;
-  }
-}
-</style>

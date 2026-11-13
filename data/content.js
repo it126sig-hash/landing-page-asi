@@ -12,12 +12,12 @@ const formatPhoneNumber = (num) => {
 };
 
 const meta = {
-  projectName: 'Sanggar Indah Palastri',
+  projectName: 'Alam Sanggar Indah',
   developer: 'Sanggar Indah Group',
-  logo: '/assets/images/logo-palastri.png',
+  logo: '/assets/images/logo.webp',
   logoGroup: '/assets/images/logo-sig-white.png',
   logoGroupDark: '/assets/images/logo-sig-dark.png',
-  tagline: 'Rumah pertama, cerita baru',
+  tagline: 'Hunian Asri di Jantung Parahyangan',
   whatsapp: {
     number: '6282118992299',
     templates: {
@@ -35,7 +35,7 @@ const meta = {
     { id: 'kalkulator', label: 'Simulasi KPR' },
     { id: 'keunggulan', label: 'Keunggulan' },
     { id: 'faq', label: 'FAQ' },
-    { id: 'kontak', label: 'Konsultasi', isCta: true },
+    { id: 'kontak', label: 'Kontak', isCta: true },
   ],
 };
 
@@ -43,25 +43,18 @@ export default {
   meta,
 
   hero: {
-    eyebrow: 'Ruang untuk cerita baru',
-    headline: 'Rumah pertama, cerita baru.',
-    headlineLines: ['Rumah pertama,', 'cerita baru.'],
+    bgImage: '/assets/images/hero-bg.jpg',
+    image: '/assets/images/hero.webp',
+    giantTitle: 'ALAM SANGGAR INDAH',
+    headline: 'Hunian Asri di Jantung Parahyangan',
+    headlineLines: ['HUNIAN ASRI', 'DI JANTUNG', 'PARAHYANGAN'],
     tagline: meta.tagline,
-    sub: 'Temukan tempat untuk pulang, bertumbuh, dan menciptakan lebih banyak cerita bersama orang-orang tersayang.',
     primaryTypeId: '22-60',
     primaryCta: 'Jelajahi Pilihan Rumah',
-    secondaryCta: 'Kenali Palastri',
-    image: '/assets/images/palastri/hero.jpg',
-    caption: {
-      title: 'Tempat pulang, setiap hari.',
-      sub: 'Hunian nyaman untuk kehidupan yang terus tumbuh',
+    bankInfo: {
+      label: 'Mitra Pembiayaan KPR Resmi',
+      desc: 'Tersedia KPR Subsidi & Komersial dengan proses pendampingan hingga akad.',
     },
-    stamp: 'Mulai langkah baik dari rumah',
-    float: {
-      title: 'Ruang untuk tumbuh',
-      sub: 'Lebih dari bangunan. Awal dari banyak kemungkinan.',
-    },
-    note: 'Bagian dari perjalanan Sanggar Indah Group',
   },
 
   trust: {

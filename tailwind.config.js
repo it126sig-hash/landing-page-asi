@@ -6,7 +6,6 @@ export default {
       colors: {
         paper: 'var(--paper)',
         'paper-deep': 'var(--paper-deep)',
-        white: 'var(--white)',
         ink: 'var(--ink)',
         muted: 'var(--muted)',
         green: 'var(--green)',

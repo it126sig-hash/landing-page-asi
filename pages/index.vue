@@ -9,10 +9,10 @@ const { content, withBase } = useContent();
 const origin = useRuntimeConfig().public.siteUrl.replace(/\/+$/, '');
 const absoluteUrl = (path) => origin + path;
 const pageUrl = absoluteUrl(withBase('/'));
-const ogImage = absoluteUrl(content.hero.image || withBase('/assets/images/palastri/hero.jpg'));
+const ogImage = absoluteUrl(content.hero.bgImage || content.hero.image || withBase('/assets/images/hero-bg.jpg'));
 
-const title = 'Sanggar Indah Palastri — Rumah untuk Cerita Baru';
-const description = 'Temukan hunian yang nyaman untuk memulai cerita baru bersama Sanggar Indah Palastri.';
+const title = `${content.meta.projectName} — ${content.meta.tagline}`;
+const description = 'Temukan hunian asri dan nyaman di Alam Sanggar Indah untuk memulai cerita baru bersama keluarga Anda.';
 
 useSeoMeta({
   title,
@@ -65,25 +65,21 @@ onUnmounted(() => {
   <div>
     <TheHeader />
 
-    <!-- Section Container 1 Layar Penuh di Desktop & Tablet Landscape (lg) -->
-    <div class="lg:min-h-[calc(100dvh-76px)] lg:flex lg:flex-col lg:justify-between">
-      <main class="lg:flex-1 lg:min-h-0 lg:flex lg:flex-col lg:justify-between">
-        <HeroSection class="lg:flex-1 lg:min-h-0" />
-        <div class="lg:flex-shrink-0">
-          <TrustStrip />
-          <KprPartnerStrip />
-        </div>
-      </main>
-    </div>
+    <main>
+      <HeroSection />
+      <TrustStrip />
+      <KprPartnerStrip />
 
-    <!-- Section Lanjutan (Diakses dengan Scroll) -->
-    <AboutSection />
-    <ProductsSection />
-    <MortgageCalculatorSection id="kalkulator" />
-    <WhySection />
-    <LocationSection />
-    <FaqSection />
-    <FinalCtaSection />
+      <!-- Section Lanjutan (Diakses dengan Scroll) -->
+      <AboutSection />
+      <ProductsSection />
+      <MortgageCalculatorSection id="kalkulator" />
+      <WhySection />
+      <LocationSection />
+      <FaqSection />
+      <FinalCtaSection />
+    </main>
+
     <TheFooter />
   </div>
 </template>

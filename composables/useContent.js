@@ -46,6 +46,7 @@ export function useContent() {
       },
       hero: {
         ...content.hero,
+        bgImage: withBase(content.hero.bgImage),
         image: withBase(content.hero.image),
         imageMobile: withBase(content.hero.imageMobile || content.hero.image),
         heroMobile: withBase(content.hero.heroMobile || content.hero.image),
