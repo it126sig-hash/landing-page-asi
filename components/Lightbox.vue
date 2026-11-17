@@ -133,7 +133,7 @@ watch(gallery, async (g) => {
       v-if="current"
       ref="dialogRef"
       tabindex="-1"
-      class="fixed inset-0 z-[100] flex flex-col bg-charcoal/95 backdrop-blur-sm focus:outline-none"
+      class="fixed inset-0 z-[100] flex flex-col bg-[var(--ink)]/95 backdrop-blur-sm focus:outline-none"
       role="dialog"
       aria-modal="true"
       :aria-label="current.alt"
@@ -147,17 +147,17 @@ watch(gallery, async (g) => {
         </p>
         <div class="flex shrink-0 items-center gap-2">
           <button type="button" aria-label="Perkecil"
-            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 disabled:opacity-40"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
             :disabled="scale <= 1" @click="zoomBy(-0.5)">
             <svg class="h-4 w-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" d="M5 12h14"/></svg>
           </button>
           <button type="button" aria-label="Perbesar"
-            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 disabled:opacity-40"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
             :disabled="scale >= 4" @click="zoomBy(0.5)">
             <svg class="h-4 w-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
           </button>
           <button type="button" aria-label="Tutup"
-            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 cursor-pointer"
             @click="closeLightbox">
             <svg class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
@@ -183,12 +183,12 @@ watch(gallery, async (g) => {
 
         <!-- Prev / Next -->
         <button v-if="many" type="button" aria-label="Gambar sebelumnya"
-          class="absolute left-2 sm:left-4 flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white backdrop-blur transition hover:bg-black/65"
+          class="absolute left-2 sm:left-4 flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white backdrop-blur transition hover:bg-black/65 cursor-pointer"
           @click.stop="goPrev">
           <svg class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
         </button>
         <button v-if="many" type="button" aria-label="Gambar berikutnya"
-          class="absolute right-2 sm:right-4 flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white backdrop-blur transition hover:bg-black/65"
+          class="absolute right-2 sm:right-4 flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white backdrop-blur transition hover:bg-black/65 cursor-pointer"
           @click.stop="goNext">
           <svg class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>

@@ -15,13 +15,15 @@ const consultasiLink = wa('konsultasi');
 </script>
 
 <template>
-  <section id="faq" class="scroll-mt-20 relative bg-white py-20 lg:py-28">
+  <section id="faq" class="scroll-mt-20 relative bg-[var(--sage-pale)] py-20 lg:py-28">
     <div class="container faq-grid grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] gap-10 lg:gap-[88px] items-start">
       <!-- Kiri: Intro Sticky -->
       <div class="faq-intro reveal lg:sticky lg:top-28">
-        <div class="mb-4 h-0.5 w-10 rounded-full bg-[var(--green)]" aria-hidden="true" />
+        <span v-if="content.faqSection.eyebrow" class="eyebrow mb-4">
+          {{ content.faqSection.eyebrow }}
+        </span>
         <h2
-          class="font-sans font-bold text-3xl sm:text-4xl lg:text-[42px] tracking-[-0.02em] leading-[1.18] text-[var(--ink)] mb-4 [&_em]:not-italic [&_em]:font-bold [&_em]:text-[var(--green)]"
+          class="font-sans font-bold text-3xl sm:text-4xl lg:text-[42px] tracking-[-0.02em] leading-[1.18] text-[var(--ink)] mb-4 [&_em]:font-serif [&_em]:italic [&_em]:font-normal [&_em]:text-[var(--green)]"
           v-html="content.faqSection.titleHtml || content.faqSection.title"
         />
         <p class="text-sm sm:text-[15px] text-[var(--muted)] leading-relaxed mb-7 max-w-[340px]">

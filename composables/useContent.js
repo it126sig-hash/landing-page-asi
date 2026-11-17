@@ -12,7 +12,8 @@ export function useContent() {
   const project = content.meta.projectName;
   const withBase = (path) => {
     if (!path) return '';
-    return useRuntimeConfig().app.baseURL.replace(/\/$/, '') + path;
+    if (/^https?:\/\//i.test(path)) return path;
+    return useRuntimeConfig().app.baseURL.replace(/\/$/, '') + encodeURI(path);
   };
 
   const wa = (key = 'konsultasi', vars = {}) => {
@@ -78,13 +79,6 @@ export function useContent() {
       facilities: content.facilities ? {
         ...content.facilities,
         image: withBase(content.facilities.image),
-      } : undefined,
-      articlesSection: content.articlesSection ? {
-        ...content.articlesSection,
-        items: (content.articlesSection.items || []).map(item => ({
-          ...item,
-          image: withBase(item.image),
-        })),
       } : undefined,
       calculator: content.calculator ? {
         ...content.calculator,

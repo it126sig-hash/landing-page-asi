@@ -86,44 +86,16 @@ const waLink = computed(() => {
 });
 
 /**
- * Definisi 9 Spesifikasi Teknis Standar dengan Fallback
+ * Spesifikasi Teknis langsung bersumber dari props.type.specs (content.defaultSpecs via useContent())
+ * tanpa hardcode di komponen; ikon dipetakan berdasarkan label/key.
  */
-const defaultSpecsDefinition = [
-  { key: 'pondasi', label: 'Pondasi', defaultVal: 'Batu Kali' },
-  { key: 'struktur', label: 'Struktur', defaultVal: 'Beton Bertulang' },
-  { key: 'dinding', label: 'Dinding', defaultVal: 'Bata Hebel / Ringan' },
-  { key: 'lantai', label: 'Lantai', defaultVal: 'Keramik 40x40' },
-  { key: 'atap', label: 'Atap', defaultVal: 'Baja Ringan / Genteng Beton' },
-  { key: 'kusen', label: 'Kusen', defaultVal: 'Aluminium' },
-  { key: 'pintu', label: 'Pintu', defaultVal: 'Kayu Panel / Engineering Door' },
-  { key: 'listrik', label: 'Listrik', defaultVal: '1300 VA' },
-  { key: 'air', label: 'Air', defaultVal: 'PAM / Sumur Bor' },
-];
-
 const normalizedSpecs = computed(() => {
   if (!props.type) return [];
-  const rawSpecs = props.type.specs || [];
-  const overrides = new Map(
-    rawSpecs.map(s => [s.label.toLowerCase().trim(), s.value])
-  );
-  const isSubsidi = (props.type.tag || '').toLowerCase().includes('subsidi') ||
-                    (props.type.category || '').toLowerCase().includes('subsidi');
-
-  return defaultSpecsDefinition.map(item => {
-    let value = overrides.get(item.label.toLowerCase().trim());
-    if (!value) {
-      if (item.key === 'listrik') {
-        value = isSubsidi ? '900 VA' : '1300 VA';
-      } else {
-        value = item.defaultVal;
-      }
-    }
-    return {
-      key: item.key,
-      label: item.label,
-      value,
-    };
-  });
+  return (props.type.specs || []).map((item) => ({
+    key: (item.label || '').toLowerCase().trim(),
+    label: item.label,
+    value: item.value,
+  }));
 });
 
 function onKeydown(e) {
@@ -238,7 +210,7 @@ watch(() => props.type, (t) => {
             <button
               type="button"
               aria-label="Tutup modal"
-              class="h-8 w-8 rounded-full border border-line bg-white text-ink hover:border-green hover:bg-sage-pale hover:text-green-deep flex items-center justify-center transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green"
+              class="h-8 w-8 rounded-full border border-line bg-white text-ink hover:border-green hover:bg-sage-pale hover:text-green-deep flex items-center justify-center transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green cursor-pointer"
               @click="emit('close')"
             >
               <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -262,7 +234,7 @@ watch(() => props.type, (t) => {
                 type="button"
                 role="tab"
                 :aria-selected="activeSlideIndex === index"
-                class="flex-1 text-center font-body rounded-lg px-2.5 py-1.5 text-xs sm:text-[13px] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green"
+                class="flex-1 text-center font-body rounded-lg px-2.5 py-1.5 text-xs sm:text-[13px] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green cursor-pointer"
                 :class="activeSlideIndex === index
                   ? 'bg-green font-semibold text-white shadow-sm'
                   : 'font-medium text-muted hover:text-ink'"

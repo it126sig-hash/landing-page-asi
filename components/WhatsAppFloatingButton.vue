@@ -53,7 +53,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
 
 <template>
   <!--
-    WhatsApp Floating Button — Palastri Natural Scandinavian:
+    WhatsApp Floating Button — Alam Sanggar Indah:
     Klik tombol WhatsApp → expand menu 4 pilihan:
       1. Syarat KPR BCA
       2. Syarat KPR BTN
@@ -78,7 +78,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 1. Syarat KPR BCA -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer"
           @click="openKprModal('Syarat KPR BCA')"
         >
           <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-0.5 border border-[var(--line)]" aria-hidden="true">
@@ -90,7 +90,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 2. Syarat KPR BTN -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer"
           @click="openKprModal('Syarat KPR BTN')"
         >
           <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-0.5 border border-[var(--line)]" aria-hidden="true">
@@ -102,7 +102,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 3. Isi Form Member Get Member -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--green-deep)] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(30,70,128,0.2)] hover:bg-[var(--green)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--green-deep)] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(30,70,128,0.2)] hover:bg-[var(--green)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer"
           @click="openMemberModal"
         >
           <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,7 +114,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 4. Hubungi Kami → WhatsApp langsung -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[#25D366] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(37,211,102,0.3)] hover:bg-[#20bd5a] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[#25D366] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(37,211,102,0.3)] hover:bg-[#20bd5a] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer"
           @click="openWhatsAppDirect"
         >
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
           v-if="isMenuOpen"
           type="button"
           aria-label="Tutup menu"
-          class="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] hover:bg-[var(--paper-deep)] border border-[var(--line)] transition-all shadow-sm"
+          class="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] hover:bg-[var(--paper-deep)] border border-[var(--line)] transition-all shadow-sm cursor-pointer"
           @click="closeMenu"
         >
           <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +156,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         type="button"
         :aria-label="isMenuOpen ? 'Tutup menu' : 'Buka menu layanan'"
         :aria-expanded="isMenuOpen"
-        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_25px_rgba(37,211,102,0.35)] hover:bg-[#20ba5a] hover:shadow-[0_12px_28px_rgba(37,211,102,0.45)] hover:scale-105 active:scale-100 transition-all duration-200"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_25px_rgba(37,211,102,0.35)] hover:bg-[#20ba5a] hover:shadow-[0_12px_28px_rgba(37,211,102,0.45)] hover:scale-105 active:scale-100 transition-all duration-200 cursor-pointer"
         @click="toggleMenu"
       >
         <svg

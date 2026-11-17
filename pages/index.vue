@@ -72,7 +72,6 @@ onUnmounted(() => {
       <LocationSection />
       <FacilitiesSection />
       <MortgageCalculatorSection id="kalkulator" />
-      <ArticlesSection />
       <FaqSection />
       <FinalCtaSection />
     </main>

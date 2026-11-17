@@ -53,7 +53,7 @@ const parsedParagraphs = computed(() => {
       <span class="font-semibold">{{ faq.question }}</span>
       <span
         class="faq-plus flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center font-bold text-base sm:text-lg transition-all duration-300 select-none"
-        :class="open ? 'bg-[var(--green)] text-white rotate-45' : 'bg-[var(--sage-pale)] text-[var(--green)] rotate-0'"
+        :class="open ? 'bg-[var(--green)] text-white rotate-45 border border-transparent' : 'bg-white border border-[var(--line)] text-[var(--green)] rotate-0'"
         aria-hidden="true"
       >
         +
@@ -85,7 +85,7 @@ const parsedParagraphs = computed(() => {
             <!-- Text paragraph -->
             <p
               v-else
-              class="text-xs sm:text-sm leading-relaxed text-[var(--muted)] text-justify text-pretty hyphens-auto"
+              class="text-xs sm:text-sm leading-relaxed text-[var(--muted)] text-left text-pretty"
               v-html="para.html"
             />
           </template>

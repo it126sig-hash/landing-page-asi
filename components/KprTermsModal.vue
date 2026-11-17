@@ -83,7 +83,7 @@ const consultasiLink = wa('konsultasi');
           <button
             type="button"
             aria-label="Tutup"
-            class="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] transition-colors hover:bg-[var(--paper-deep)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green)]"
+            class="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] transition-colors hover:bg-[var(--paper-deep)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green)] cursor-pointer"
             @click="emit('close')"
           >
             <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -115,7 +115,7 @@ const consultasiLink = wa('konsultasi');
               :aria-selected="activeTab === tab.key"
               :aria-controls="`kpr-panel-${tab.key}`"
               :id="`kpr-tab-${tab.key}`"
-              class="flex-1 rounded-lg px-3 py-2 text-sm font-semibold transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green)]"
+              class="flex-1 rounded-lg px-3 py-2 text-sm font-semibold transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green)] cursor-pointer"
               :class="activeTab === tab.key
                 ? 'bg-[var(--white)] text-[var(--ink)] shadow-sm'
                 : 'text-[var(--muted)] hover:text-[var(--ink)]'"

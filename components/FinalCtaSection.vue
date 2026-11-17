@@ -123,7 +123,7 @@ onUnmounted(() => {
 <template>
   <section id="kontak" class="bg-white py-14 sm:py-20 scroll-mt-20">
     <div class="container">
-      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#2D75D8] to-[#448EEB] text-white p-8 sm:p-12 lg:px-14 lg:py-12 shadow-lg reveal">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[var(--green-deep)] via-[var(--green)] to-[#255CA8] text-white p-8 sm:p-12 lg:px-14 lg:py-12 shadow-lg reveal">
         <!-- Siluet Ilustrasi Deretan Rumah SVG Halus (Kanan Bawah) -->
         <svg
           class="pointer-events-none absolute -bottom-2 right-0 w-[340px] sm:w-[440px] lg:w-[520px] h-auto text-[#173c72] opacity-15"
@@ -190,7 +190,19 @@ onUnmounted(() => {
             aria-label="Tutup form konsultasi"
             @click="closeModal"
           >
-            <span class="text-sm font-bold leading-none" aria-hidden="true">✕</span>
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
           </button>
 
           <div class="pr-8 mb-5">

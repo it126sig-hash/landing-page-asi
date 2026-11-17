@@ -20,7 +20,7 @@ const primaryBtn = ref(null);
 const pageReady = ref(false);
 
 /** Kunci penanda "sudah pernah dilihat", dipisah per kode. */
-const seenKey = computed(() => `palastri:referral-welcome:${urlData.value?.kode_referal || ''}`);
+const seenKey = computed(() => `asi:referral-welcome:${urlData.value?.kode_referal || ''}`);
 
 function alreadySeen() {
   try {
@@ -114,7 +114,7 @@ onUnmounted(() => {
               <!-- Kop undangan -->
               <div class="relative bg-[var(--green-deep)] px-7 pb-8 pt-7 text-center">
                 <button type="button" :aria-label="copy.closeLabel"
-                  class="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-white/50 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/60"
+                  class="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-white/50 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/60 cursor-pointer"
                   @click="dismiss">
                   <svg class="h-4 w-4 stroke-current" fill="none" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />

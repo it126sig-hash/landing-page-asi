@@ -276,7 +276,7 @@ export function useConsultationForm() {
       const payload = {
         ...pendingPayload.value,
         timestamp: new Date().toISOString(),
-        source: pendingPayload.value.source || 'landing-page-palastri',
+        source: pendingPayload.value.source || 'landing-page-asi',
         captchaToken: captchaToken.value,
       };
 

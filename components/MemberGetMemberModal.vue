@@ -141,7 +141,7 @@ function handleSubmit() {
     referralCode: form.value.hasReferral ? (referralData.value?.kode_referal || '') : '',
     referralName: form.value.hasReferral ? (referralData.value?.nama_konsumen || '') : '',
     referralKavling: form.value.hasReferral ? (referralData.value?.kavling_dimiliki || '') : '',
-    source: 'landing-page-palastri'
+    source: 'landing-page-asi'
   });
 }
 
@@ -224,7 +224,7 @@ watch(state, async (s) => {
             <!-- Header Area -->
             <div class="px-6 pt-6 pb-4 sm:px-8 sm:pt-8 md:pb-6 border-b border-[var(--line)] shrink-0">
               <button type="button" aria-label="Tutup"
-                class="absolute right-5 top-5 sm:right-6 sm:top-6 flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] transition-colors hover:bg-[var(--paper-deep)] focus:outline-none focus:ring-2 focus:ring-[var(--green)] focus:ring-offset-2"
+                class="absolute right-5 top-5 sm:right-6 sm:top-6 flex h-9 w-9 items-center justify-center rounded-full bg-[var(--sage-pale)] text-[var(--ink)] transition-colors hover:bg-[var(--paper-deep)] focus:outline-none focus:ring-2 focus:ring-[var(--green)] focus:ring-offset-2 cursor-pointer"
                 @click="handleClose">
                 <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

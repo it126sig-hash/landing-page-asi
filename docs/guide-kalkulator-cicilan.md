@@ -1,100 +1,98 @@
-# Panduan Portabilitas & Implementasi Reusable: Kalkulator Cicilan KPR
+# Panduan Portabilitas & Implementasi Reusable: Kalkulator Cicilan KPR (v2.1)
 
-Dokumen ini adalah panduan teknis lengkap (*complete integration guide*) untuk mereplikasi dan mengimplementasikan **Section Kalkulator Cicilan KPR (Simulasi Bunga Anuitas)** ke proyek web lain berbasis **Vue 3**, **Nuxt 3**, dan **Tailwind CSS**.
+Dokumen ini adalah panduan teknis lengkap (*complete integration guide*) untuk mereplikasi dan mengimplementasikan **Section Kalkulator Cicilan KPR (Simulasi Bunga Anuitas Dinamis v2.1)** ke proyek web lain berbasis **Vue 3**, **Nuxt 3**, dan **Tailwind CSS**.
 
 ---
 
-## 1. Overview & Fitur Utama
+## 1. Overview & Diagram Wireframe Arsitektur v2.1
 
-Kalkulator ini dirancang dengan pendekatan *high-conversion, mobile-responsive, content-driven*, dan akurasi finansial sesuai standar perbankan nasional.
+Kalkulator ini dirancang dengan pendekatan *high-conversion, mobile-responsive, lean UX, clean code*, dan akurasi finansial sesuai standar perbankan nasional.
+
+Pada pembaruan **versi 2.1**, antarmuka disederhanakan (*decluttered*) untuk memfokuskan calon konsumen pada besaran cicilan bulanan:
+- **Heading Rata Tengah (Center-Aligned)**: Tampilan judul harmonis dan bersih tanpa eyebrow (*no eyebrow*).
+- **Sub-grid 2 Kolom Responsif (`sm:grid-cols-2`)**: Form Suku Bunga Manual (% p.a.) dan Pilihan Tenor disajikan berdampingan di tablet/desktop dan bertumpuk 1 kolom di mobile smartphone.
+- **Tanpa Preset Tipe Rumah**: Pengguna bebas memasukkan nominal harga rumah apa pun secara fleksibel dilengkapi tombol reset `✕`.
+- **Box Estimasi Cicilan Bersih**: Box highlight nominal cicilan bulanan disajikan bersih tanpa badge bunga statis.
+- **Grid 3 Metrik Dinamis Real-Time**: Tiga kartu metrik ringkasan (Bunga KPR % p.a., Uang Muka %, Tenor Thn) otomatis terupdate seketika mengikuti perubahan input pengguna.
+- **Eliminasi Accordion Biaya Akad Awal (Clean Code)**: Menghilangkan perhitungan provisi/admin bank untuk menghindari kelebihan informasi (*information overload*) pada tahap awal simulasi.
+- **Wadah Pill Disclaimer Netral**: Catatan edukatif diletakkan di luar kartu utama secara mandiri tanpa keterikatan logo bank spesifik.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [Background: Gambar Hunian 3D Opacity 10-15% + Fade Gradient Atas & Bawah]             │
+│ [Latar Belakang: Gambar Hunian 3D Modern - Opacity 10-15% + Vertical Fade Gradient]   │
 │                                                                                        │
-│                               [Eyebrow: SIMULASI ANGSURAN]                             │
 │                           Hitung Simulasi Cicilan Rumah Anda                           │
 │              Rencanakan pembelian rumah impian Anda dengan mudah...                    │
 │                                                                                        │
-│  ┌─ SATU CARD LANDSCAPE 2 KOLOM (Rounded 26px, Shadow, Border Line) ────────────────┐  │
-│  │                                                   │                              │  │
-│  │  KOLOM 1 (KIRI, 6 Col): INPUT DATA                │  KOLOM 2 (KANAN, 6 Col):     │  │
-│  │                                                   │  HASIL ESTIMASI & CTA        │  │
-│  │  🏠 Harga Rumah                                   │  Plafon KPR:                 │  │
-│  │  ┌──────────────────────────────────────────┬───┐ │    Rp 157.700.000            │  │
-│  │  │ Rp 166.000.000                           │ ✕ │ │  ──────────────────────────  │  │
-│  │  └──────────────────────────────────────────┴───┘ │  ┌─ BOX ESTIMASI CICILAN ──┐ │  │
-│  │                                                   │  │ Estimasi Cicilan/Bulan  │ │  │
-│  │  👛 Uang Muka (DP) - 5% (Rp 8.300.000)            │  │ Rp 1.040.750 /bulan     │ │  │
-│  │  ┌────────────────────────┬─────────────────────┐ │  │ [ Bunga 5% Anuitas BCA ] │ │  │
-│  │  │ Rp 8.300.000           │  5 %                │ │  └─────────────────────────┘ │  │
-│  │  └────────────────────────┴─────────────────────┘ │  ┌─ 3 METRICS GRID ────────┐ │  │
-│  │  [==●===========================================] │  │ Bunga     DP       Tenor │ │  │
-│  │  5% Min DP                 50%       90% Max DP   │  │ 5.0% p.a. Mulai 5% 20 Th │ │  │
-│  │                                                   │  └─────────────────────────┘ │  │
-│  │  📅 Jangka Waktu Pinjaman                         │  ▾ Rincian Biaya Akad Awal   │  │
-│  │  ┌──────────────────────────────────────────────┐ │    • Provisi (0.5%): Rp 788k │  │
-│  │  │ 20 Tahun (240 Bulan)                       ▼ │ │    • Admin Bank: Rp 500k     │  │
-│  │  └──────────────────────────────────────────────┘ │    • Total Biaya: Rp 2.329k  │  │
-│  │                                                   │                              │  │
-│  │                                                   │  [ 📲 Konsultasi WhatsApp ↗ ]│  │
-│  └───────────────────────────────────────────────────┴──────────────────────────────┘  │
+│  ┌─ SATU CARD LANDSCAPE 2 KOLOM (bg-white, rounded-[26px], border-line, shadow) ─────┐ │
+│  │                                                   │                              │ │
+│  │  KOLOM 1 (KIRI, 6 Col): FORM INPUT FINANSIAL      │  KOLOM 2 (KANAN, 6 Col):     │ │
+│  │                                                   │  RINGKASAN ESTIMASI & CTA    │ │
+│  │  🏠 Harga Rumah             [Rp 166.000.000]      │  Plafon Pembiayaan KPR       │ │
+│  │  ┌──────────────────────────────────────────┬───┐ │    Rp 157.700.000            │ │
+│  │  │ Rp 166.000.000                           │ ✕ │ │  ──────────────────────────  │ │
+│  │  └──────────────────────────────────────────┴───┘ │  ┌─ BOX ESTIMASI CICILAN ──┐ │ │
+│  │                                                   │  │ Estimasi Cicilan/Bulan  │ │ │
+│  │  👛 Uang Muka (DP) - 5% (Rp 8.300.000)            │  │ Rp 1.040.750 /bulan     │ │ │
+│  │  ┌────────────────────────┬─────────────────────┐ │  └─────────────────────────┘ │ │
+│  │  │ Rp 8.300.000           │  5 %                │ │  ┌─ 3 METRICS GRID ────────┐ │ │
+│  │  └────────────────────────┴─────────────────────┘ │  │ Bunga     DP       Tenor │ │ │
+│  │  [==●===========================================] │  │ 5% p.a.   5%       20 Th │ │ │
+│  │  5% Min DP                 50%       90% Max DP   │  └─────────────────────────┘ │ │
+│  │                                                   │                              │ │
+│  │  ┌─ SUB-GRID 2 KOLOM (sm:grid-cols-2 gap-4) ────┐ │                              │ │
+│  │  │ Suku Bunga (%/thn)   │ Jangka Waktu (Tenor)  │ │                              │ │
+│  │  │ [ 5.0            % ] │ [ 20 Thn (240 Bln)  ▼]│ │                              │ │
+│  │  └──────────────────────┴───────────────────────┘ │  [ 📲 Konsultasi WhatsApp ↗ ]│ │
+│  └───────────────────────────────────────────────────┴──────────────────────────────┘ │
 │                                                                                        │
-│       ┌─ PILL CONTAINER DI LUAR CARD (White/80 Backdrop-blur, Border Line) ───┐        │
-│       │ [ Logo BCA ] | *Simulasi cicilan bunga anuitas 5% ini khusus berlaku  │        │
-│       │                untuk KPR Bank BCA. Persetujuan kredit dan biaya riil   │        │
-│       │                mengikuti ketentuan bank.                              │        │
-│       └───────────────────────────────────────────────────────────────────────┘        │
+│       ┌─ WADAH PILL DISCLAIMER NETRAL DI LUAR CARD (White/80 Backdrop-blur, Border) ──┐ │
+│       │ *Perhitungan simulasi ini hanya sebagai patokan/estimasi. Perhitungan riil    │ │
+│       │ dan suku bunga di bank dapat berbeda sesuai kebijakan bank yang berlaku.      │ │
+│       └───────────────────────────────────────────────────────────────────────────────┘ │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Rangkuman Fitur:
-1. **Layout 1 Card Landscape 2 Kolom:** Terpadu dalam satu wadah (*container* kartu besar) dengan border halus dan bayangan elegan.
-   - **Kolom Kiri:** Input harga rumah manual, input nominal DP, input persentase DP, slider DP interaktif, dan dropdown tenor.
-   - **Kolom Kanan:** Plafon pembiayaan, box highlight estimasi angsuran bulanan dengan badge bunga, grid 3 metrik ringkasan, collapsible accordion rincian biaya awal akad, dan tombol WhatsApp CTA *full-width*.
-2. **Sinkronisasi Dua Arah Uang Muka (DP):**
-   - Mengetik nominal DP $\rightarrow$ persentase DP & slider otomatis sinkron.
+### Rangkuman Fitur Unggulan v2.1:
+1. **Layout 1 Card Landscape 2 Kolom**: Terpadu dalam satu kartu utama (`rounded-[26px]`) dengan split 6-kolom input dan 6-kolom hasil estimasi pada desktop.
+2. **Suku Bunga Dinamis & Manual (% p.a.)**: Pengguna dapat menguji berbagai skema suku bunga bank (KPR Subsidi FLPP 5%, KPR Promo 3.5%–7%, atau KPR Komersial 8%+) secara leluasa.
+3. **Sub-Grid 2 Kolom Responsif (`sm:grid-cols-2 gap-4`)**: Input suku bunga dan dropdown tenor sejajar rapi di layar $\ge 640\text{px}$, menghemat ruang vertikal kartu secara drastis. Label dilengkapi proteksi `truncate` dan badge dengan `shrink-0 whitespace-nowrap` anti-wrapping.
+4. **Sinkronisasi Tiga Arah Uang Muka (DP)**:
+   - Mengetik nominal Rupiah $\rightarrow$ persentase DP & slider otomatis sinkron.
    - Mengubah persentase DP $\rightarrow$ nominal DP & slider otomatis sinkron.
-   - Menggeser slider $\rightarrow$ nominal DP & persentase DP otomatis sinkron.
+   - Menggeser slider range $\rightarrow$ nominal DP & persentase DP otomatis sinkron dengan track gradient terisi proporsional.
    - Mengubah harga rumah $\rightarrow$ nominal DP terhitung ulang mengikuti persentase aktif.
-3. **Input Harga Fleksibel & Tombol Clear:** Format otomatis pemisah ribuan titik (`id-ID`) dan tombol `✕` untuk mereset harga menjadi 0 tanpa error `NaN`.
-4. **Formula Anuitas Standar Perbankan:** Menghitung angsuran bulanan tetap dengan suku bunga efektif/anuitas tahunan yang 100% presisi sesuai formula Excel bank.
-5. **Estimasi Biaya Akad Awal:**
-   - Biaya Provisi: $0.5\% \times \text{Plafon Kredit}$.
-   - Biaya Administrasi Bank: $\text{Rp } 500.000$ (biaya tetap).
-   - Total Biaya Pertama: $\text{Angsuran Pertama} + \text{Provisi} + \text{Administrasi}$.
-6. **Latar Belakang Hunian Subtle:** Background image 3D tipis (*opacity 10–15%*) dengan efek gradasi vertikal *fade* atas dan bawah agar konten kartu tetap memiliki kontras tinggi.
-7. **Pill Bank Partner & Disclaimer di Luar Card:** Logo bank resmi (misal: Bank BCA) dan kalimat disclaimer ringkas diletakkan di luar card utama dalam pill container berlatar *backdrop-blur*.
-8. **WhatsApp CTA Dinamis:** Menghasilkan pesan konsultasi WhatsApp otomatis yang langsung memuat rincian simulasi pengguna.
+5. **Tombol Reset Cepat (`✕`)**: Tombol clear yang mengembalikan harga dan nominal ke 0 secara aman tanpa error `NaN`.
+6. **Formula Anuitas Bulanan Presisi Perbankan**: Menghitung angsuran tetap bulanan secara akurat menggunakan formula anuitas standar bank nasional ($A = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$).
+7. **Grid 3 Metrik Dinamis Real-Time**: Kartu ringkasan Bunga KPR (`% p.a.`), Uang Muka (`%`), dan Tenor (`Thn`) yang selalu sinkron instan.
+8. **WhatsApp Lead Generator**: Tombol CTA menghasilkan tautan WhatsApp otomatis yang langsung memuat rincian simulasi pengguna (*pre-filled message*).
+9. **Wadah Pill Disclaimer Netral**: Posisi di luar kartu utama dengan latar belakang *backdrop-blur* transparan, bebas dari ikatan logo bank tertentu.
 
 ---
 
 ## 2. Kebutuhan Stack & Dependensi
 
-Komponen ini bersifat *framework-agnostic* di ekosistem Vue:
-- **Core:** Vue 3 (Composition API `<script setup>`) atau Nuxt 3.
-- **CSS Utility:** Tailwind CSS v3.x atau v4.x.
-- **Icons / Fonts (Opsional):**
-  - Font Judul: Serif display (`Fraunces`, `Dream Orphans`, atau `Playfair Display`).
-  - Font Konten: Sans-serif (`Poppins`, `DM Sans`, atau `Inter`).
-  - Simbol: Karakter UTF-8 bawaan (`Rp`, `▼`, `✕`, `↗`, `▾`, `▴`).
+Komponen ini bersifat *framework-agnostic* di ekosistem Vue modern:
+- **Core Framework**: Vue 3 (Composition API `<script setup>`) atau Nuxt 3.
+- **CSS Utility Engine**: Tailwind CSS (v3.x atau v4.x).
+- **Icons / Simbol**: Karakter UTF-8 bawaan (`Rp`, `▼`, `✕`, `↗`, `%`). Tidak membutuhkan dependensi icon library eksternal (Lucide/FontAwesome).
+- **Zero Third-Party Financial Plugins**: Semua formula aktuaria dihitung menggunakan JavaScript murni.
 
-### Variabel Warna CSS (Design Tokens)
-Jika proyek Anda menggunakan sistem CSS variables, daftarkan variabel berikut di CSS global (atau ganti langsung dengan class Tailwind seperti `emerald-700`, `stone-100`, dll.):
+### Konfigurasi Variabel Warna CSS (Design Tokens)
+Komponen menggunakan variabel CSS dengan nilai fallback bawaan, sehingga dapat langsung bekerja tanpa setup rumit atau diintegrasikan ke theme kustom proyek Anda:
 
 ```css
 :root {
-  --paper: #f6f5f1;          /* Latar belakang section */
-  --paper-deep: #e8e6df;     /* Track slider & border sekunder */
-  --white: #ffffff;          /* Latar card utama */
-  --ink: #1e2420;            /* Teks judul & nominal utama */
-  --muted: #6b726d;          /* Teks deskripsi & label */
-  --line: #e3e1da;           /* Border garis halus */
-  --green: #2d5a3f;          /* Warna primer (tombol, accent slider) */
-  --green-deep: #1e3f2c;     /* Warna hijau gelap (teks nominal cicilan) */
-  --green-soft: #c8d8cd;     /* Border box highlight cicilan */
-  --sage-pale: #eaf1ec;      /* Latar box highlight cicilan */
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --calc-bg: #f6f5f1;             /* Latar section (off-white / cream pale) */
+  --calc-card: #ffffff;           /* Latar kartu utama */
+  --calc-ink: #1e2420;            /* Teks judul & nominal utama (charcoal) */
+  --calc-muted: #6b726d;          /* Teks deskripsi & label input */
+  --calc-line: #e3e1da;           /* Border garis halus (cream light) */
+  --calc-primary: #1c4a2a;        /* Warna primer tombol & slider (forest deep) */
+  --calc-primary-hover: #2d5a3f;  /* Warna hover tombol primer */
+  --calc-track: #eceae1;          /* Track slider tidak aktif */
+  --calc-highlight-bg: #eaf1ec;   /* Latar box estimasi cicilan (mint pale) */
+  --calc-highlight-border: #c8d8cd; /* Border box estimasi cicilan */
 }
 ```
 
@@ -102,23 +100,24 @@ Jika proyek Anda menggunakan sistem CSS variables, daftarkan variabel berikut di
 
 ## 3. Struktur Data Konfigurasi (Config Object)
 
-Definisikan data kalkulator di file terpisah (misal `content.js` atau JSON):
+Seluruh teks antarmuka, nilai default finansial, daftar tenor, dan template WhatsApp dapat dikonfigurasi melalui sebuah objek konfigurasi (misalnya di file `content.js` atau JSON):
 
 ```javascript
 export const mortgageCalculatorConfig = {
-  eyebrow: 'Simulasi Angsuran',
+  id: 'kalkulator',
+  eyebrow: '', // Kosongkan untuk menyembunyikan eyebrow (v2.1)
   titleLines: ['Hitung Simulasi', 'Cicilan Rumah Anda'],
   subtitle: 'Rencanakan pembelian rumah impian Anda dengan mudah menggunakan kalkulator cicilan berikut.',
   
   // Parameter Finansial Default
-  defaultPrice: 166000000,       // Patokan harga awal (Rp 166 Jt)
-  defaultDpPercent: 5,           // Minimal DP awal 5%
-  defaultTenor: 20,              // Default tenor 20 tahun
-  annualInterestRate: 0.05,      // Suku bunga anuitas 5.0% per tahun (0.05)
-  provisionRate: 0.005,          // Biaya provisi 0.5% (0.005)
-  adminFee: 500000,              // Biaya administrasi flat Rp 500.000
+  defaultPrice: 166000000,          // Patokan harga awal rumah (Rp 166 Jt)
+  defaultDpPercent: 5,              // Uang Muka (DP) default 5%
+  defaultTenor: 20,                 // Tenor pinjaman default 20 tahun
+  defaultInterestRatePercent: 5,   // Suku bunga tahunan default 5.0% p.a.
+  minDpPercent: 5,                  // Batas minimum slider DP (5%)
+  maxDpPercent: 90,                 // Batas maksimum slider DP (90%)
   
-  // Pilihan Tenor
+  // Pilihan Tenor Pinjaman
   tenors: [
     { value: 5, label: '5 Tahun (60 Bulan)' },
     { value: 10, label: '10 Tahun (120 Bulan)' },
@@ -126,76 +125,100 @@ export const mortgageCalculatorConfig = {
     { value: 20, label: '20 Tahun (240 Bulan)' },
   ],
   
-  // Visual & Media
-  image: '/assets/images/rumah-3d.webp', // Foto latar belakang hunian
+  // Gambar Latar Hunian Subtle
+  image: '/assets/images/rumah-3d.webp',
+  imageAlt: 'Ilustrasi Hunian Modern',
   
-  // Bank Partner
-  bankPartner: {
-    name: 'Bank BCA',
-    logo: '/assets/images/bank/bca.webp',
-  },
+  // Template & Nomor WhatsApp Marketing
+  whatsappNumber: '6282118992299', // Format nomor internasional tanpa tanda +
+  whatsappTemplate: 'Halo tim marketing, saya melakukan simulasi cicilan di website dengan rincian:\n- Harga Rumah: {harga}\n- Uang Muka: {dp} ({dpPercent}%)\n- Plafon KPR: {plafon}\n- Suku Bunga: {bunga} p.a.\n- Tenor: {tenor} Tahun\n- Estimasi Cicilan: {cicilan}/bulan\n\nBoleh bantu info ketersediaan unit dan persyaratannya?',
   
-  // Metrik Ringkasan
-  metrics: [
-    { label: 'Bunga KPR', value: '5.0% p.a.' },
-    { label: 'Uang Muka', value: 'Mulai 5%' },
-    { label: 'Tenor KPR', value: 's/d 20 Thn' },
-  ],
-  
-  // WhatsApp Configuration
-  whatsappNumber: '6281234567890', // Nomor WhatsApp Marketing (tanpa tanda +)
-  whatsappTemplate: 'Halo tim marketing, saya melakukan simulasi cicilan di website dengan rincian:\n- Harga Rumah: {harga}\n- Uang Muka: {dp} ({dpPercent}%)\n- Plafon KPR: {plafon}\n- Tenor: {tenor} Tahun\n- Estimasi Cicilan: {cicilan}/bulan\n\nBoleh bantu info ketersediaan unit dan persyaratannya?',
-  
-  footnote: '*Simulasi cicilan bunga anuitas 5% ini khusus berlaku untuk KPR Bank BCA. Persetujuan kredit dan biaya riil mengikuti ketentuan bank.',
+  // Teks Disclaimer Netral di Luar Card
+  footnote: '*Perhitungan simulasi ini hanya sebagai patokan/estimasi. Perhitungan riil dan suku bunga di bank dapat berbeda sesuai kebijakan bank yang berlaku.',
   ctaLabel: 'Konsultasi Simulasi via WhatsApp',
+  
+  // Label UI (Dapat disesuaikan bahasa / i18n)
+  labels: {
+    housePrice: 'Harga Rumah',
+    downPayment: 'Uang Muka (DP)',
+    downPaymentNominal: 'Uang Muka Nominal',
+    downPaymentPercent: 'Persentase DP',
+    interestRate: 'Suku Bunga (% per tahun)',
+    tenor: 'Jangka Waktu Pinjaman',
+    clearLabel: 'Hapus input harga',
+    minDp: '5% Min DP',
+    midDp: '50%',
+    maxDp: '90% Max DP',
+    plafonTitle: 'Plafon Pembiayaan KPR',
+    installmentTitle: 'Estimasi Cicilan per Bulan',
+    perMonth: '/bulan',
+    metricInterest: 'Bunga KPR',
+    metricDp: 'Uang Muka',
+    metricTenor: 'Tenor KPR',
+  },
 };
 ```
 
 ---
 
-## 4. Formula Matematika & Logika Inti (The Math & Core Logic)
+## 4. Formula Finansial & Logika Inti (The Math & Core Logic)
 
-### 4.1 Rumus Bunga Anuitas Bulanan (EMI)
+### 4.1 Rumus Bunga Anuitas Bulanan (EMI) dengan Suku Bunga Dinamis
+
+Kalkulator menggunakan rumus baku anuitas perbankan (*Equated Monthly Installment / EMI*):
 
 $$A = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$$
 
-- $P$ = Plafon Kredit = $\text{Harga Jual} - \text{Nominal Uang Muka}$
-- $i$ = Suku Bunga Tahunan (desimal, cth: $5\% = 0.05$)
-- $r$ = Suku Bunga Bulanan = $\frac{i}{12} = \frac{0.05}{12} \approx 0.0041666667$
-- $n$ = Jumlah Bulan = $\text{Tenor (Tahun)} \times 12$
+Di mana:
+- $P$ (**Plafon Kredit**) = $\max(0, \text{Harga Rumah} - \text{Nominal Uang Muka})$
+- $i$ (**Suku Bunga Tahunan Dinamis**) = $\frac{\text{interestRate}}{100}$ (contoh: $5\% \rightarrow 0.05$)
+- $r$ (**Suku Bunga Bulanan**) = $\frac{i}{12} = \frac{\text{interestRate} / 100}{12}$
+- $n$ (**Jumlah Periode Bulan**) = $\text{Tenor (Tahun)} \times 12$
+- $A$ (**Angsuran per Bulan**) = Nominal angsuran pokok + bunga tetap per bulan
 
-#### Fungsi JavaScript Murni:
+#### Penanganan Edge Case Finansial:
+1. **Plafon $\le 0$**: Menghasilkan angsuran $\text{Rp } 0$.
+2. **Suku Bunga $\le 0$ ($i = 0$)**: Menghindari pembagian dengan nol (*division by zero*). Angsuran dihitung murni pembagian pokok pinjaman: $A = \text{round}(P / n)$.
+
 ```javascript
-function calculateMonthlyInstallment(plafon, annualInterestRate, tenorYears) {
+function calculateMonthlyInstallment(plafon, interestRatePercent, tenorYears) {
   if (plafon <= 0) return 0;
-  const n = tenorYears * 12;
-  if (annualInterestRate <= 0) return Math.round(plafon / n);
+  const rateVal = Number(interestRatePercent);
+  const annualRate = (isNaN(rateVal) ? 0 : rateVal) / 100;
+  const n = (tenorYears || 20) * 12;
   
-  const r = annualInterestRate / 12;
+  if (annualRate <= 0) return Math.round(plafon / n);
+  
+  const r = annualRate / 12;
   const factor = Math.pow(1 + r, n);
   const emi = plafon * (r * factor) / (factor - 1);
   return Math.round(emi);
 }
 ```
 
-### 4.2 Helper Format Rupiah
-```javascript
-function formatCurrency(val) {
-  if (val === null || val === undefined || isNaN(val)) return 'Rp 0';
-  return 'Rp ' + Math.round(val).toLocaleString('id-ID');
-}
-```
+### 4.2 Matriks Referensi Validasi Finansial (Akurasi Presisi)
+
+Sebagai acuan uji kebenaran perhitungan pada harga unit **Rp 166.000.000** (DP 5% = Rp 8.300.000, Plafon = Rp 157.700.000):
+
+| Suku Bunga p.a. | Tenor 5 Thn ($n=60$) | Tenor 10 Thn ($n=120$) | Tenor 15 Thn ($n=180$) | Tenor 20 Thn ($n=240$) |
+|:---:|:---:|:---:|:---:|:---:|
+| **5.0%** (Subsidi FLPP) | Rp 2.976.013/bln | Rp 1.672.846/bln | Rp 1.247.165/bln | **Rp 1.040.750/bln** |
+| **7.0%** (Promo Komersil) | Rp 3.122.641/bln | Rp 1.831.026/bln | Rp 1.417.414/bln | **Rp 1.222.658/bln** |
+| **8.5%** (KPR Reguler) | Rp 3.235.961/bln | Rp 1.954.551/bln | Rp 1.551.789/bln | **Rp 1.368.514/bln** |
 
 ### 4.3 Logika Sinkronisasi Dua Arah Uang Muka (DP)
+
+Tiga kendali DP (Input Rupiah, Input Persen, dan Slider Range) saling mengikat secara reaktif:
+
 ```javascript
-// 1. Saat pengguna mengetik harga rumah manual
+// 1. Pengguna mengetik harga rumah manual
 function onPriceInput(digitsOnlyString, currentDpPercent) {
   const price = parseInt(digitsOnlyString, 10) || 0;
   const dpNominal = Math.round(price * (currentDpPercent / 100));
   return { price, dpNominal };
 }
 
-// 2. Saat pengguna mengetik nominal DP dalam Rupiah
+// 2. Pengguna mengetik nominal DP dalam Rupiah
 function onDpNominalInput(digitsOnlyString, currentPrice) {
   const dpNominal = parseInt(digitsOnlyString, 10) || 0;
   let dpPercent = 0;
@@ -206,7 +229,7 @@ function onDpNominalInput(digitsOnlyString, currentPrice) {
   return { dpNominal, dpPercent };
 }
 
-// 3. Saat pengguna mengetik persentase DP atau menggeser slider
+// 3. Pengguna mengubah persentase DP atau menggeser slider range
 function onDpPercentChange(newPercent, currentPrice) {
   let pct = parseFloat(newPercent);
   if (isNaN(pct)) pct = 0;
@@ -217,23 +240,27 @@ function onDpPercentChange(newPercent, currentPrice) {
 }
 ```
 
-### 4.4 Generator URL WhatsApp Dinamis
+### 4.4 Perhitungan Dynamic Gradient Track Slider
+
+Agar track range slider terisi warna hijau aktif sesuai posisi handle secara mulus:
+
 ```javascript
-function generateWhatsAppUrl(phone, template, data) {
-  let message = template;
-  for (const [key, val] of Object.entries(data)) {
-    message = message.replaceAll(`{${key}}`, val);
-  }
-  const cleanPhone = phone.replace(/\D/g, '');
-  return `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
-}
+const sliderBackgroundStyle = computed(() => {
+  const min = c.value.minDpPercent || 5;
+  const max = c.value.maxDpPercent || 90;
+  const val = Math.min(Math.max(dpPercent.value, min), max);
+  const percentage = ((val - min) / (max - min)) * 100;
+  return {
+    background: `linear-gradient(to right, var(--calc-primary, #1c4a2a) 0%, var(--calc-primary, #1c4a2a) ${percentage}%, var(--calc-track, #eceae1) ${percentage}%, var(--calc-track, #eceae1) 100%)`,
+  };
+});
 ```
 
 ---
 
-## 5. Kode Komponen Lengkap Siap Pakai (`MortgageCalculator.vue`)
+## 5. Komponen Reusable Siap Pakai (`MortgageCalculator.vue`)
 
-Komponen Single-File Component (SFC) berikut sudah **self-contained**. Anda dapat langsung menyalin file ini ke proyek Anda di `components/MortgageCalculator.vue`:
+Komponen Single-File Component (SFC) berikut **100% self-contained** dan siap disalin langsung ke folder `components/MortgageCalculator.vue` di proyek Vue 3 atau Nuxt 3 Anda:
 
 ```vue
 <script setup>
@@ -246,17 +273,18 @@ const props = defineProps({
   },
 });
 
-// Default Configuration Fallback
+// Default Configuration Fallback (v2.1)
 const defaultConfig = {
-  eyebrow: 'Simulasi Angsuran',
+  id: 'kalkulator',
+  eyebrow: '',
   titleLines: ['Hitung Simulasi', 'Cicilan Rumah Anda'],
   subtitle: 'Rencanakan pembelian rumah impian Anda dengan mudah menggunakan kalkulator cicilan berikut.',
   defaultPrice: 166000000,
   defaultDpPercent: 5,
   defaultTenor: 20,
-  annualInterestRate: 0.05,
-  provisionRate: 0.005,
-  adminFee: 500000,
+  defaultInterestRatePercent: 5,
+  minDpPercent: 5,
+  maxDpPercent: 90,
   tenors: [
     { value: 5, label: '5 Tahun (60 Bulan)' },
     { value: 10, label: '10 Tahun (120 Bulan)' },
@@ -264,29 +292,43 @@ const defaultConfig = {
     { value: 20, label: '20 Tahun (240 Bulan)' },
   ],
   image: '',
-  bankPartner: {
-    name: 'Bank BCA',
-    logo: '',
-  },
-  metrics: [
-    { label: 'Bunga KPR', value: '5.0% p.a.' },
-    { label: 'Uang Muka', value: 'Mulai 5%' },
-    { label: 'Tenor KPR', value: 's/d 20 Thn' },
-  ],
-  whatsappNumber: '6281234567890',
-  whatsappTemplate: 'Halo tim marketing, saya melakukan simulasi cicilan di website dengan rincian:\n- Harga Rumah: {harga}\n- Uang Muka: {dp} ({dpPercent}%)\n- Plafon KPR: {plafon}\n- Tenor: {tenor} Tahun\n- Estimasi Cicilan: {cicilan}/bulan\n\nBoleh bantu info ketersediaan unit dan persyaratan pengajuan KPR-nya?',
-  footnote: '*Simulasi cicilan bunga anuitas 5% ini khusus berlaku untuk KPR Bank BCA. Persetujuan kredit dan biaya riil mengikuti ketentuan bank.',
+  imageAlt: 'Ilustrasi Hunian Modern',
+  whatsappNumber: '6282118992299',
+  whatsappTemplate: 'Halo tim marketing, saya melakukan simulasi cicilan di website dengan rincian:\n- Harga Rumah: {harga}\n- Uang Muka: {dp} ({dpPercent}%)\n- Plafon KPR: {plafon}\n- Suku Bunga: {bunga} p.a.\n- Tenor: {tenor} Tahun\n- Estimasi Cicilan: {cicilan}/bulan\n\nBoleh bantu info ketersediaan unit dan persyaratannya?',
+  footnote: '*Perhitungan simulasi ini hanya sebagai patokan/estimasi. Perhitungan riil dan suku bunga di bank dapat berbeda sesuai kebijakan bank yang berlaku.',
   ctaLabel: 'Konsultasi Simulasi via WhatsApp',
+  labels: {
+    housePrice: 'Harga Rumah',
+    downPayment: 'Uang Muka (DP)',
+    downPaymentNominal: 'Uang Muka Nominal',
+    downPaymentPercent: 'Persentase DP',
+    interestRate: 'Suku Bunga (% per tahun)',
+    tenor: 'Jangka Waktu Pinjaman',
+    clearLabel: 'Hapus input harga',
+    minDp: '5% Min DP',
+    midDp: '50%',
+    maxDp: '90% Max DP',
+    plafonTitle: 'Plafon Pembiayaan KPR',
+    installmentTitle: 'Estimasi Cicilan per Bulan',
+    perMonth: '/bulan',
+    metricInterest: 'Bunga KPR',
+    metricDp: 'Uang Muka',
+    metricTenor: 'Tenor KPR',
+  },
 };
 
-const c = computed(() => ({ ...defaultConfig, ...props.config }));
+const c = computed(() => ({
+  ...defaultConfig,
+  ...props.config,
+  labels: { ...defaultConfig.labels, ...(props.config?.labels || {}) },
+}));
 
-// Reactive State
+// State Reaktif
 const price = ref(c.value.defaultPrice);
 const dpPercent = ref(c.value.defaultDpPercent);
 const dpNominal = ref(Math.round(price.value * (dpPercent.value / 100)));
 const tenorYears = ref(c.value.defaultTenor);
-const showBreakdown = ref(false);
+const interestRate = ref(c.value.defaultInterestRatePercent);
 
 // Format Rupiah
 function formatCurrency(val) {
@@ -302,7 +344,7 @@ const formattedDpNominal = computed(() => {
   return dpNominal.value > 0 ? dpNominal.value.toLocaleString('id-ID') : '';
 });
 
-// Event Handlers
+// Event Handlers Input
 function onPriceInput(e) {
   const digits = e.target.value.replace(/\D/g, '');
   const num = digits ? parseInt(digits, 10) : 0;
@@ -343,105 +385,124 @@ function onSliderInput(e) {
   dpNominal.value = Math.round(price.value * (pct / 100));
 }
 
-// Computations
+// Perhitungan Finansial
 const plafon = computed(() => Math.max(0, price.value - dpNominal.value));
 
 const monthlyInstallment = computed(() => {
   const P = plafon.value;
   if (P <= 0) return 0;
-  const annualRate = c.value.annualInterestRate ?? 0.05;
+  const rateVal = Number(interestRate.value);
+  const annualRate = (isNaN(rateVal) ? 0 : rateVal) / 100;
   const years = tenorYears.value || 20;
   const n = years * 12;
   if (annualRate <= 0) return Math.round(P / n);
-  
+
   const r = annualRate / 12;
   const factor = Math.pow(1 + r, n);
   const emi = P * (r * factor) / (factor - 1);
   return Math.round(emi);
 });
 
-const provisionFee = computed(() => {
-  const rate = c.value.provisionRate ?? 0.005;
-  return Math.round(plafon.value * rate);
+// Slider Background Track Gradient
+const sliderBackgroundStyle = computed(() => {
+  const min = c.value.minDpPercent || 5;
+  const max = c.value.maxDpPercent || 90;
+  const val = Math.min(Math.max(dpPercent.value, min), max);
+  const percentage = ((val - min) / (max - min)) * 100;
+  return {
+    background: `linear-gradient(to right, var(--calc-primary, #1c4a2a) 0%, var(--calc-primary, #1c4a2a) ${percentage}%, var(--calc-track, #eceae1) ${percentage}%, var(--calc-track, #eceae1) 100%)`,
+  };
 });
 
-const adminFee = computed(() => {
-  return plafon.value > 0 ? (c.value.adminFee ?? 500000) : 0;
-});
+// Grid 3 Metrik Dinamis Real-Time
+const metrics = computed(() => [
+  {
+    label: c.value.labels?.metricInterest || 'Bunga KPR',
+    value: `${interestRate.value ?? 0}% p.a.`,
+  },
+  {
+    label: c.value.labels?.metricDp || 'Uang Muka',
+    value: `${dpPercent.value}%`,
+  },
+  {
+    label: c.value.labels?.metricTenor || 'Tenor KPR',
+    value: `${tenorYears.value} Thn`,
+  },
+]);
 
-const totalInitialFee = computed(() => {
-  if (plafon.value <= 0) return 0;
-  return monthlyInstallment.value + provisionFee.value + adminFee.value;
-});
-
-// Dynamic WhatsApp link
-const waConsultLink = computed(() => {
-  const template = c.value.whatsappTemplate;
+// Dynamic WhatsApp Link
+const whatsappUrl = computed(() => {
+  const template = c.value.whatsappTemplate || '';
+  const phone = (c.value.whatsappNumber || '').replace(/\D/g, '');
   const map = {
     harga: formatCurrency(price.value),
     dp: formatCurrency(dpNominal.value),
     dpPercent: dpPercent.value,
     plafon: formatCurrency(plafon.value),
+    bunga: `${interestRate.value ?? 0}%`,
     tenor: tenorYears.value,
     cicilan: formatCurrency(monthlyInstallment.value),
   };
   let message = template;
   for (const [key, val] of Object.entries(map)) {
-    message = message.replaceAll(`{${key}}`, val);
+    message = message.replaceAll(`{${key}}`, String(val));
   }
-  const phone = (c.value.whatsappNumber || '').replace(/\D/g, '');
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 });
 </script>
 
 <template>
-  <section class="calc-section relative py-20 lg:py-24 scroll-mt-20 overflow-hidden bg-[var(--paper,#f6f5f1)]" id="kalkulator">
+  <section
+    :id="c.id || 'kalkulator'"
+    class="calc-section relative pt-6 pb-16 lg:pt-8 lg:pb-20 scroll-mt-20 overflow-hidden bg-[var(--calc-bg,#f6f5f1)]"
+  >
     <!-- Background Image with Fade Effect -->
     <div v-if="c.image" class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
       <img
         :src="c.image"
-        alt=""
+        :alt="c.imageAlt || ''"
         aria-hidden="true"
         class="h-full w-full object-cover object-center opacity-10 lg:opacity-15"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-[var(--paper,#f6f5f1)] via-transparent to-[var(--paper,#f6f5f1)]"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-[var(--calc-bg,#f6f5f1)] via-transparent to-[var(--calc-bg,#f6f5f1)]"></div>
     </div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
-      <!-- Section Heading -->
-      <div class="mb-10 lg:mb-12">
-        <div class="max-w-2xl">
-          <span v-if="c.eyebrow" class="inline-block text-xs font-bold tracking-widest uppercase text-[var(--green,#2d5a3f)] mb-3">
-            {{ c.eyebrow }}
-          </span>
-          <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-serif leading-tight text-[var(--ink,#1e2420)] mb-3">
-            {{ c.titleLines?.[0] || 'Hitung Simulasi' }}<br>
-            <em class="italic">{{ c.titleLines?.[1] || 'Cicilan Rumah Anda' }}</em>
-          </h2>
-          <p class="text-xs sm:text-sm text-[var(--muted,#6b726d)] leading-relaxed">
-            {{ c.subtitle }}
-          </p>
-        </div>
+      <!-- Section Heading (Centered, Tanpa Eyebrow) -->
+      <div class="text-center mx-auto max-w-2xl mb-8 lg:mb-10">
+        <span
+          v-if="c.eyebrow"
+          class="inline-block text-xs font-bold tracking-widest uppercase text-[var(--calc-primary,#1c4a2a)] mb-3"
+        >
+          {{ c.eyebrow }}
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-serif font-semibold leading-tight text-[var(--calc-ink,#1e2420)] mb-3 text-center">
+          {{ c.titleLines?.[0] || 'Hitung Simulasi' }}<br>
+          <em class="italic font-normal">{{ c.titleLines?.[1] || 'Cicilan Rumah Anda' }}</em>
+        </h2>
+        <p v-if="c.subtitle" class="text-xs sm:text-sm text-[var(--calc-muted,#6b726d)] leading-relaxed">
+          {{ c.subtitle }}
+        </p>
       </div>
 
       <!-- SATU Card Landscape 2 Kolom -->
-      <div class="bg-[var(--white,#ffffff)] border border-[var(--line,#e3e1da)] rounded-[26px] p-6 sm:p-8 lg:p-10 shadow-sm">
+      <div class="bg-[var(--calc-card,#ffffff)] border border-[var(--calc-line,#e3e1da)] rounded-[26px] p-6 sm:p-8 lg:p-10 shadow-[0_4px_30px_rgba(20,43,32,0.06)]">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <!-- Kolom 1 (Kiri): Input Data (6 Col) -->
+          <!-- Kolom 1 (Kiri): Form Input Finansial (6 Col) -->
           <div class="lg:col-span-6 space-y-6">
             <!-- 1. Input Harga Rumah -->
             <div>
               <div class="flex items-center justify-between mb-2">
-                <label for="calc-price-input" class="text-xs sm:text-[13px] font-bold text-[var(--ink,#1e2420)] tracking-tight">
-                  Harga Rumah
+                <label for="calc-price-input" class="text-xs sm:text-[13px] font-bold text-[var(--calc-ink,#1e2420)] tracking-tight">
+                  {{ c.labels?.housePrice }}
                 </label>
-                <span v-if="price > 0" class="text-[11px] font-semibold text-[var(--green,#2d5a3f)]">
+                <span v-if="price > 0" class="text-[11px] font-semibold text-[var(--calc-primary,#1c4a2a)]">
                   {{ formatCurrency(price) }}
                 </span>
               </div>
 
               <div class="relative flex items-center">
-                <div class="absolute left-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--muted,#6b726d)] select-none">
+                <div class="absolute left-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--calc-muted,#6b726d)] select-none">
                   Rp
                 </div>
                 <input
@@ -451,15 +512,15 @@ const waConsultLink = computed(() => {
                   :value="formattedPrice"
                   @input="onPriceInput"
                   placeholder="0"
-                  class="w-full pl-11 pr-10 py-3.5 bg-[var(--paper,#f6f5f1)]/50 border border-[var(--line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--ink,#1e2420)] placeholder-[var(--muted,#6b726d)]/50 focus:bg-white focus:border-[var(--green,#2d5a3f)] focus:ring-2 focus:ring-[var(--green,#2d5a3f)]/20 outline-none transition-all"
-                  aria-label="Harga Rumah"
+                  class="w-full pl-11 pr-10 py-3.5 bg-[var(--calc-bg,#f6f5f1)]/80 border border-[var(--calc-line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--calc-ink,#1e2420)] placeholder-[var(--calc-muted,#6b726d)]/50 focus:bg-white focus:border-[var(--calc-primary,#1c4a2a)] focus:ring-2 focus:ring-[var(--calc-primary,#1c4a2a)]/20 outline-none transition-all"
+                  :aria-label="c.labels?.housePrice"
                 />
                 <button
                   v-if="price > 0"
                   type="button"
                   @click="clearPrice"
-                  class="absolute right-3.5 w-6 h-6 flex items-center justify-center rounded-full bg-[var(--line,#e3e1da)] hover:bg-[var(--muted,#6b726d)] hover:text-white text-[var(--ink,#1e2420)] text-xs transition-colors cursor-pointer"
-                  aria-label="Hapus input harga"
+                  class="absolute right-3.5 w-6 h-6 flex items-center justify-center rounded-full bg-[var(--calc-line,#e3e1da)] hover:bg-[var(--calc-muted,#6b726d)] hover:text-white text-[var(--calc-ink,#1e2420)] text-xs transition-colors cursor-pointer"
+                  :aria-label="c.labels?.clearLabel"
                 >
                   ✕
                 </button>
@@ -469,10 +530,10 @@ const waConsultLink = computed(() => {
             <!-- 2. Uang Muka (DP) Sinkronisasi Dua Arah -->
             <div>
               <div class="flex items-center justify-between mb-2">
-                <label for="calc-dp-nominal" class="text-xs sm:text-[13px] font-bold text-[var(--ink,#1e2420)] tracking-tight">
-                  Uang Muka (DP)
+                <label for="calc-dp-nominal" class="text-xs sm:text-[13px] font-bold text-[var(--calc-ink,#1e2420)] tracking-tight">
+                  {{ c.labels?.downPayment }}
                 </label>
-                <span class="text-[11px] font-semibold text-[var(--green,#2d5a3f)]">
+                <span class="text-[11px] font-semibold text-[var(--calc-primary,#1c4a2a)]">
                   {{ dpPercent }}% ({{ formatCurrency(dpNominal) }})
                 </span>
               </div>
@@ -480,7 +541,7 @@ const waConsultLink = computed(() => {
               <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
                 <!-- Input Nominal DP -->
                 <div class="sm:col-span-8 relative flex items-center">
-                  <div class="absolute left-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--muted,#6b726d)] select-none">
+                  <div class="absolute left-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--calc-muted,#6b726d)] select-none">
                     Rp
                   </div>
                   <input
@@ -490,8 +551,8 @@ const waConsultLink = computed(() => {
                     :value="formattedDpNominal"
                     @input="onDpNominalInput"
                     placeholder="0"
-                    class="w-full pl-11 pr-4 py-3.5 bg-[var(--paper,#f6f5f1)]/50 border border-[var(--line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--ink,#1e2420)] placeholder-[var(--muted,#6b726d)]/50 focus:bg-white focus:border-[var(--green,#2d5a3f)] focus:ring-2 focus:ring-[var(--green,#2d5a3f)]/20 outline-none transition-all"
-                    aria-label="Uang Muka Nominal"
+                    class="w-full pl-11 pr-4 py-3.5 bg-[var(--calc-bg,#f6f5f1)]/80 border border-[var(--calc-line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--calc-ink,#1e2420)] placeholder-[var(--calc-muted,#6b726d)]/50 focus:bg-white focus:border-[var(--calc-primary,#1c4a2a)] focus:ring-2 focus:ring-[var(--calc-primary,#1c4a2a)]/20 outline-none transition-all"
+                    :aria-label="c.labels?.downPaymentNominal || c.labels?.downPayment"
                   />
                 </div>
 
@@ -506,10 +567,10 @@ const waConsultLink = computed(() => {
                     :value="dpPercent"
                     @input="onDpPercentInput"
                     placeholder="0"
-                    class="w-full pl-4 pr-8 py-3.5 bg-[var(--paper,#f6f5f1)]/50 border border-[var(--line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--ink,#1e2420)] placeholder-[var(--muted,#6b726d)]/50 focus:bg-white focus:border-[var(--green,#2d5a3f)] focus:ring-2 focus:ring-[var(--green,#2d5a3f)]/20 outline-none transition-all text-right sm:text-center"
-                    aria-label="Persentase DP"
+                    class="w-full pl-4 pr-8 py-3.5 bg-[var(--calc-bg,#f6f5f1)]/80 border border-[var(--calc-line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--calc-ink,#1e2420)] placeholder-[var(--calc-muted,#6b726d)]/50 focus:bg-white focus:border-[var(--calc-primary,#1c4a2a)] focus:ring-2 focus:ring-[var(--calc-primary,#1c4a2a)]/20 outline-none transition-all text-right sm:text-center"
+                    :aria-label="c.labels?.downPaymentPercent || 'Persentase DP'"
                   />
-                  <div class="absolute right-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--muted,#6b726d)] select-none">
+                  <div class="absolute right-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--calc-muted,#6b726d)] select-none">
                     %
                   </div>
                 </div>
@@ -519,158 +580,138 @@ const waConsultLink = computed(() => {
               <div class="mt-3.5 px-1">
                 <input
                   type="range"
-                  min="5"
-                  max="90"
+                  :min="c.minDpPercent || 5"
+                  :max="c.maxDpPercent || 90"
                   step="1"
                   :value="dpPercent"
                   @input="onSliderInput"
-                  class="w-full h-2 bg-[var(--paper-deep,#e8e6df)] rounded-lg appearance-none cursor-pointer accent-[var(--green,#2d5a3f)]"
+                  :style="sliderBackgroundStyle"
+                  class="calc-slider w-full h-2 rounded-lg appearance-none cursor-pointer"
                   aria-label="Slider Persentase Uang Muka"
                 />
-                <div class="flex justify-between text-[10px] sm:text-[11px] font-semibold text-[var(--muted,#6b726d)] mt-1.5">
-                  <span>5% Min DP</span>
-                  <span>50%</span>
-                  <span>90% Max DP</span>
+                <div class="flex justify-between text-[10px] sm:text-[11px] font-semibold text-[var(--calc-muted,#6b726d)] mt-1.5">
+                  <span>{{ c.labels?.minDp }}</span>
+                  <span>{{ c.labels?.midDp || '50%' }}</span>
+                  <span>{{ c.labels?.maxDp }}</span>
                 </div>
               </div>
             </div>
 
-            <!-- 3. Tenor Pinjaman -->
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <label for="calc-tenor-select" class="text-xs sm:text-[13px] font-bold text-[var(--ink,#1e2420)] tracking-tight">
-                  Jangka Waktu Pinjaman
-                </label>
-                <span class="text-[11px] font-semibold text-[var(--green,#2d5a3f)]">
-                  {{ tenorYears }} Tahun ({{ tenorYears * 12 }} Bulan)
-                </span>
+            <!-- 3 & 4. Sub-grid 2 Kolom Responsif: Suku Bunga & Tenor -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Suku Bunga Manual (% per tahun) -->
+              <div>
+                <div class="flex items-center justify-between mb-2 gap-2">
+                  <label for="calc-interest-rate" class="text-xs sm:text-[13px] font-bold text-[var(--calc-ink,#1e2420)] tracking-tight truncate">
+                    {{ c.labels?.interestRate || 'Suku Bunga (% per tahun)' }}
+                  </label>
+                  <span class="text-[11px] font-semibold text-[var(--calc-primary,#1c4a2a)] shrink-0 whitespace-nowrap">
+                    {{ interestRate || 0 }}% p.a.
+                  </span>
+                </div>
+                <div class="relative flex items-center">
+                  <input
+                    id="calc-interest-rate"
+                    type="number"
+                    min="0"
+                    max="30"
+                    step="0.1"
+                    v-model.number="interestRate"
+                    placeholder="5"
+                    class="w-full pl-4 pr-10 py-3.5 bg-[var(--calc-bg,#f6f5f1)]/80 border border-[var(--calc-line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--calc-ink,#1e2420)] placeholder-[var(--calc-muted,#6b726d)]/50 focus:bg-white focus:border-[var(--calc-primary,#1c4a2a)] focus:ring-2 focus:ring-[var(--calc-primary,#1c4a2a)]/20 outline-none transition-all"
+                    :aria-label="c.labels?.interestRate || 'Suku Bunga (% per tahun)'"
+                  />
+                  <div class="absolute right-4 pointer-events-none text-xs sm:text-sm font-bold text-[var(--calc-muted,#6b726d)] select-none">
+                    %
+                  </div>
+                </div>
               </div>
 
-              <div class="relative">
-                <select
-                  id="calc-tenor-select"
-                  v-model.number="tenorYears"
-                  class="w-full appearance-none px-4 py-3.5 bg-[var(--paper,#f6f5f1)]/50 border border-[var(--line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--ink,#1e2420)] focus:bg-white focus:border-[var(--green,#2d5a3f)] focus:ring-2 focus:ring-[var(--green,#2d5a3f)]/20 outline-none cursor-pointer transition-all pr-10"
-                  aria-label="Jangka Waktu Pinjaman"
-                >
-                  <option
-                    v-for="t in c.tenors"
-                    :key="t.value"
-                    :value="t.value"
+              <!-- Tenor Pinjaman -->
+              <div>
+                <div class="flex items-center justify-between mb-2 gap-2">
+                  <label for="calc-tenor-select" class="text-xs sm:text-[13px] font-bold text-[var(--calc-ink,#1e2420)] tracking-tight truncate">
+                    {{ c.labels?.tenor || 'Jangka Waktu' }}
+                  </label>
+                  <span class="text-[11px] font-semibold text-[var(--calc-primary,#1c4a2a)] shrink-0 whitespace-nowrap">
+                    {{ tenorYears }} Thn
+                  </span>
+                </div>
+
+                <div class="relative">
+                  <select
+                    id="calc-tenor-select"
+                    v-model.number="tenorYears"
+                    class="w-full appearance-none px-4 py-3.5 bg-[var(--calc-bg,#f6f5f1)]/80 border border-[var(--calc-line,#e3e1da)] rounded-xl text-sm sm:text-base font-bold text-[var(--calc-ink,#1e2420)] focus:bg-white focus:border-[var(--calc-primary,#1c4a2a)] focus:ring-2 focus:ring-[var(--calc-primary,#1c4a2a)]/20 outline-none cursor-pointer transition-all pr-10"
+                    :aria-label="c.labels?.tenor || 'Jangka Waktu Pinjaman'"
                   >
-                    {{ t.label }}
-                  </option>
-                </select>
-                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--green,#2d5a3f)] text-xs font-bold">
-                  ▼
+                    <option v-for="t in c.tenors" :key="t.value" :value="t.value">
+                      {{ t.label }}
+                    </option>
+                  </select>
+                  <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--calc-primary,#1c4a2a)] text-xs font-bold">
+                    ▼
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Kolom 2 (Kanan): Plafon, Box Cicilan, Metrics, Biaya Akad, WhatsApp CTA (6 Col) -->
-          <div class="lg:col-span-6 space-y-5 lg:border-l lg:border-[var(--line,#e3e1da)] lg:pl-10">
+          <!-- Kolom 2 (Kanan): Plafon, Box Cicilan, Metrics, WhatsApp CTA (6 Col) -->
+          <div class="lg:col-span-6 space-y-5 lg:border-l lg:border-[var(--calc-line,#e3e1da)] lg:pl-10">
             <!-- Plafon Pinjaman -->
-            <div class="flex items-center justify-between pb-3 border-b border-[var(--line,#e3e1da)] text-xs sm:text-sm">
-              <span class="text-[var(--muted,#6b726d)] font-medium">Plafon Pembiayaan KPR</span>
-              <span class="text-[var(--ink,#1e2420)] font-bold text-sm sm:text-base">{{ formatCurrency(plafon) }}</span>
+            <div class="flex items-center justify-between pb-3 border-b border-[var(--calc-line,#e3e1da)] text-xs sm:text-sm">
+              <span class="text-[var(--calc-muted,#6b726d)] font-medium">{{ c.labels?.plafonTitle || 'Plafon Pembiayaan KPR' }}</span>
+              <span class="text-[var(--calc-ink,#1e2420)] font-bold text-sm sm:text-base">{{ formatCurrency(plafon) }}</span>
             </div>
 
-            <!-- Box Estimasi Cicilan -->
-            <div class="p-5 sm:p-6 rounded-2xl bg-[var(--sage-pale,#eaf1ec)] border border-[var(--green-soft,#c8d8cd)] text-center sm:text-left sm:flex sm:items-center sm:justify-between gap-4">
-              <div>
-                <span class="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-[var(--green-deep,#1e3f2c)]">
-                  Estimasi Cicilan per Bulan
+            <!-- Box Estimasi Cicilan Bersih (Clean - Tanpa Badge Statis) -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[var(--calc-highlight-bg,#eaf1ec)] border border-[var(--calc-highlight-border,#c8d8cd)] text-center">
+              <span class="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-[var(--calc-primary,#1c4a2a)]">
+                {{ c.labels?.installmentTitle || 'Estimasi Cicilan per Bulan' }}
+              </span>
+              <div class="flex items-baseline justify-center gap-1.5 mt-1">
+                <span class="font-serif text-3xl sm:text-4xl text-[var(--calc-primary,#1c4a2a)] font-bold tracking-tight">
+                  {{ formatCurrency(monthlyInstallment) }}
                 </span>
-                <div class="flex items-baseline justify-center sm:justify-start gap-1.5 mt-1">
-                  <span class="font-serif text-3xl sm:text-4xl text-[var(--green-deep,#1e3f2c)] font-bold tracking-tight">
-                    {{ formatCurrency(monthlyInstallment) }}
-                  </span>
-                  <span class="text-xs sm:text-sm font-semibold text-[var(--muted,#6b726d)]">
-                    /bulan
-                  </span>
-                </div>
-              </div>
-              <div class="mt-3 sm:mt-0 flex justify-center">
-                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold bg-white text-[var(--green-deep,#1e3f2c)] shadow-sm">
-                  <span>Bunga 5% Anuitas</span>
+                <span class="text-xs sm:text-sm font-semibold text-[var(--calc-muted,#6b726d)]">
+                  {{ c.labels?.perMonth || '/bulan' }}
                 </span>
               </div>
             </div>
 
-            <!-- 3 Metrics Grid -->
-            <div
-              v-if="c.metrics && c.metrics.length"
-              class="p-4 rounded-xl bg-[var(--paper,#f6f5f1)] border border-[var(--line,#e3e1da)] grid grid-cols-3 gap-2 text-center divide-x divide-[var(--line,#e3e1da)]"
-            >
-              <div v-for="metric in c.metrics" :key="metric.label" class="first:pl-0 px-2 last:pr-0">
-                <span class="block text-[10px] uppercase font-bold tracking-wider text-[var(--muted,#6b726d)]">{{ metric.label }}</span>
-                <strong class="block text-xs sm:text-sm font-bold text-[var(--green-deep,#1e3f2c)] mt-0.5">{{ metric.value }}</strong>
+            <!-- Grid 3 Metrik Dinamis Real-Time -->
+            <div class="p-4 rounded-xl bg-[var(--calc-bg,#f6f5f1)] border border-[var(--calc-line,#e3e1da)] grid grid-cols-3 gap-2 text-center divide-x divide-[var(--calc-line,#e3e1da)]">
+              <div v-for="metric in metrics" :key="metric.label" class="first:pl-0 px-2 last:pr-0">
+                <span class="block text-[10px] uppercase font-bold tracking-wider text-[var(--calc-muted,#6b726d)]">
+                  {{ metric.label }}
+                </span>
+                <strong class="block text-xs sm:text-sm font-bold text-[var(--calc-primary,#1c4a2a)] mt-0.5">
+                  {{ metric.value }}
+                </strong>
               </div>
             </div>
 
-            <!-- Collapsible Biaya Akad Awal -->
-            <div>
-              <button
-                type="button"
-                @click="showBreakdown = !showBreakdown"
-                class="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--green,#2d5a3f)] hover:text-[var(--green-deep,#1e3f2c)] transition-colors py-1 cursor-pointer"
-                :aria-expanded="showBreakdown"
-              >
-                <span>{{ showBreakdown ? 'Tutup Rincian Biaya Akad Awal ▴' : 'Lihat Rincian Biaya Akad Awal ▾' }}</span>
-              </button>
-
-              <div
-                v-show="showBreakdown"
-                class="mt-3 p-4 rounded-xl bg-[var(--paper,#f6f5f1)]/70 border border-[var(--line,#e3e1da)] space-y-2.5 text-xs transition-all"
-              >
-                <div class="flex justify-between items-center text-[var(--muted,#6b726d)]">
-                  <span>Provisi Bank (0.5%)</span>
-                  <span class="font-semibold text-[var(--ink,#1e2420)]">{{ formatCurrency(provisionFee) }}</span>
-                </div>
-                <div class="flex justify-between items-center text-[var(--muted,#6b726d)]">
-                  <span>Administrasi Bank</span>
-                  <span class="font-semibold text-[var(--ink,#1e2420)]">{{ formatCurrency(adminFee) }}</span>
-                </div>
-                <div class="flex justify-between items-center pt-2.5 border-t border-[var(--line,#e3e1da)] font-bold text-[var(--ink,#1e2420)] text-xs sm:text-sm">
-                  <span>Total Estimasi Biaya Pertama</span>
-                  <span class="text-[var(--green-deep,#1e3f2c)] text-sm sm:text-base">{{ formatCurrency(totalInitialFee) }}</span>
-                </div>
-                <p class="text-[10.5px] text-[var(--muted,#6b726d)] leading-relaxed pt-1">
-                  *Estimasi biaya awal mencakup angsuran pertama, provisi bank, dan biaya administrasi.
-                </p>
-              </div>
-            </div>
-
-            <!-- WhatsApp CTA Button -->
+            <!-- WhatsApp CTA Button (Full Width) -->
             <div class="pt-2">
               <a
-                :href="waConsultLink"
+                :href="whatsappUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-full py-4 px-6 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 rounded-full bg-[var(--green,#2d5a3f)] hover:bg-[var(--green-deep,#1e3f2c)] text-white shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+                class="w-full py-4 px-6 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 rounded-full bg-[var(--calc-primary,#1c4a2a)] hover:bg-[var(--calc-primary-hover,#2d5a3f)] text-white shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
               >
-                <span>{{ c.ctaLabel }}</span>
-                <span class="text-base leading-none">↗</span>
+                <span>{{ c.ctaLabel || 'Konsultasi Simulasi via WhatsApp' }}</span>
+                <span class="text-base leading-none" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Pill Logo Bank & Disclaimer di Luar Card -->
+      <!-- Wadah Pill Disclaimer Netral di Luar Card (Tanpa Logo Bank) -->
       <div v-if="c.footnote" class="mt-8 flex justify-center">
-        <div class="inline-flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3.5 px-5 py-2.5 sm:py-2 rounded-2xl sm:rounded-full bg-[var(--white,#ffffff)]/80 backdrop-blur-sm border border-[var(--line,#e3e1da)] shadow-sm max-w-[820px] text-center sm:text-left">
-          <div v-if="c.bankPartner?.logo" class="shrink-0 flex items-center justify-center">
-            <img
-              :src="c.bankPartner.logo"
-              :alt="c.bankPartner.name || 'Bank Partner'"
-              class="h-5 sm:h-6 w-auto object-contain"
-              loading="lazy"
-            />
-          </div>
-          <span v-if="c.bankPartner?.logo" class="hidden sm:block h-3.5 w-px bg-[var(--line,#e3e1da)] shrink-0" aria-hidden="true"></span>
-          <p class="text-[11px] sm:text-xs leading-relaxed text-[var(--muted,#6b726d)]">
+        <div class="inline-flex items-center px-5 py-2.5 rounded-2xl sm:rounded-full bg-white/80 backdrop-blur-sm border border-[var(--calc-line,#e3e1da)] shadow-sm max-w-full text-center">
+          <p class="text-[11px] sm:text-xs leading-relaxed text-[var(--calc-muted,#6b726d)]">
             {{ c.footnote }}
           </p>
         </div>
@@ -680,35 +721,36 @@ const waConsultLink = computed(() => {
 </template>
 
 <style scoped>
-input[type="range"]::-webkit-slider-thumb {
+/* Cross-browser range thumb styling */
+.calc-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--green, #2d5a3f);
-  border: 2px solid #fff;
+  background: var(--calc-primary, #1c4a2a);
+  border: 2px solid #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.15s ease;
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
+.calc-slider::-webkit-slider-thumb:hover {
   transform: scale(1.15);
 }
 
-input[type="range"]::-moz-range-thumb {
+.calc-slider::-moz-range-thumb {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--green, #2d5a3f);
-  border: 2px solid #fff;
+  background: var(--calc-primary, #1c4a2a);
+  border: 2px solid #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.15s ease;
 }
 
-input[type="range"]::-moz-range-thumb:hover {
+.calc-slider::-moz-range-thumb:hover {
   transform: scale(1.15);
 }
 </style>
@@ -716,101 +758,85 @@ input[type="range"]::-moz-range-thumb:hover {
 
 ---
 
-## 6. Panduan Kustomisasi di Proyek Baru
+## 6. Petunjuk Step-by-Step Integrasi di Proyek Lain
 
-### 6.1 Mengubah Suku Bunga Pinjaman (Subsidi vs Komersial)
-Di konfigurasi props atau data:
-- **KPR Subsidi FLPP (Flat):** `annualInterestRate: 0.05` ($5\%$).
-- **KPR Komersial Promo (Fixed awal):** `annualInterestRate: 0.0375` ($3.75\%$) atau `annualInterestRate: 0.075` ($7.5\%$).
-- Jangan lupa perbarui teks badge dan metrik:
-  ```javascript
-  {
-    annualInterestRate: 0.075,
-    metrics: [
-      { label: 'Bunga KPR', value: '7.5% p.a.' },
-      // ...
-    ]
-  }
-  ```
+Berikut adalah 4 langkah mudah untuk mengimplementasikan komponen ini pada proyek Vue 3 atau Nuxt 3 baru:
 
-### 6.2 Mengganti Mitra Bank & Logo
-Ganti logo dan nama bank pada objek `bankPartner`:
-```javascript
-bankPartner: {
-  name: 'Bank Mandiri',
-  logo: '/assets/images/bank/mandiri.webp',
+### Langkah 1: Salin File Komponen
+Salin kode di atas ke file `components/MortgageCalculator.vue` dalam proyek web target Anda.
+
+### Langkah 2: Konfigurasi Tailwind & Variabel Warna
+Anda dapat menyesuaikan palet warna agar serasi dengan *brand identity* proyek Anda. Masukkan CSS variables berikut ke file CSS utama Anda (misal `assets/css/main.css`):
+
+```css
+/* Contoh Palet Emerald / Nature */
+:root {
+  --calc-bg: #f8faf9;
+  --calc-card: #ffffff;
+  --calc-ink: #111827;
+  --calc-muted: #6b7280;
+  --calc-line: #e5e7eb;
+  --calc-primary: #047857;       /* emerald-700 */
+  --calc-primary-hover: #065f46; /* emerald-800 */
+  --calc-track: #e5e7eb;
+  --calc-highlight-bg: #ecfdf5;  /* emerald-50 */
+  --calc-highlight-border: #a7f3d0;
 }
 ```
-Dan sesuaikan teks disclaimer:
+
+*Jika proyek Anda telah memiliki konfigurasi Tailwind tersendiri, Anda juga dapat mereplace kelas CSS langsung ke utilitas Tailwind standar.*
+
+### Langkah 3: Siapkan Data Konfigurasi & Nomor WhatsApp
+Buat file konfigurasi (misal `data/calculator.js`) atau letakkan langsung di dalam komponen halaman:
+
 ```javascript
-footnote: '*Simulasi cicilan bunga anuitas 5% ini khusus berlaku untuk program KPR Bank Mandiri. Persetujuan kredit dan suku bunga riil mengikuti ketentuan bank.'
+// data/calculator.js
+export const myCalcConfig = {
+  defaultPrice: 250000000,       // Harga default unit
+  defaultDpPercent: 10,          // DP default 10%
+  defaultInterestRatePercent: 6, // Bunga default 6.0% p.a.
+  defaultTenor: 15,              // Tenor default 15 tahun
+  whatsappNumber: '6281234567890',
+  whatsappTemplate: 'Halo, saya melakukan simulasi cicilan di website Anda dengan rincian:\n- Harga Rumah: {harga}\n- Uang Muka: {dp} ({dpPercent}%)\n- Plafon KPR: {plafon}\n- Suku Bunga: {bunga} p.a.\n- Tenor: {tenor} Tahun\n- Estimasi Cicilan: {cicilan}/bulan\n\nBisa dibantu informasi unit yang tersedia?',
+};
 ```
 
-### 6.3 Menyesuaikan Nomor WhatsApp & Template Pesan
-Ubah `whatsappNumber` dengan format nomor internasional tanpa `+`:
-```javascript
-whatsappNumber: '6285721112233',
-whatsappTemplate: 'Halo tim marketing {namaProyek}, saya tertarik simulasi KPR:\n- Harga: {harga}\n- DP: {dp} ({dpPercent}%)\n- Plafon: {plafon}\n- Tenor: {tenor} Thn\n- Angsuran: {cicilan}/bln\nMohon informasi ketersediaan unit.'
-```
-
-### 6.4 Menyesuaikan Batas Slider Uang Muka
-Jika program perumahan Anda mewajibkan minimal DP 10% atau 20%:
-Ubah atribut `min` dan `max` pada `<input type="range">`:
-```html
-<input
-  type="range"
-  min="10"
-  max="80"
-  step="1"
-  :value="dpPercent"
-  @input="onSliderInput"
-/>
-```
-Serta perbarui label rentang di bawah slider:
-```html
-<div class="flex justify-between text-[11px] font-semibold text-[var(--muted)] mt-1.5">
-  <span>10% Min DP</span>
-  <span>50%</span>
-  <span>80% Max DP</span>
-</div>
-```
-
-### 6.5 Integrasi di Nuxt 3 atau Vue 3 App
-Cukup panggil komponen di halaman yang diinginkan:
+### Langkah 4: Render di Halaman Utama (Nuxt 3 / Vue 3)
 
 ```vue
+<!-- pages/index.vue -->
 <template>
   <main>
-    <!-- Section lain -->
-    <MortgageCalculator :config="myCustomCalcConfig" />
-    <!-- Section lain -->
+    <!-- Section Landing Page Lainnya -->
+    
+    <!-- Kalkulator Cicilan Reusable v2.1 -->
+    <MortgageCalculator :config="myCalcConfig" />
+    
+    <!-- Section Landing Page Lainnya -->
   </main>
 </template>
 
 <script setup>
 import MortgageCalculator from '~/components/MortgageCalculator.vue';
-
-const myCustomCalcConfig = {
-  defaultPrice: 250000000,
-  defaultDpPercent: 10,
-  defaultTenor: 15,
-  annualInterestRate: 0.05,
-  bankPartner: {
-    name: 'Bank BTN',
-    logo: '/images/btn.png',
-  },
-};
+import { myCalcConfig } from '~/data/calculator';
 </script>
 ```
 
 ---
 
-## 7. Rangkuman & Checklist Implementasi
+## 7. Rangkuman & Checklist Implementasi Portabilitas v2.1
 
-| Langkah | Deskripsi | Status |
-|---|---|:---:|
-| 1. Salin Komponen | Salin `MortgageCalculator.vue` ke folder `components/` proyek baru | Siap Pakai |
-| 2. Daftarkan Data | Siapkan objek konfigurasi harga, DP default, dan suku bunga | Opsional |
-| 3. Aset Logo & Gambar | Letakkan logo bank di `public/assets/images/bank/` | Siap Pakai |
-| 4. Nomor WhatsApp | Ganti `whatsappNumber` dengan nomor tim marketing aktif | Siap Pakai |
-| 5. Pasang di Halaman | Import dan render komponen di template halaman utama | Siap Pakai |
+Gunakan checklist berikut untuk memverifikasi kesuksesan integrasi komponen pada proyek target:
+
+| No | Komponen / Pengujian | Deskripsi Verifikasi | Target Hasil |
+|:---:|---|---|:---:|
+| 1 | **Salin Komponen SFC** | File `components/MortgageCalculator.vue` tersalin tanpa error kompilasi Nuxt/Vite. | PASS |
+| 2 | **Header Rata Tengah** | Judul section berada di tengah (*center-aligned*) dan bebas dari elemen eyebrow. | PASS |
+| 3 | **Input Suku Bunga Dinamis** | Mengubah angka suku bunga (% p.a.) seketika mengubah nominal cicilan bulanan dan metrik pertama. | PASS |
+| 4 | **Sub-grid 2 Kolom Responsif** | Bunga & Tenor sejajar 2 kolom pada layar $\ge 640\text{px}$ dan bertumpuk 1 kolom pada ponsel mobile. | PASS |
+| 5 | **Sinkronisasi Tiga Arah DP** | Perubahan nominal Rupiah, persen (%), dan slider 5%–90% saling sinkron 100%. | PASS |
+| 6 | **Tombol Reset (`✕`)** | Mengklik tombol clear mereset harga menjadi 0 dan cicilan Rp 0 tanpa memicu `NaN`. | PASS |
+| 7 | **3 Metrik Dinamis** | Bunga p.a., DP %, dan Tenor Thn ter-update real-time sesuai state aktif. | PASS |
+| 8 | **Clean Box Cicilan** | Nominal cicilan bulanan disajikan bersih tanpa badge statis. | PASS |
+| 9 | **Disclaimer Netral** | Wadah pill di luar kartu menampilkan teks edukatif netral tanpa keterikatan logo bank. | PASS |
+| 10 | **CTA WhatsApp Dinamis** | Klik tombol CTA membuka pesan WhatsApp dengan seluruh data simulasi terisi otomatis. | PASS |

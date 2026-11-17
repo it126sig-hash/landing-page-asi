@@ -11,6 +11,7 @@ const skyRef = ref(null);
 const houseRef = ref(null);
 const houseInnerRef = ref(null);
 const contentRef = ref(null);
+const badgeRef = ref(null);
 const headlineRef = ref(null);
 const sublineRef = ref(null);
 const ctaRef = ref(null);
@@ -29,6 +30,7 @@ onMounted(() => {
     const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
     const entrance = [
       [houseInnerRef.value, { y: 48, opacity: 0, duration: 1.1 }, 0.08],
+      [badgeRef.value, { y: 20, opacity: 0, duration: 0.7 }, 0.1],
       [headlineRef.value, { y: 36, opacity: 0, duration: 0.9 }, 0.16],
       [sublineRef.value, { y: 26, opacity: 0, duration: 0.8 }, 0.28],
       [ctaRef.value, { y: 22, opacity: 0, duration: 0.7 }, 0.38],
@@ -52,7 +54,13 @@ onMounted(() => {
       gsap.to(skyRef.value, { yPercent: 18, ease: 'none', scrollTrigger });
     }
     if (houseRef.value) {
-      gsap.to(houseRef.value, { y: -52, scale: 1.02, ease: 'none', scrollTrigger });
+      gsap.to(houseRef.value, {
+        y: -52,
+        scale: 1.02,
+        transformOrigin: 'bottom center',
+        ease: 'none',
+        scrollTrigger,
+      });
     }
     if (contentRef.value) {
       gsap.to(contentRef.value, { y: 56, ease: 'none', scrollTrigger });
@@ -70,46 +78,39 @@ onUnmounted(() => {
   <section
     id="beranda"
     ref="heroRef"
-    class="relative flex h-[100dvh] min-h-[580px] sm:min-h-[640px] w-full items-start sm:items-center overflow-hidden bg-[linear-gradient(to_bottom,#CBE3F8_0%,#E6F2FC_62%,#FFFFFF_100%)] pt-[82px] pb-[180px] sm:pt-[96px] sm:pb-[140px] lg:pt-[88px] lg:pb-[96px]"
+    class="relative flex h-[100dvh] min-h-[600px] sm:min-h-[640px] w-full items-center overflow-hidden bg-[linear-gradient(180deg,#5BA4E6_0%,#9CD2F7_58%,#E3F3FD_100%)] pt-[76px] pb-10 sm:pt-[84px] sm:pb-12"
   >
-    <!-- Layer 1 — Langit biru cerah berawan tanpa scrim gelap -->
+    <!-- Layer 0 — Langit biru cerah siang hari natural -->
     <div
       ref="skyRef"
       class="pointer-events-none absolute inset-x-0 -top-[16%] z-0 h-[132%] select-none will-change-transform"
       aria-hidden="true"
     >
-      <div
-        class="absolute inset-0 isolate overflow-hidden [mask-image:linear-gradient(to_bottom,#000_48%,transparent_88%)] [-webkit-mask-image:linear-gradient(to_bottom,#000_48%,transparent_88%)]"
-      >
+      <div class="relative h-full w-full overflow-hidden">
         <img
           :src="content.hero.bgImage"
           alt=""
           loading="eager"
           fetchpriority="high"
           decoding="async"
-          class="h-full w-full object-cover object-[58%_45%] opacity-65 [filter:grayscale(1)_brightness(1.5)_contrast(0.78)]"
+          class="h-full w-full object-cover object-[56%_38%] opacity-75 [filter:grayscale(1)_brightness(1.45)_contrast(0.92)]"
         />
-        <div class="absolute inset-0 bg-[#9FD0F2] mix-blend-color" />
-        <div class="absolute inset-0 bg-white/40" />
+        <!-- Cerah & natural daytime sky blue tint tanpa gradien gelap di bawah -->
+        <div class="absolute inset-0 bg-[#75BDF2] mix-blend-color opacity-85" />
+        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(91,164,230,0.22)_0%,rgba(156,210,247,0.14)_60%,rgba(227,243,253,0.12)_100%)]" />
       </div>
     </div>
 
     <!-- Glow matahari lembut kanan-atas -->
     <div
-      class="pointer-events-none absolute inset-0 z-[5] bg-[radial-gradient(ellipse_56%_50%_at_76%_18%,rgba(255,244,218,0.55),rgba(255,244,218,0.18)_48%,rgba(255,244,218,0)_74%)]"
+      class="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_54%_48%_at_76%_18%,rgba(255,252,240,0.42),rgba(255,252,240,0.12)_50%,transparent_75%)]"
       aria-hidden="true"
     />
 
-    <!-- Haze lembut kiri agar teks gelap selalu kontras & jelas -->
-    <div
-      class="pointer-events-none absolute inset-y-0 left-0 z-10 w-full bg-gradient-to-r from-[#F4F8FC]/85 via-[#E6F2FC]/45 to-transparent lg:w-[68%] lg:from-[#F4F8FC]/80 lg:via-[#E6F2FC]/40 lg:to-transparent"
-      aria-hidden="true"
-    />
-
-    <!-- Layer 2 — Visual deretan rumah kanan-bawah -->
+    <!-- Layer 1 — Deretan rumah full kiri-ke-kanan layar tanpa fade -->
     <div
       ref="houseRef"
-      class="pointer-events-none absolute -bottom-6 -left-[8%] z-10 w-[126vw] select-none will-change-transform sm:-bottom-12 sm:left-[12%] sm:w-[104vw] lg:-bottom-14 lg:left-[35%] lg:w-[min(140vh,72vw)] xl:left-[36%] xl:w-[min(138vh,70vw)]"
+      class="pointer-events-none absolute inset-x-0 -bottom-14 z-[5] w-full select-none will-change-transform origin-bottom"
       aria-hidden="true"
     >
       <img
@@ -119,35 +120,41 @@ onUnmounted(() => {
         loading="eager"
         fetchpriority="high"
         decoding="async"
-        class="h-auto w-full sm:[-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_24%)] sm:[mask-image:linear-gradient(to_right,transparent_0%,black_24%)] [filter:brightness(1.03)_saturate(1.03)]"
+        class="h-[58dvh] min-h-[360px] lg:h-auto w-full object-cover object-bottom [filter:brightness(1.08)_saturate(1.08)]"
       />
     </div>
 
-    <!-- Kurva gelombang putih halus di bagian bawah Hero -->
+    <!-- Layer 2 — Overlay hitam transparan ringan agar hero tetap cerah & teks kiri kontras -->
     <div
-      class="pointer-events-none absolute inset-x-0 bottom-0 z-20 overflow-hidden leading-none"
+      class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-black/55 via-black/28 to-transparent sm:from-black/50 sm:via-black/25 sm:to-transparent"
       aria-hidden="true"
-    >
-      <svg
-        class="block h-[38px] w-full sm:h-[58px] lg:h-[78px]"
-        viewBox="0 0 1440 96"
-        fill="none"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0,44 C360,94 980,78 1440,18 L1440,96 L0,96 Z"
-          fill="#ffffff"
-        />
-      </svg>
-    </div>
+    />
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 z-10 h-28 bg-gradient-to-b from-black/30 to-transparent"
+      aria-hidden="true"
+    />
+    <div
+      class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-t from-black/35 to-transparent"
+      aria-hidden="true"
+    />
 
     <!-- Layer 3 — Kolom copy kiri -->
-    <div class="relative z-30 w-full">
+    <div class="relative z-20 w-full">
       <div class="container">
-        <div ref="contentRef" class="max-w-[36rem]">
+        <div ref="contentRef" class="max-w-[38rem]">
+          <!-- Badge pill outline -->
+          <div ref="badgeRef">
+            <span
+              class="inline-flex items-center rounded-full border border-white/55 bg-black/15 px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-[2px]"
+            >
+              {{ content.meta.projectName }}
+            </span>
+          </div>
+
+          <!-- Headline 3 baris uppercase putih tebal -->
           <h1
             ref="headlineRef"
-            class="font-sans font-bold leading-[1.06] tracking-[-0.025em] text-[var(--ink)] text-[clamp(1.95rem,7.8vw,2.5rem)] sm:text-[clamp(2.55rem,4.1vw,3.65rem)]"
+            class="mt-4 font-sans font-bold uppercase leading-[0.98] tracking-[-0.02em] text-white text-[clamp(2rem,8vw,2.65rem)] sm:text-[clamp(2.65rem,4.2vw,3.85rem)]"
           >
             <span
               v-for="(line, idx) in content.hero.headlineLines"
@@ -158,22 +165,24 @@ onUnmounted(() => {
             </span>
           </h1>
 
+          <!-- Subline -->
           <p
             v-if="content.hero.subline"
             ref="sublineRef"
-            class="mt-3 sm:mt-4 max-w-[29rem] text-[13.5px] sm:text-[16px] leading-[1.55] text-[var(--muted)]"
+            class="mt-3.5 sm:mt-4 max-w-[29rem] text-[13.5px] sm:text-[16px] leading-[1.55] text-white/90"
           >
             {{ content.hero.subline }}
           </p>
 
-          <div ref="ctaRef" class="mt-4 sm:mt-6">
+          <!-- CTA Utama putih bersih -->
+          <div ref="ctaRef" class="mt-5 sm:mt-6">
             <a
               href="#tipe"
-              class="group inline-flex items-center gap-3 rounded-full bg-[var(--green)] px-6 py-3 sm:px-7 sm:py-3.5 text-[13.5px] sm:text-[15px] font-semibold text-white shadow-[0_12px_28px_rgba(43,108,196,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--green-deep)] hover:shadow-[0_16px_32px_rgba(23,60,114,0.32)]"
+              class="group inline-flex items-center gap-3 rounded-xl bg-white text-[var(--ink)] hover:bg-[var(--sage-pale)] px-6 py-3.5 text-[13.5px] sm:text-[15px] font-semibold shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
             >
               <span>{{ content.hero.primaryCta }}</span>
               <svg
-                class="h-4 w-4 shrink-0 text-white transition-transform duration-300 group-hover:translate-x-1"
+                class="h-4 w-4 shrink-0 text-[var(--ink)] transition-transform duration-300 group-hover:translate-x-1"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -188,52 +197,50 @@ onUnmounted(() => {
             </a>
           </div>
 
-          <!-- Blok Mitra Pembiayaan KPR Resmi (Logo + Nama Bank) -->
+          <!-- Blok Mitra Pembiayaan KPR (Logo putih tanpa kotak background) -->
           <div
             v-if="content.hero.bankInfo && content.banks?.length"
             ref="bankRef"
-            class="mt-4 sm:mt-6 max-w-[28rem] border-t border-[var(--ink)]/12 pt-3 sm:pt-4"
+            class="mt-6 sm:mt-8 max-w-[26rem] border-t border-white/25 pt-4"
           >
-            <p class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--muted)]">
+            <p class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-white/80">
               {{ content.hero.bankInfo.label }}
             </p>
 
-            <div class="mt-2 sm:mt-2.5 flex flex-wrap items-center gap-2 sm:gap-3">
-              <div
-                v-for="bank in content.banks"
-                :key="bank.name"
-                class="inline-flex items-center gap-2 rounded-xl bg-white/85 backdrop-blur-sm border border-[var(--line)] px-3 py-1.5 shadow-sm"
-              >
+            <div class="mt-3 flex items-center gap-4 sm:gap-5">
+              <template v-for="(bank, idx) in content.banks" :key="bank.name">
                 <img
-                  :src="bank.image"
+                  :src="bank.imageWhite || bank.image"
                   :alt="`Logo Bank ${bank.name}`"
                   loading="eager"
                   decoding="async"
-                  class="h-4 sm:h-5 w-auto shrink-0 object-contain"
+                  :class="bank.name === 'BCA' ? 'h-6 sm:h-7 w-auto object-contain' : 'h-5 sm:h-6 w-auto object-contain'"
                 />
-                <span class="text-[11px] sm:text-xs font-bold text-[var(--ink)] whitespace-nowrap">
-                  Bank {{ bank.name }}
-                </span>
-              </div>
+                <span
+                  v-if="idx < content.banks.length - 1"
+                  class="w-px h-6 bg-white/30 shrink-0"
+                  aria-hidden="true"
+                />
+              </template>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Scroll hint di kiri bawah (desktop/tablet) -->
+    <!-- Scroll hint (desktop kanan bawah, tidak bertabrakan dengan logo KPR) -->
     <div
       v-if="content.hero.scrollLabel"
-      class="pointer-events-none absolute inset-x-0 bottom-8 sm:bottom-10 lg:bottom-11 z-30"
+      class="pointer-events-none absolute inset-x-0 bottom-6 z-20 hidden md:block"
     >
-      <div class="container">
+      <div class="container flex justify-end">
         <a
           ref="scrollHintRef"
           href="#tentang"
-          class="pointer-events-auto hidden sm:inline-flex items-center gap-2.5 text-xs font-medium text-[var(--muted)] transition-colors hover:text-[var(--ink)]"
+          class="pointer-events-auto inline-flex items-center gap-2 text-xs font-medium text-white/80 transition-colors hover:text-white cursor-pointer"
         >
           <svg
-            class="h-5 w-4 shrink-0 text-[var(--muted)]"
+            class="h-5 w-4 shrink-0 text-white/80"
             viewBox="0 0 18 26"
             fill="none"
             stroke="currentColor"

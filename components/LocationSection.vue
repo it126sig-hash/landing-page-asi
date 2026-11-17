@@ -10,10 +10,13 @@ const { content } = useContent();
       <div class="grid grid-cols-1 lg:grid-cols-[0.42fr_0.58fr] gap-10 lg:gap-14 items-center">
         <!-- Copy Kiri -->
         <div class="reveal">
-          <div class="mb-4 h-0.5 w-10 rounded-full bg-[var(--green)]" aria-hidden="true" />
-          <h2 class="font-sans text-3xl sm:text-4xl font-bold tracking-[-0.02em] leading-[1.18] text-[var(--ink)]">
-            {{ content.locationSection.title }}
-          </h2>
+          <span v-if="content.locationSection.eyebrow" class="eyebrow mb-4">
+            {{ content.locationSection.eyebrow }}
+          </span>
+          <h2
+            class="font-sans text-3xl sm:text-4xl font-bold tracking-[-0.02em] leading-[1.18] text-[var(--ink)] [&_em]:font-serif [&_em]:italic [&_em]:font-normal [&_em]:text-[var(--green)]"
+            v-html="content.locationSection.titleHtml || content.locationSection.title"
+          />
           <p class="mt-4 text-sm sm:text-[15px] leading-[1.7] text-[var(--muted)] max-w-[440px]">
             {{ content.locationSection.desc }}
           </p>
