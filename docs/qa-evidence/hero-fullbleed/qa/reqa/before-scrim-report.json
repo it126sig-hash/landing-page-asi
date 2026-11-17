@@ -1,0 +1,32 @@
+[
+  {
+    "name": "768x1024",
+    "scrimWidth": 660.46875,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "700x900",
+    "scrimWidth": 602,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "820x1180",
+    "scrimWidth": 705.1875,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "1024x768",
+    "scrimWidth": 757.75,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "1440x900",
+    "scrimWidth": 1065.59375,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "375x667",
+    "scrimWidth": 375,
+    "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.45) 100%)"
+  }
+]

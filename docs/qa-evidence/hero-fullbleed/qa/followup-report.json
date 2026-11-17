@@ -1,0 +1,133 @@
+{
+  "headerRect1440": {
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 77
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "backdrop": "blur(4px)",
+    "logoText": {
+      "x": 173.66,
+      "y": 24,
+      "w": 137.11,
+      "h": 28,
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "18px",
+      "fontWeight": "700"
+    },
+    "navs": [
+      {
+        "text": "Tentang Kami",
+        "x": 482,
+        "y": 22,
+        "w": 88.88,
+        "h": 32,
+        "color": "rgba(255, 255, 255, 0.9)",
+        "fontSize": "12px",
+        "weight": "600"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 598.88,
+        "y": 22,
+        "w": 91.56,
+        "h": 32,
+        "color": "rgba(255, 255, 255, 0.9)",
+        "fontSize": "12px",
+        "weight": "600"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 718.44,
+        "y": 22,
+        "w": 81.19,
+        "h": 32,
+        "color": "rgba(255, 255, 255, 0.9)",
+        "fontSize": "12px",
+        "weight": "600"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 827.63,
+        "y": 22,
+        "w": 77.23,
+        "h": 32,
+        "color": "rgba(255, 255, 255, 0.9)",
+        "fontSize": "12px",
+        "weight": "600"
+      },
+      {
+        "text": "FAQ",
+        "x": 932.86,
+        "y": 22,
+        "w": 25.13,
+        "h": 32,
+        "color": "rgba(255, 255, 255, 0.9)",
+        "fontSize": "12px",
+        "weight": "600"
+      }
+    ],
+    "cta": {
+      "x": 1225.2,
+      "y": 20,
+      "w": 84.8,
+      "h": 36,
+      "color": "rgb(17, 17, 17)",
+      "bg": "rgb(255, 255, 255)"
+    },
+    "heroH1Font": "Poppins, sans-serif"
+  },
+  "focus": {
+    "active": true,
+    "focusVisible": true,
+    "outline": "solid 2px rgb(83, 107, 85) offset 2px",
+    "rect": {
+      "x": 130,
+      "y": 463.4,
+      "w": 270.3,
+      "h": 62
+    },
+    "scrollY": 23
+  },
+  "recheck768": {
+    "subline": {
+      "x": 24,
+      "y": 494.39,
+      "w": 480,
+      "h": 46.38
+    },
+    "color": "rgba(255, 255, 255, 0.9)",
+    "fontSize": "16px",
+    "text": "Temukan kenyamanan hunian modern yang berpadu dengan suasana alam."
+  },
+  "headerRect375": {
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 69
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "backdrop": "blur(4px)",
+    "logoText": {
+      "x": 53.48,
+      "y": 24,
+      "w": 106.64,
+      "h": 20,
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "700"
+    },
+    "burger": {
+      "x": 320,
+      "y": 14,
+      "w": 40,
+      "h": 40,
+      "color": "rgb(255, 255, 255)",
+      "border": "rgba(255, 255, 255, 0.3)"
+    },
+    "cta": null
+  }
+}

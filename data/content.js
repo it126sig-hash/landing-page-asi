@@ -48,6 +48,7 @@ export default {
     giantTitle: 'ALAM SANGGAR INDAH',
     headline: 'Hunian Asri di Jantung Parahyangan',
     headlineLines: ['HUNIAN ASRI', 'DI JANTUNG', 'PARAHYANGAN'],
+    subline: 'Temukan kenyamanan hunian modern yang berpadu dengan suasana alam.',
     tagline: meta.tagline,
     primaryTypeId: '22-60',
     primaryCta: 'Jelajahi Pilihan Rumah',

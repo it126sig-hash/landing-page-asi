@@ -1,0 +1,1586 @@
+{
+  "desktop-1440x900": {
+    "viewport": {
+      "w": 1440,
+      "h": 900
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 130,
+          "y": 163,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 1045,
+        "worstRatio": 9.3,
+        "p5Ratio": 9.64,
+        "meanRatio": 11.23,
+        "meanBgLum": 0.0364,
+        "maxBgLum": 0.054,
+        "bgMeanRGB": [
+          60,
+          52,
+          42
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 130,
+          "y": 229,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 13363,
+        "worstRatio": 5.21,
+        "p5Ratio": 6.22,
+        "meanRatio": 10.16,
+        "meanBgLum": 0.0601,
+        "maxBgLum": 0.1514,
+        "bgMeanRGB": [
+          76,
+          65,
+          51
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 130,
+          "y": 303,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 12132,
+        "worstRatio": 5.39,
+        "p5Ratio": 6.59,
+        "meanRatio": 11.53,
+        "meanBgLum": 0.0488,
+        "maxBgLum": 0.145,
+        "bgMeanRGB": [
+          71,
+          56,
+          39
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 130,
+          "y": 377,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 16437,
+        "worstRatio": 4.45,
+        "p5Ratio": 6.27,
+        "meanRatio": 11.87,
+        "meanBgLum": 0.048,
+        "maxBgLum": 0.186,
+        "bgMeanRGB": [
+          70,
+          55,
+          38
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 130,
+          "y": 229,
+          "w": 640,
+          "h": 222
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 41932,
+        "worstRatio": 4.45,
+        "p5Ratio": 6.34,
+        "meanRatio": 11.23,
+        "meanBgLum": 0.0521,
+        "maxBgLum": 0.186,
+        "bgMeanRGB": [
+          72,
+          59,
+          43
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 130,
+          "y": 475,
+          "w": 480,
+          "h": 65
+        },
+        "fontPx": 22.32,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 5270,
+        "worstRatio": 7.56,
+        "p5Ratio": 9.86,
+        "meanRatio": 11.8,
+        "meanBgLum": 0.0252,
+        "maxBgLum": 0.0685,
+        "bgMeanRGB": [
+          52,
+          41,
+          29
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 130,
+          "y": 707,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 764,
+        "worstRatio": 14.0,
+        "p5Ratio": 14.09,
+        "meanRatio": 14.33,
+        "meanBgLum": 0.0024,
+        "maxBgLum": 0.004,
+        "bgMeanRGB": [
+          8,
+          8,
+          6
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "laptop-1280x800": {
+    "viewport": {
+      "w": 1280,
+      "h": 800
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 50,
+          "y": 129,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 1031,
+        "worstRatio": 9.79,
+        "p5Ratio": 10.75,
+        "meanRatio": 12.8,
+        "meanBgLum": 0.0258,
+        "maxBgLum": 0.0487,
+        "bgMeanRGB": [
+          50,
+          42,
+          33
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 50,
+          "y": 195,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 10800,
+        "worstRatio": 6.52,
+        "p5Ratio": 7.59,
+        "meanRatio": 11.45,
+        "meanBgLum": 0.047,
+        "maxBgLum": 0.1111,
+        "bgMeanRGB": [
+          66,
+          58,
+          46
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 50,
+          "y": 261,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 9533,
+        "worstRatio": 6.75,
+        "p5Ratio": 8.55,
+        "meanRatio": 12.94,
+        "meanBgLum": 0.0357,
+        "maxBgLum": 0.1055,
+        "bgMeanRGB": [
+          61,
+          48,
+          34
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 50,
+          "y": 327,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 12922,
+        "worstRatio": 5.63,
+        "p5Ratio": 6.9,
+        "meanRatio": 12.42,
+        "meanBgLum": 0.0429,
+        "maxBgLum": 0.1366,
+        "bgMeanRGB": [
+          66,
+          51,
+          35
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 50,
+          "y": 195,
+          "w": 640,
+          "h": 197
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 33255,
+        "worstRatio": 5.63,
+        "p5Ratio": 7.34,
+        "meanRatio": 12.25,
+        "meanBgLum": 0.0422,
+        "maxBgLum": 0.1366,
+        "bgMeanRGB": [
+          65,
+          52,
+          38
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 50,
+          "y": 416,
+          "w": 480,
+          "h": 58
+        },
+        "fontPx": 19.84,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 4329,
+        "worstRatio": 8.82,
+        "p5Ratio": 9.81,
+        "meanRatio": 12.3,
+        "meanBgLum": 0.022,
+        "maxBgLum": 0.0506,
+        "bgMeanRGB": [
+          47,
+          37,
+          27
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 50,
+          "y": 641,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 762,
+        "worstRatio": 14.25,
+        "p5Ratio": 14.32,
+        "meanRatio": 14.44,
+        "meanBgLum": 0.0018,
+        "maxBgLum": 0.0028,
+        "bgMeanRGB": [
+          6,
+          6,
+          4
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "tablet-1024x768": {
+    "viewport": {
+      "w": 1024,
+      "h": 768
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 32,
+          "y": 138,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 858,
+        "worstRatio": 8.15,
+        "p5Ratio": 9.99,
+        "meanRatio": 11.87,
+        "meanBgLum": 0.0319,
+        "maxBgLum": 0.0691,
+        "bgMeanRGB": [
+          56,
+          48,
+          39
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 32,
+          "y": 205,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 6799,
+        "worstRatio": 6.66,
+        "p5Ratio": 7.91,
+        "meanRatio": 11.73,
+        "meanBgLum": 0.0438,
+        "maxBgLum": 0.1077,
+        "bgMeanRGB": [
+          65,
+          56,
+          44
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 32,
+          "y": 257,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 6143,
+        "worstRatio": 7.32,
+        "p5Ratio": 8.53,
+        "meanRatio": 12.89,
+        "meanBgLum": 0.0357,
+        "maxBgLum": 0.0935,
+        "bgMeanRGB": [
+          61,
+          48,
+          34
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 32,
+          "y": 310,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 8234,
+        "worstRatio": 4.85,
+        "p5Ratio": 7.05,
+        "meanRatio": 12.32,
+        "meanBgLum": 0.0438,
+        "maxBgLum": 0.1664,
+        "bgMeanRGB": [
+          67,
+          52,
+          35
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 32,
+          "y": 205,
+          "w": 640,
+          "h": 158
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 21176,
+        "worstRatio": 4.85,
+        "p5Ratio": 7.63,
+        "meanRatio": 12.3,
+        "meanBgLum": 0.0415,
+        "maxBgLum": 0.1664,
+        "bgMeanRGB": [
+          65,
+          52,
+          37
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 32,
+          "y": 386,
+          "w": 480,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 2954,
+        "worstRatio": 6.68,
+        "p5Ratio": 7.47,
+        "meanRatio": 11.74,
+        "meanBgLum": 0.0272,
+        "maxBgLum": 0.085,
+        "bgMeanRGB": [
+          52,
+          41,
+          29
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 32,
+          "y": 599,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 764,
+        "worstRatio": 13.98,
+        "p5Ratio": 14.07,
+        "meanRatio": 14.34,
+        "meanBgLum": 0.0024,
+        "maxBgLum": 0.0041,
+        "bgMeanRGB": [
+          8,
+          8,
+          6
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "tablet-portrait-768x1024": {
+    "viewport": {
+      "w": 768,
+      "h": 1024
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 24,
+          "y": 286,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 1051,
+        "worstRatio": 7.78,
+        "p5Ratio": 8.8,
+        "meanRatio": 11.56,
+        "meanBgLum": 0.0352,
+        "maxBgLum": 0.0751,
+        "bgMeanRGB": [
+          57,
+          51,
+          41
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 24,
+          "y": 352,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3769,
+        "worstRatio": 7.42,
+        "p5Ratio": 8.14,
+        "meanRatio": 12.14,
+        "meanBgLum": 0.0417,
+        "maxBgLum": 0.0914,
+        "bgMeanRGB": [
+          66,
+          53,
+          36
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 24,
+          "y": 392,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3357,
+        "worstRatio": 7.13,
+        "p5Ratio": 7.82,
+        "meanRatio": 12.18,
+        "meanBgLum": 0.0421,
+        "maxBgLum": 0.0973,
+        "bgMeanRGB": [
+          66,
+          52,
+          36
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 24,
+          "y": 431,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 4569,
+        "worstRatio": 6.34,
+        "p5Ratio": 7.59,
+        "meanRatio": 12.0,
+        "meanBgLum": 0.0442,
+        "maxBgLum": 0.1155,
+        "bgMeanRGB": [
+          69,
+          53,
+          36
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 24,
+          "y": 352,
+          "w": 640,
+          "h": 118
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 11695,
+        "worstRatio": 6.34,
+        "p5Ratio": 7.86,
+        "meanRatio": 12.09,
+        "meanBgLum": 0.0428,
+        "maxBgLum": 0.1155,
+        "bgMeanRGB": [
+          67,
+          53,
+          36
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "FAIL",
+        "target": "subline",
+        "rect": {
+          "x": 24,
+          "y": 494,
+          "w": 480,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 3025,
+        "worstRatio": 3.24,
+        "p5Ratio": 4.35,
+        "meanRatio": 9.81,
+        "meanBgLum": 0.0524,
+        "maxBgLum": 0.2417,
+        "bgMeanRGB": [
+          72,
+          56,
+          38
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 24,
+          "y": 708,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 780,
+        "worstRatio": 12.62,
+        "p5Ratio": 13.11,
+        "meanRatio": 13.83,
+        "meanBgLum": 0.0049,
+        "maxBgLum": 0.0112,
+        "bgMeanRGB": [
+          17,
+          14,
+          11
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "mobile-390x844": {
+    "viewport": {
+      "w": 390,
+      "h": 844
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 19,
+          "y": 220,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 1060,
+        "worstRatio": 7.1,
+        "p5Ratio": 7.49,
+        "meanRatio": 10.62,
+        "meanBgLum": 0.0447,
+        "maxBgLum": 0.0873,
+        "bgMeanRGB": [
+          67,
+          56,
+          43
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 19,
+          "y": 282,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3101,
+        "worstRatio": 7.95,
+        "p5Ratio": 10.09,
+        "meanRatio": 12.65,
+        "meanBgLum": 0.035,
+        "maxBgLum": 0.082,
+        "bgMeanRGB": [
+          62,
+          49,
+          33
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 19,
+          "y": 318,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2823,
+        "worstRatio": 6.69,
+        "p5Ratio": 7.89,
+        "meanRatio": 11.41,
+        "meanBgLum": 0.0473,
+        "maxBgLum": 0.107,
+        "bgMeanRGB": [
+          70,
+          57,
+          40
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 19,
+          "y": 354,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3844,
+        "worstRatio": 5.59,
+        "p5Ratio": 6.2,
+        "meanRatio": 11.01,
+        "meanBgLum": 0.0555,
+        "maxBgLum": 0.1379,
+        "bgMeanRGB": [
+          75,
+          60,
+          41
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 19,
+          "y": 282,
+          "w": 352,
+          "h": 107
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 9768,
+        "worstRatio": 5.59,
+        "p5Ratio": 6.77,
+        "meanRatio": 11.65,
+        "meanBgLum": 0.0466,
+        "maxBgLum": 0.1379,
+        "bgMeanRGB": [
+          70,
+          56,
+          38
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 19,
+          "y": 410,
+          "w": 352,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 2973,
+        "worstRatio": 6.16,
+        "p5Ratio": 7.6,
+        "meanRatio": 10.8,
+        "meanBgLum": 0.034,
+        "maxBgLum": 0.0971,
+        "bgMeanRGB": [
+          62,
+          47,
+          31
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 19,
+          "y": 595,
+          "w": 352,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 690,
+        "worstRatio": 11.22,
+        "p5Ratio": 11.38,
+        "meanRatio": 13.19,
+        "meanBgLum": 0.0084,
+        "maxBgLum": 0.0199,
+        "bgMeanRGB": [
+          23,
+          20,
+          15
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "mobile-375x667": {
+    "viewport": {
+      "w": 375,
+      "h": 667
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 15,
+          "y": 133,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 863,
+        "worstRatio": 7.51,
+        "p5Ratio": 8.38,
+        "meanRatio": 10.49,
+        "meanBgLum": 0.0444,
+        "maxBgLum": 0.0797,
+        "bgMeanRGB": [
+          68,
+          57,
+          42
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 15,
+          "y": 196,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2884,
+        "worstRatio": 6.02,
+        "p5Ratio": 7.73,
+        "meanRatio": 12.12,
+        "meanBgLum": 0.0418,
+        "maxBgLum": 0.1243,
+        "bgMeanRGB": [
+          64,
+          53,
+          40
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 15,
+          "y": 230,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2587,
+        "worstRatio": 6.82,
+        "p5Ratio": 8.3,
+        "meanRatio": 12.19,
+        "meanBgLum": 0.0396,
+        "maxBgLum": 0.104,
+        "bgMeanRGB": [
+          66,
+          52,
+          35
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 15,
+          "y": 265,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3472,
+        "worstRatio": 5.86,
+        "p5Ratio": 6.65,
+        "meanRatio": 11.08,
+        "meanBgLum": 0.0531,
+        "maxBgLum": 0.1292,
+        "bgMeanRGB": [
+          74,
+          59,
+          41
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 15,
+          "y": 196,
+          "w": 345,
+          "h": 103
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 8943,
+        "worstRatio": 5.86,
+        "p5Ratio": 7.3,
+        "meanRatio": 11.74,
+        "meanBgLum": 0.0455,
+        "maxBgLum": 0.1292,
+        "bgMeanRGB": [
+          68,
+          55,
+          39
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 15,
+          "y": 319,
+          "w": 345,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 2985,
+        "worstRatio": 5.39,
+        "p5Ratio": 7.06,
+        "meanRatio": 10.62,
+        "meanBgLum": 0.0367,
+        "maxBgLum": 0.1196,
+        "bgMeanRGB": [
+          64,
+          49,
+          32
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 15,
+          "y": 505,
+          "w": 345,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 688,
+        "worstRatio": 11.22,
+        "p5Ratio": 12.63,
+        "meanRatio": 13.52,
+        "meanBgLum": 0.0065,
+        "maxBgLum": 0.0199,
+        "bgMeanRGB": [
+          20,
+          18,
+          15
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "mobile-360x800": {
+    "viewport": {
+      "w": 360,
+      "h": 800
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 15,
+          "y": 202,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 1061,
+        "worstRatio": 6.79,
+        "p5Ratio": 7.35,
+        "meanRatio": 10.4,
+        "meanBgLum": 0.0472,
+        "maxBgLum": 0.0939,
+        "bgMeanRGB": [
+          68,
+          58,
+          44
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 15,
+          "y": 264,
+          "w": 330,
+          "h": 33
+        },
+        "fontPx": 36.72,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2627,
+        "worstRatio": 8.33,
+        "p5Ratio": 10.22,
+        "meanRatio": 12.83,
+        "meanBgLum": 0.0338,
+        "maxBgLum": 0.076,
+        "bgMeanRGB": [
+          61,
+          48,
+          33
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 15,
+          "y": 298,
+          "w": 330,
+          "h": 33
+        },
+        "fontPx": 36.72,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2386,
+        "worstRatio": 6.62,
+        "p5Ratio": 7.89,
+        "meanRatio": 11.48,
+        "meanBgLum": 0.0467,
+        "maxBgLum": 0.1087,
+        "bgMeanRGB": [
+          70,
+          57,
+          40
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 15,
+          "y": 331,
+          "w": 330,
+          "h": 33
+        },
+        "fontPx": 36.72,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3184,
+        "worstRatio": 5.76,
+        "p5Ratio": 6.22,
+        "meanRatio": 11.17,
+        "meanBgLum": 0.0535,
+        "maxBgLum": 0.1324,
+        "bgMeanRGB": [
+          74,
+          59,
+          41
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 15,
+          "y": 264,
+          "w": 330,
+          "h": 99
+        },
+        "fontPx": 36.72,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 8197,
+        "worstRatio": 5.76,
+        "p5Ratio": 7.0,
+        "meanRatio": 11.79,
+        "meanBgLum": 0.0452,
+        "maxBgLum": 0.1324,
+        "bgMeanRGB": [
+          69,
+          55,
+          38
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 15,
+          "y": 384,
+          "w": 330,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 2982,
+        "worstRatio": 5.19,
+        "p5Ratio": 6.98,
+        "meanRatio": 10.45,
+        "meanBgLum": 0.0384,
+        "maxBgLum": 0.1266,
+        "bgMeanRGB": [
+          65,
+          50,
+          33
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 15,
+          "y": 569,
+          "w": 330,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 690,
+        "worstRatio": 11.12,
+        "p5Ratio": 11.35,
+        "meanRatio": 13.04,
+        "meanBgLum": 0.0093,
+        "maxBgLum": 0.0206,
+        "bgMeanRGB": [
+          25,
+          21,
+          17
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  },
+  "mobile-320x568": {
+    "viewport": {
+      "w": 320,
+      "h": 568
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge",
+        "rect": {
+          "x": 15,
+          "y": 88,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(255, 255, 255, 0.95)",
+        "alpha": 0.95,
+        "threshold": 4.5,
+        "samples": 854,
+        "worstRatio": 8.09,
+        "p5Ratio": 8.45,
+        "meanRatio": 10.86,
+        "meanBgLum": 0.0414,
+        "maxBgLum": 0.07,
+        "bgMeanRGB": [
+          65,
+          54,
+          41
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 15,
+          "y": 150,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2203,
+        "worstRatio": 7.23,
+        "p5Ratio": 7.62,
+        "meanRatio": 11.13,
+        "meanBgLum": 0.0508,
+        "maxBgLum": 0.0952,
+        "bgMeanRGB": [
+          69,
+          60,
+          46
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 2 'DI JANTUNG'",
+        "rect": {
+          "x": 15,
+          "y": 181,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 1924,
+        "worstRatio": 5.93,
+        "p5Ratio": 8.78,
+        "meanRatio": 12.43,
+        "meanBgLum": 0.0381,
+        "maxBgLum": 0.127,
+        "bgMeanRGB": [
+          63,
+          51,
+          36
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline line 3 'PARAHYANGAN'",
+        "rect": {
+          "x": 15,
+          "y": 211,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2660,
+        "worstRatio": 5.56,
+        "p5Ratio": 6.53,
+        "meanRatio": 10.64,
+        "meanBgLum": 0.0572,
+        "maxBgLum": 0.1387,
+        "bgMeanRGB": [
+          77,
+          62,
+          43
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "headline block",
+        "rect": {
+          "x": 15,
+          "y": 150,
+          "w": 290,
+          "h": 91
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 6787,
+        "worstRatio": 5.56,
+        "p5Ratio": 7.1,
+        "meanRatio": 11.31,
+        "meanBgLum": 0.0497,
+        "maxBgLum": 0.1387,
+        "bgMeanRGB": [
+          71,
+          58,
+          42
+        ],
+        "fontWeight": "600"
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 15,
+          "y": 261,
+          "w": 290,
+          "h": 70
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 3006,
+        "worstRatio": 5.46,
+        "p5Ratio": 6.06,
+        "meanRatio": 10.5,
+        "meanBgLum": 0.0402,
+        "maxBgLum": 0.1173,
+        "bgMeanRGB": [
+          64,
+          50,
+          34
+        ]
+      },
+      {
+        "status": "PASS",
+        "target": "bank label",
+        "rect": {
+          "x": 15,
+          "y": 470,
+          "w": 290,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(255, 255, 255, 0.85)",
+        "alpha": 0.85,
+        "threshold": 4.5,
+        "samples": 696,
+        "worstRatio": 11.12,
+        "p5Ratio": 11.38,
+        "meanRatio": 13.09,
+        "meanBgLum": 0.009,
+        "maxBgLum": 0.0206,
+        "bgMeanRGB": [
+          23,
+          21,
+          19
+        ]
+      },
+      {
+        "target": "CTA text on white pill",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "textColor": "rgb(20, 26, 28)",
+        "threshold": 4.5,
+        "worstRatio": 17.58,
+        "p5Ratio": 17.58,
+        "meanRatio": 17.58,
+        "method": "analytic (#141a1c on #ffffff)"
+      }
+    ]
+  }
+}
