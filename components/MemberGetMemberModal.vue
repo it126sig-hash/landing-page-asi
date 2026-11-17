@@ -231,7 +231,7 @@ watch(state, async (s) => {
                 </svg>
               </button>
               <div class="pr-8">
-                <h3 class="font-display font-serif text-2xl font-bold text-[var(--ink)]">{{ mgmContent.title }}</h3>
+                <h3 class="font-serif text-2xl font-bold text-[var(--ink)]">{{ mgmContent.title }}</h3>
                 <p class="mt-2 text-sm text-[var(--muted)] leading-relaxed">
                   {{ mgmContent.subtitle }}
                 </p>
@@ -363,7 +363,7 @@ watch(state, async (s) => {
               <!-- STATE: captcha — Security Check -->
               <div v-else-if="isCaptchaStep" class="py-2">
                 <div class="pr-8 mb-5">
-                  <h2 class="font-display font-serif text-xl font-bold text-[var(--ink)]">Verifikasi Keamanan</h2>
+                  <h2 class="font-serif text-xl font-bold text-[var(--ink)]">Verifikasi Keamanan</h2>
                   <p class="mt-1 text-sm text-[var(--muted)] leading-relaxed">Centang verifikasi berikut untuk mengirim data Member Get Member.</p>
                 </div>
 
@@ -405,7 +405,7 @@ watch(state, async (s) => {
                   <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-serif text-xl font-bold text-[var(--ink)] mb-2">Pesan Terkirim!</h3>
+                  <h3 class="font-serif text-xl font-bold text-[var(--ink)] mb-2">Pesan Terkirim!</h3>
                   <p class="text-sm text-[var(--muted)] leading-relaxed max-w-xs mx-auto">{{ cf.messages.success }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3 w-full mt-2">
@@ -425,7 +425,7 @@ watch(state, async (s) => {
                   <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" /></svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-serif text-xl font-bold text-[var(--ink)] mb-2">{{ cf.notConfiguredTitle }}</h3>
+                  <h3 class="font-serif text-xl font-bold text-[var(--ink)] mb-2">{{ cf.notConfiguredTitle }}</h3>
                   <p class="text-sm text-[var(--muted)] leading-relaxed max-w-xs mx-auto">{{ cf.messages.notConfigured }}</p>
                 </div>
                 <a :href="waFallbackUrl" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#20bd5a] px-5 py-3 text-sm font-bold text-white shadow-[0_4px_12px_rgba(37,211,102,0.3)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
@@ -439,7 +439,7 @@ watch(state, async (s) => {
                   <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-serif text-xl font-bold text-[var(--ink)] mb-2">Pengiriman Gagal</h3>
+                  <h3 class="font-serif text-xl font-bold text-[var(--ink)] mb-2">Pengiriman Gagal</h3>
                   <p class="text-sm text-[var(--muted)] leading-relaxed max-w-xs mx-auto">{{ cf.messages.error }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3 w-full mt-2">

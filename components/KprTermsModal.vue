@@ -98,7 +98,7 @@ const consultasiLink = wa('konsultasi');
                 class="inline-flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-1.5 ring-1 ring-[var(--line)] shadow-sm md:h-12 md:w-12">
                 <img :src="withBase(bankLogo.src)" :alt="bankLogo.alt" class="h-full w-full object-contain" />
               </span>
-              <h2 class="font-display font-serif text-2xl md:text-3xl font-bold text-[var(--ink)]">
+              <h2 class="font-serif text-2xl md:text-3xl font-bold text-[var(--ink)]">
                 {{ title }}
               </h2>
             </div>

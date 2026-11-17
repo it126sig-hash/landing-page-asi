@@ -75,6 +75,17 @@ export function useContent() {
           image: item.image ? withBase(item.image) : item.image,
         })),
       },
+      facilities: content.facilities ? {
+        ...content.facilities,
+        image: withBase(content.facilities.image),
+      } : undefined,
+      articlesSection: content.articlesSection ? {
+        ...content.articlesSection,
+        items: (content.articlesSection.items || []).map(item => ({
+          ...item,
+          image: withBase(item.image),
+        })),
+      } : undefined,
       calculator: content.calculator ? {
         ...content.calculator,
         image: withBase(content.calculator.image),

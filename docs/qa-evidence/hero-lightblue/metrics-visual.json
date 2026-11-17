@@ -1,0 +1,4930 @@
+[
+  {
+    "vw": 1440,
+    "vh": 900,
+    "dpr": 1,
+    "scrollWidth": 1440,
+    "bodyScrollWidth": 1440,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "right": 1440,
+      "bottom": 900
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 900,
+    "badge": {
+      "x": 130,
+      "y": 163.26,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 340.77,
+      "bottom": 201.76
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 130,
+      "y": 240.51,
+      "w": 640,
+      "h": 221.58,
+      "right": 770,
+      "bottom": 462.09
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "82.08px",
+      "weight": "600",
+      "lh": "73.872px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 130,
+        "y": 240.51,
+        "w": 640,
+        "h": 73.86,
+        "right": 770,
+        "bottom": 314.37
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 130,
+        "y": 314.37,
+        "w": 640,
+        "h": 73.86,
+        "right": 770,
+        "bottom": 388.23
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 130,
+        "y": 388.23,
+        "w": 640,
+        "h": 73.86,
+        "right": 770,
+        "bottom": 462.09
+      }
+    ],
+    "subline": {
+      "x": 130,
+      "y": 490.55,
+      "w": 480,
+      "h": 64.69,
+      "right": 610,
+      "bottom": 555.24
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "22.32px",
+      "lh": "32.364px"
+    },
+    "cta": {
+      "x": 130,
+      "y": 597.95,
+      "w": 270.33,
+      "h": 62,
+      "right": 400.33,
+      "bottom": 659.95
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "16px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 130,
+      "y": 732.63,
+      "w": 352,
+      "h": 16.5,
+      "right": 482,
+      "bottom": 749.13
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "11px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 130,
+      "y": 711.63,
+      "w": 352,
+      "h": 99.5,
+      "right": 482,
+      "bottom": 811.13,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 263.48,
+      "y": 772.13,
+      "w": 1,
+      "h": 32,
+      "right": 264.48,
+      "bottom": 804.13,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 130,
+        "y": 768.13,
+        "w": 113.48,
+        "h": 40,
+        "right": 243.48,
+        "bottom": 808.13,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 284.48,
+        "y": 765.13,
+        "w": 73.59,
+        "h": 46,
+        "right": 358.08,
+        "bottom": 811.13,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 77,
+      "right": 1440,
+      "bottom": 77
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 173.66,
+      "y": 24,
+      "w": 137.11,
+      "h": 28,
+      "right": 310.77,
+      "bottom": 52,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 482,
+        "y": 22,
+        "w": 88.88,
+        "h": 32,
+        "right": 570.88,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 598.88,
+        "y": 22,
+        "w": 91.56,
+        "h": 32,
+        "right": 690.44,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 718.44,
+        "y": 22,
+        "w": 81.19,
+        "h": 32,
+        "right": 799.63,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 827.63,
+        "y": 22,
+        "w": 77.23,
+        "h": 32,
+        "right": 904.86,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 932.86,
+        "y": 22,
+        "w": 25.13,
+        "h": 32,
+        "right": 957.98,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 1225.2,
+      "y": 20,
+      "w": 84.8,
+      "h": 36,
+      "right": 1310,
+      "bottom": 56,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -162,
+      "w": 1440,
+      "h": 1224,
+      "right": 1440,
+      "bottom": 1062
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -162,
+      "w": 1440,
+      "h": 1224,
+      "right": 1440,
+      "bottom": 1062
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": 432,
+      "y": 238.24,
+      "w": 1368,
+      "h": 769.5,
+      "right": 1800,
+      "bottom": 1007.74
+    },
+    "houseWrapper": {
+      "x": 432,
+      "y": 226.5,
+      "w": 1368,
+      "h": 769.5,
+      "right": 1800,
+      "bottom": 996
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 130,
+      "y": 162.86,
+      "w": 640,
+      "h": 622.27,
+      "right": 770,
+      "bottom": 785.13
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -162,
+        "w": 1440,
+        "h": 1224,
+        "right": 1440,
+        "bottom": 1062,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900,
+        "right": 1440,
+        "bottom": 900,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": 432,
+        "y": 226.5,
+        "w": 1368,
+        "h": 769.5,
+        "right": 1800,
+        "bottom": 996,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 128,
+        "right": 1440,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1094.39,
+        "h": 900,
+        "right": 1094.39,
+        "bottom": 900,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 576,
+        "w": 1440,
+        "h": 324,
+        "right": 1440,
+        "bottom": 900,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "right": 1440,
+      "bottom": 900,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 900,
+      "w": 1440,
+      "h": 78,
+      "right": 1440,
+      "bottom": 978
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 1800
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 1800
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2275.8
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 1495.8
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 1495.8
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 1482.8
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 1476.8
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 1482.8
+      }
+    ],
+    "name": "desktop-1440x900",
+    "overlay": "gone@1",
+    "bgShot": "bg-desktop-1440x900.png"
+  },
+  {
+    "vw": 1280,
+    "vh": 800,
+    "dpr": 1,
+    "scrollWidth": 1280,
+    "bodyScrollWidth": 1280,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 800,
+      "right": 1280,
+      "bottom": 800
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 800,
+    "badge": {
+      "x": 50,
+      "y": 128.75,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 260.77,
+      "bottom": 167.25
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 50,
+      "y": 195.25,
+      "w": 640,
+      "h": 196.97,
+      "right": 690,
+      "bottom": 392.22
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "72.96px",
+      "weight": "600",
+      "lh": "65.664px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 50,
+        "y": 195.25,
+        "w": 640,
+        "h": 65.66,
+        "right": 690,
+        "bottom": 260.91
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 50,
+        "y": 260.91,
+        "w": 640,
+        "h": 65.66,
+        "right": 690,
+        "bottom": 326.56
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 50,
+        "y": 326.56,
+        "w": 640,
+        "h": 65.66,
+        "right": 690,
+        "bottom": 392.22
+      }
+    ],
+    "subline": {
+      "x": 50,
+      "y": 416.22,
+      "w": 480,
+      "h": 57.53,
+      "right": 530,
+      "bottom": 473.75
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "19.84px",
+      "lh": "28.768px"
+    },
+    "cta": {
+      "x": 50,
+      "y": 509.75,
+      "w": 270.33,
+      "h": 62,
+      "right": 320.33,
+      "bottom": 571.75
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "16px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 50,
+      "y": 640.75,
+      "w": 352,
+      "h": 16.5,
+      "right": 402,
+      "bottom": 657.25
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "11px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 50,
+      "y": 619.75,
+      "w": 352,
+      "h": 99.5,
+      "right": 402,
+      "bottom": 719.25,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 183.48,
+      "y": 680.25,
+      "w": 1,
+      "h": 32,
+      "right": 184.48,
+      "bottom": 712.25,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 50,
+        "y": 676.25,
+        "w": 113.48,
+        "h": 40,
+        "right": 163.48,
+        "bottom": 716.25,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 204.48,
+        "y": 673.25,
+        "w": 73.59,
+        "h": 46,
+        "right": 278.08,
+        "bottom": 719.25,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 77,
+      "right": 1280,
+      "bottom": 77
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 93.66,
+      "y": 24,
+      "w": 137.11,
+      "h": 28,
+      "right": 230.77,
+      "bottom": 52,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 402,
+        "y": 22,
+        "w": 88.88,
+        "h": 32,
+        "right": 490.88,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 518.88,
+        "y": 22,
+        "w": 91.56,
+        "h": 32,
+        "right": 610.44,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 638.44,
+        "y": 22,
+        "w": 81.19,
+        "h": 32,
+        "right": 719.63,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 747.63,
+        "y": 22,
+        "w": 77.23,
+        "h": 32,
+        "right": 824.86,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 852.86,
+        "y": 22,
+        "w": 25.13,
+        "h": 32,
+        "right": 877.98,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 1145.2,
+      "y": 20,
+      "w": 84.8,
+      "h": 36,
+      "right": 1230,
+      "bottom": 56,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -144,
+      "w": 1280,
+      "h": 1088,
+      "right": 1280,
+      "bottom": 944
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -144,
+      "w": 1280,
+      "h": 1088,
+      "right": 1280,
+      "bottom": 944
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": 384,
+      "y": 212,
+      "w": 1216,
+      "h": 684,
+      "right": 1600,
+      "bottom": 896
+    },
+    "houseWrapper": {
+      "x": 384,
+      "y": 212,
+      "w": 1216,
+      "h": 684,
+      "right": 1600,
+      "bottom": 896
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 50,
+      "y": 128.75,
+      "w": 640,
+      "h": 590.5,
+      "right": 690,
+      "bottom": 719.25
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -144,
+        "w": 1280,
+        "h": 1088,
+        "right": 1280,
+        "bottom": 944,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 800,
+        "right": 1280,
+        "bottom": 800,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": 384,
+        "y": 212,
+        "w": 1216,
+        "h": 684,
+        "right": 1600,
+        "bottom": 896,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 128,
+        "right": 1280,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 972.8,
+        "h": 800,
+        "right": 972.8,
+        "bottom": 800,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 512,
+        "w": 1280,
+        "h": 288,
+        "right": 1280,
+        "bottom": 800,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 800,
+      "right": 1280,
+      "bottom": 800,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 800,
+      "w": 1280,
+      "h": 78,
+      "right": 1280,
+      "bottom": 878
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 1600
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 1600
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2114.1
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 1334.1
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 1334.1
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 1321.1
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 1315.1
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 1321.1
+      }
+    ],
+    "name": "laptop-1280x800",
+    "overlay": "gone@7",
+    "bgShot": "bg-laptop-1280x800.png"
+  },
+  {
+    "vw": 1024,
+    "vh": 768,
+    "dpr": 1,
+    "scrollWidth": 1024,
+    "bodyScrollWidth": 1024,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 1024,
+      "h": 768,
+      "right": 1024,
+      "bottom": 768
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 768,
+    "badge": {
+      "x": 32,
+      "y": 138.02,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 242.77,
+      "bottom": 176.52
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 32,
+      "y": 204.52,
+      "w": 640,
+      "h": 157.59,
+      "right": 672,
+      "bottom": 362.11
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "58.368px",
+      "weight": "600",
+      "lh": "52.5312px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 32,
+        "y": 204.52,
+        "w": 640,
+        "h": 52.53,
+        "right": 672,
+        "bottom": 257.05
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 32,
+        "y": 257.05,
+        "w": 640,
+        "h": 52.53,
+        "right": 672,
+        "bottom": 309.58
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 32,
+        "y": 309.58,
+        "w": 640,
+        "h": 52.53,
+        "right": 672,
+        "bottom": 362.11
+      }
+    ],
+    "subline": {
+      "x": 32,
+      "y": 386.11,
+      "w": 480,
+      "h": 46.38,
+      "right": 512,
+      "bottom": 432.48
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "16px",
+      "lh": "23.2px"
+    },
+    "cta": {
+      "x": 32,
+      "y": 468.48,
+      "w": 270.33,
+      "h": 62,
+      "right": 302.33,
+      "bottom": 530.48
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "16px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 32,
+      "y": 599.48,
+      "w": 352,
+      "h": 16.5,
+      "right": 384,
+      "bottom": 615.98
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "11px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 32,
+      "y": 578.48,
+      "w": 352,
+      "h": 99.5,
+      "right": 384,
+      "bottom": 677.98,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 165.48,
+      "y": 638.98,
+      "w": 1,
+      "h": 32,
+      "right": 166.48,
+      "bottom": 670.98,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 32,
+        "y": 634.98,
+        "w": 113.48,
+        "h": 40,
+        "right": 145.48,
+        "bottom": 674.98,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 186.48,
+        "y": 631.98,
+        "w": 73.59,
+        "h": 46,
+        "right": 260.08,
+        "bottom": 677.98,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1024,
+      "h": 77,
+      "right": 1024,
+      "bottom": 77
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 75.66,
+      "y": 24,
+      "w": 137.11,
+      "h": 28,
+      "right": 212.77,
+      "bottom": 52,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 274,
+        "y": 22,
+        "w": 88.88,
+        "h": 32,
+        "right": 362.88,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 390.88,
+        "y": 22,
+        "w": 91.56,
+        "h": 32,
+        "right": 482.44,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 510.44,
+        "y": 22,
+        "w": 81.19,
+        "h": 32,
+        "right": 591.63,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 619.63,
+        "y": 22,
+        "w": 77.23,
+        "h": 32,
+        "right": 696.86,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 724.86,
+        "y": 22,
+        "w": 25.13,
+        "h": 32,
+        "right": 749.98,
+        "bottom": 54,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 907.2,
+      "y": 20,
+      "w": 84.8,
+      "h": 36,
+      "right": 992,
+      "bottom": 56,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -138.23,
+      "w": 1024,
+      "h": 1044.47,
+      "right": 1024,
+      "bottom": 906.23
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -138.23,
+      "w": 1024,
+      "h": 1044.47,
+      "right": 1024,
+      "bottom": 906.23
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": 307.19,
+      "y": 207.38,
+      "w": 1167.36,
+      "h": 656.63,
+      "right": 1474.55,
+      "bottom": 864
+    },
+    "houseWrapper": {
+      "x": 307.19,
+      "y": 207.38,
+      "w": 1167.36,
+      "h": 656.63,
+      "right": 1474.55,
+      "bottom": 864
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 32,
+      "y": 138.02,
+      "w": 640,
+      "h": 539.97,
+      "right": 672,
+      "bottom": 677.98
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -138.23,
+        "w": 1024,
+        "h": 1044.47,
+        "right": 1024,
+        "bottom": 906.23,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 768,
+        "right": 1024,
+        "bottom": 768,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": 307.19,
+        "y": 207.38,
+        "w": 1167.36,
+        "h": 656.63,
+        "right": 1474.55,
+        "bottom": 864,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 128,
+        "right": 1024,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 778.23,
+        "h": 768,
+        "right": 778.23,
+        "bottom": 768,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 491.53,
+        "w": 1024,
+        "h": 276.47,
+        "right": 1024,
+        "bottom": 768,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 1024,
+      "h": 768,
+      "right": 1024,
+      "bottom": 768,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 768,
+      "w": 1024,
+      "h": 78,
+      "right": 1024,
+      "bottom": 846
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 1474.5
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 1474.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2095.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 1159.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 1159.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 1146.4
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 1140.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 1146.4
+      }
+    ],
+    "name": "tablet-1024x768",
+    "overlay": "gone@6",
+    "bgShot": "bg-tablet-1024x768.png"
+  },
+  {
+    "vw": 768,
+    "vh": 1024,
+    "dpr": 1,
+    "scrollWidth": 768,
+    "bodyScrollWidth": 768,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 768,
+      "h": 1024,
+      "right": 768,
+      "bottom": 1024
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 1024,
+    "badge": {
+      "x": 24,
+      "y": 285.72,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 234.77,
+      "bottom": 324.22
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 24,
+      "y": 352.22,
+      "w": 640,
+      "h": 118.17,
+      "right": 664,
+      "bottom": 470.39
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "43.776px",
+      "weight": "600",
+      "lh": "39.3984px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 24,
+        "y": 352.22,
+        "w": 640,
+        "h": 39.39,
+        "right": 664,
+        "bottom": 391.61
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 24,
+        "y": 391.61,
+        "w": 640,
+        "h": 39.39,
+        "right": 664,
+        "bottom": 431
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 24,
+        "y": 431,
+        "w": 640,
+        "h": 39.39,
+        "right": 664,
+        "bottom": 470.39
+      }
+    ],
+    "subline": {
+      "x": 24,
+      "y": 494.39,
+      "w": 480,
+      "h": 46.38,
+      "right": 504,
+      "bottom": 540.77
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "16px",
+      "lh": "23.2px"
+    },
+    "cta": {
+      "x": 24,
+      "y": 576.77,
+      "w": 270.33,
+      "h": 62,
+      "right": 294.33,
+      "bottom": 638.77
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "16px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 24,
+      "y": 707.77,
+      "w": 352,
+      "h": 16.5,
+      "right": 376,
+      "bottom": 724.27
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "11px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 24,
+      "y": 686.77,
+      "w": 352,
+      "h": 99.5,
+      "right": 376,
+      "bottom": 786.27,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 157.48,
+      "y": 747.27,
+      "w": 1,
+      "h": 32,
+      "right": 158.48,
+      "bottom": 779.27,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 24,
+        "y": 743.27,
+        "w": 113.48,
+        "h": 40,
+        "right": 137.48,
+        "bottom": 783.27,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 178.48,
+        "y": 740.27,
+        "w": 73.59,
+        "h": 46,
+        "right": 252.08,
+        "bottom": 786.27,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 768,
+      "h": 69,
+      "right": 768,
+      "bottom": 69
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 67.66,
+      "y": 22,
+      "w": 121.88,
+      "h": 24,
+      "right": 189.53,
+      "bottom": 46,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "right": 0,
+      "bottom": 0,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -184.31,
+      "w": 768,
+      "h": 1392.63,
+      "right": 768,
+      "bottom": 1208.31
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -184.31,
+      "w": 768,
+      "h": 1392.63,
+      "right": 768,
+      "bottom": 1208.31
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": 15.36,
+      "y": 613.14,
+      "w": 901.11,
+      "h": 506.86,
+      "right": 916.47,
+      "bottom": 1120
+    },
+    "houseWrapper": {
+      "x": 15.36,
+      "y": 613.14,
+      "w": 901.11,
+      "h": 506.86,
+      "right": 916.47,
+      "bottom": 1120
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 24,
+      "y": 285.72,
+      "w": 640,
+      "h": 500.55,
+      "right": 664,
+      "bottom": 786.27
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -184.31,
+        "w": 768,
+        "h": 1392.63,
+        "right": 768,
+        "bottom": 1208.31,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 1024,
+        "right": 768,
+        "bottom": 1024,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": 15.36,
+        "y": 613.14,
+        "w": 901.11,
+        "h": 506.86,
+        "right": 916.47,
+        "bottom": 1120,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 128,
+        "right": 768,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 1024,
+        "right": 768,
+        "bottom": 1024,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25) 62%, rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 655.38,
+        "w": 768,
+        "h": 368.63,
+        "right": 768,
+        "bottom": 1024,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 768,
+      "h": 1024,
+      "right": 768,
+      "bottom": 1024,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 1024,
+      "w": 768,
+      "h": 92,
+      "right": 768,
+      "bottom": 1116
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 916.5
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 916.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2091.2
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 843.2
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 843.2
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 830.2
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 824.2
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 830.2
+      }
+    ],
+    "name": "tablet-portrait-768x1024",
+    "overlay": "gone@6",
+    "bgShot": "bg-tablet-portrait-768x1024.png"
+  },
+  {
+    "vw": 390,
+    "vh": 844,
+    "dpr": 1,
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "right": 390,
+      "bottom": 844
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 844,
+    "badge": {
+      "x": 19,
+      "y": 219.86,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 229.77,
+      "bottom": 258.36
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 19,
+      "y": 282.36,
+      "w": 352,
+      "h": 107.39,
+      "right": 371,
+      "bottom": 389.75
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "39.78px",
+      "weight": "600",
+      "lh": "35.802px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 19,
+        "y": 282.36,
+        "w": 352,
+        "h": 35.8,
+        "right": 371,
+        "bottom": 318.16
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 19,
+        "y": 318.16,
+        "w": 352,
+        "h": 35.8,
+        "right": 371,
+        "bottom": 353.95
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 19,
+        "y": 353.95,
+        "w": 352,
+        "h": 35.8,
+        "right": 371,
+        "bottom": 389.75
+      }
+    ],
+    "subline": {
+      "x": 19,
+      "y": 409.75,
+      "w": 352,
+      "h": 46.38,
+      "right": 371,
+      "bottom": 456.13
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "16px",
+      "lh": "23.2px"
+    },
+    "cta": {
+      "x": 19,
+      "y": 484.13,
+      "w": 258.69,
+      "h": 62,
+      "right": 277.69,
+      "bottom": 546.13
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "15px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 19,
+      "y": 595.13,
+      "w": 352,
+      "h": 15,
+      "right": 371,
+      "bottom": 610.13
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "10px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 19,
+      "y": 578.13,
+      "w": 352,
+      "h": 94,
+      "right": 371,
+      "bottom": 672.13,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 152.48,
+      "y": 633.13,
+      "w": 1,
+      "h": 32,
+      "right": 153.48,
+      "bottom": 665.13,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 19,
+        "y": 629.13,
+        "w": 113.48,
+        "h": 40,
+        "right": 132.48,
+        "bottom": 669.13,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 173.48,
+        "y": 626.13,
+        "w": 73.59,
+        "h": 46,
+        "right": 247.08,
+        "bottom": 672.13,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 69,
+      "right": 390,
+      "bottom": 69
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 57.48,
+      "y": 24,
+      "w": 106.64,
+      "h": 20,
+      "right": 164.13,
+      "bottom": 44,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "right": 0,
+      "bottom": 0,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -151.91,
+      "w": 390,
+      "h": 1147.83,
+      "right": 390,
+      "bottom": 995.92
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -151.91,
+      "w": 390,
+      "h": 1147.83,
+      "right": 390,
+      "bottom": 995.92
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": -62.39,
+      "y": 503.25,
+      "w": 776.47,
+      "h": 436.75,
+      "right": 714.08,
+      "bottom": 940
+    },
+    "houseWrapper": {
+      "x": -62.39,
+      "y": 503.25,
+      "w": 776.47,
+      "h": 436.75,
+      "right": 714.08,
+      "bottom": 940
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 19,
+      "y": 219.86,
+      "w": 352,
+      "h": 452.27,
+      "right": 371,
+      "bottom": 672.13
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -151.91,
+        "w": 390,
+        "h": 1147.83,
+        "right": 390,
+        "bottom": 995.92,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": -62.39,
+        "y": 503.25,
+        "w": 776.47,
+        "h": 436.75,
+        "right": 714.08,
+        "bottom": 940,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 128,
+        "right": 390,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 540.17,
+        "w": 390,
+        "h": 303.83,
+        "right": 390,
+        "bottom": 844,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "right": 390,
+      "bottom": 844,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 844,
+      "w": 390,
+      "h": 134,
+      "right": 390,
+      "bottom": 978
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 714.1
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 714.1
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2086.9
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 526.9
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 526.9
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 513.9
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 507.9
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 513.9
+      }
+    ],
+    "name": "mobile-390x844",
+    "overlay": "gone@5",
+    "bgShot": "bg-mobile-390x844.png"
+  },
+  {
+    "vw": 375,
+    "vh": 667,
+    "dpr": 1,
+    "scrollWidth": 375,
+    "bodyScrollWidth": 375,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 667,
+      "right": 375,
+      "bottom": 667
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 667,
+    "badge": {
+      "x": 15,
+      "y": 133.42,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 225.77,
+      "bottom": 171.92
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 15,
+      "y": 195.92,
+      "w": 345,
+      "h": 103.27,
+      "right": 360,
+      "bottom": 299.19
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "38.25px",
+      "weight": "600",
+      "lh": "34.425px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 15,
+        "y": 195.92,
+        "w": 345,
+        "h": 34.42,
+        "right": 360,
+        "bottom": 230.34
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 15,
+        "y": 230.34,
+        "w": 345,
+        "h": 34.42,
+        "right": 360,
+        "bottom": 264.77
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 15,
+        "y": 264.77,
+        "w": 345,
+        "h": 34.42,
+        "right": 360,
+        "bottom": 299.19
+      }
+    ],
+    "subline": {
+      "x": 15,
+      "y": 319.19,
+      "w": 345,
+      "h": 46.38,
+      "right": 360,
+      "bottom": 365.56
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "16px",
+      "lh": "23.2px"
+    },
+    "cta": {
+      "x": 15,
+      "y": 393.56,
+      "w": 258.69,
+      "h": 62,
+      "right": 273.69,
+      "bottom": 455.56
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "15px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 15,
+      "y": 504.56,
+      "w": 345,
+      "h": 15,
+      "right": 360,
+      "bottom": 519.56
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "10px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 15,
+      "y": 487.56,
+      "w": 345,
+      "h": 94,
+      "right": 360,
+      "bottom": 581.56,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 148.48,
+      "y": 542.56,
+      "w": 1,
+      "h": 32,
+      "right": 149.48,
+      "bottom": 574.56,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 15,
+        "y": 538.56,
+        "w": 113.48,
+        "h": 40,
+        "right": 128.48,
+        "bottom": 578.56,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 169.48,
+        "y": 535.56,
+        "w": 73.59,
+        "h": 46,
+        "right": 243.08,
+        "bottom": 581.56,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 69,
+      "right": 375,
+      "bottom": 69
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 53.48,
+      "y": 24,
+      "w": 106.64,
+      "h": 20,
+      "right": 160.13,
+      "bottom": 44,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "right": 0,
+      "bottom": 0,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -120.05,
+      "w": 375,
+      "h": 907.11,
+      "right": 375,
+      "bottom": 787.06
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -120.05,
+      "w": 375,
+      "h": 907.11,
+      "right": 375,
+      "bottom": 787.06
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": -60,
+      "y": 417.84,
+      "w": 613.63,
+      "h": 345.16,
+      "right": 553.63,
+      "bottom": 763
+    },
+    "houseWrapper": {
+      "x": -60,
+      "y": 417.84,
+      "w": 613.63,
+      "h": 345.16,
+      "right": 553.63,
+      "bottom": 763
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 15,
+      "y": 133.42,
+      "w": 345,
+      "h": 448.14,
+      "right": 360,
+      "bottom": 581.56
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -120.05,
+        "w": 375,
+        "h": 907.11,
+        "right": 375,
+        "bottom": 787.06,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 667,
+        "right": 375,
+        "bottom": 667,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": -60,
+        "y": 417.84,
+        "w": 613.63,
+        "h": 345.16,
+        "right": 553.63,
+        "bottom": 763,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 128,
+        "right": 375,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 667,
+        "right": 375,
+        "bottom": 667,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 426.89,
+        "w": 375,
+        "h": 240.11,
+        "right": 375,
+        "bottom": 667,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 667,
+      "right": 375,
+      "bottom": 667,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 667,
+      "w": 375,
+      "h": 144.5,
+      "right": 375,
+      "bottom": 811.5
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 553.6
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 553.6
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2081.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 521.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 521.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 508.4
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 502.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 508.4
+      }
+    ],
+    "name": "mobile-375x667",
+    "overlay": "gone@5",
+    "bgShot": "bg-mobile-375x667.png"
+  },
+  {
+    "vw": 320,
+    "vh": 568,
+    "dpr": 1,
+    "scrollWidth": 320,
+    "bodyScrollWidth": 320,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 586.77,
+      "right": 320,
+      "bottom": 586.77
+    },
+    "heroBg": "linear-gradient(rgb(127, 183, 223) 0%, rgb(185, 221, 243) 55%, rgb(234, 246, 254) 100%)",
+    "heroH": 587,
+    "badge": {
+      "x": 15,
+      "y": 88,
+      "w": 210.77,
+      "h": 38.5,
+      "right": 225.77,
+      "bottom": 126.5
+    },
+    "badgeColor": "rgb(38, 53, 46)",
+    "badgeBorder": "rgba(38, 53, 46, 0.35)",
+    "badgeFont": {
+      "size": "11px",
+      "weight": "600",
+      "tracking": "2.42px"
+    },
+    "h1": {
+      "x": 15,
+      "y": 150.5,
+      "w": 290,
+      "h": 90.7,
+      "right": 305,
+      "bottom": 241.2
+    },
+    "h1Color": "rgb(38, 53, 46)",
+    "h1Font": {
+      "size": "33.6px",
+      "weight": "600",
+      "lh": "30.24px",
+      "family": "Poppins, sans-serif"
+    },
+    "h1Text": "HUNIAN ASRI\nDI JANTUNG\nPARAHYANGAN",
+    "h1Lines": [
+      {
+        "text": "HUNIAN ASRI",
+        "x": 15,
+        "y": 150.5,
+        "w": 290,
+        "h": 30.23,
+        "right": 305,
+        "bottom": 180.73
+      },
+      {
+        "text": "DI JANTUNG",
+        "x": 15,
+        "y": 180.73,
+        "w": 290,
+        "h": 30.23,
+        "right": 305,
+        "bottom": 210.97
+      },
+      {
+        "text": "PARAHYANGAN",
+        "x": 15,
+        "y": 210.97,
+        "w": 290,
+        "h": 30.23,
+        "right": 305,
+        "bottom": 241.2
+      }
+    ],
+    "subline": {
+      "x": 15,
+      "y": 261.2,
+      "w": 290,
+      "h": 69.56,
+      "right": 305,
+      "bottom": 330.77
+    },
+    "sublineColor": "rgba(38, 53, 46, 0.8)",
+    "sublineFont": {
+      "size": "16px",
+      "lh": "23.2px"
+    },
+    "cta": {
+      "x": 15,
+      "y": 358.77,
+      "w": 258.69,
+      "h": 62,
+      "right": 273.69,
+      "bottom": 420.77
+    },
+    "ctaHref": "#tipe",
+    "ctaBg": "rgb(52, 75, 60)",
+    "ctaColor": "rgb(255, 255, 255)",
+    "ctaShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(38, 53, 46, 0.2) 0px 14px 32px 0px",
+    "ctaFont": {
+      "size": "15px",
+      "weight": "600"
+    },
+    "bankLabel": {
+      "x": 15,
+      "y": 469.77,
+      "w": 290,
+      "h": 15,
+      "right": 305,
+      "bottom": 484.77
+    },
+    "bankLabelText": "MITRA PEMBIAYAAN KPR RESMI",
+    "bankLabelColor": "rgba(38, 53, 46, 0.75)",
+    "bankLabelFont": {
+      "size": "10px",
+      "weight": "600"
+    },
+    "bankBlock": {
+      "x": 15,
+      "y": 452.77,
+      "w": 290,
+      "h": 94,
+      "right": 305,
+      "bottom": 546.77,
+      "borderTop": "1px rgba(38, 53, 46, 0.2)"
+    },
+    "bankDivider": {
+      "x": 148.48,
+      "y": 507.77,
+      "w": 1,
+      "h": 32,
+      "right": 149.48,
+      "bottom": 539.77,
+      "bg": "rgba(38, 53, 46, 0.25)"
+    },
+    "bankLogos": [
+      {
+        "alt": "Logo Bank BCA",
+        "src": "/assets/images/bank/bca.webp",
+        "x": 15,
+        "y": 503.77,
+        "w": 113.48,
+        "h": 40,
+        "right": 128.48,
+        "bottom": 543.77,
+        "nw": 1220,
+        "nh": 430,
+        "complete": true,
+        "objectFit": "contain"
+      },
+      {
+        "alt": "Logo Bank BTN",
+        "src": "/assets/images/bank/btn.webp",
+        "x": 169.48,
+        "y": 500.77,
+        "w": 73.59,
+        "h": 46,
+        "right": 243.08,
+        "bottom": 546.77,
+        "nw": 800,
+        "nh": 500,
+        "complete": true,
+        "objectFit": "contain"
+      }
+    ],
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 69,
+      "right": 320,
+      "bottom": 69
+    },
+    "headerBg": "rgba(0, 0, 0, 0.15)",
+    "headerTextColor": "rgb(255, 255, 255)",
+    "headerLogoText": {
+      "x": 53.48,
+      "y": 24,
+      "w": 106.64,
+      "h": 20,
+      "right": 160.13,
+      "bottom": 44,
+      "color": "rgb(255, 255, 255)"
+    },
+    "navLinks": [
+      {
+        "text": "Tentang Kami",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Pilihan Rumah",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Simulasi KPR",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "Keunggulan",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      },
+      {
+        "text": "FAQ",
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "color": "rgba(255, 255, 255, 0.9)"
+      }
+    ],
+    "headerCta": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "right": 0,
+      "bottom": 0,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)"
+    },
+    "skyWrap": {
+      "x": 0,
+      "y": -105.61,
+      "w": 320,
+      "h": 798,
+      "right": 320,
+      "bottom": 692.39
+    },
+    "skyImg": {
+      "x": 0,
+      "y": -105.61,
+      "w": 320,
+      "h": 798,
+      "right": 320,
+      "bottom": 692.39
+    },
+    "skyFilter": "grayscale(1) brightness(1.45) contrast(0.82)",
+    "skyMask": "linear-gradient(rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 90%)",
+    "skyObjectPosition": "58% 50%",
+    "house": {
+      "x": -51.19,
+      "y": 388.84,
+      "w": 522.55,
+      "h": 293.92,
+      "right": 471.36,
+      "bottom": 682.77
+    },
+    "houseWrapper": {
+      "x": -51.19,
+      "y": 388.84,
+      "w": 522.55,
+      "h": 293.92,
+      "right": 471.36,
+      "bottom": 682.77
+    },
+    "houseFilter": "brightness(1.03) saturate(1.02)",
+    "houseMask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 22%)",
+    "contentBlock": {
+      "x": 15,
+      "y": 88,
+      "w": 290,
+      "h": 458.77,
+      "right": 305,
+      "bottom": 546.77
+    },
+    "layers": [
+      {
+        "x": 0,
+        "y": -105.61,
+        "w": 320,
+        "h": 798,
+        "right": 320,
+        "bottom": 692.39,
+        "z": "0",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 586.77,
+        "right": 320,
+        "bottom": 586.77,
+        "z": "5",
+        "bgImage": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+      },
+      {
+        "x": -51.19,
+        "y": 388.84,
+        "w": 522.55,
+        "h": 293.92,
+        "right": 471.36,
+        "bottom": 682.77,
+        "z": "10",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 128,
+        "right": 320,
+        "bottom": 128,
+        "z": "20",
+        "bgImage": "none"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 586.77,
+        "right": 320,
+        "bottom": 586.77,
+        "z": "20",
+        "bgImage": "linear-gradient(to right, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0))"
+      },
+      {
+        "x": 0,
+        "y": 375.53,
+        "w": 320,
+        "h": 211.23,
+        "right": 320,
+        "bottom": 586.77,
+        "z": "20",
+        "bgImage": "none"
+      }
+    ],
+    "glow": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 586.77,
+      "right": 320,
+      "bottom": 586.77,
+      "bg": "radial-gradient(58% 52% at 74% 16%, rgba(255, 233, 194, 0.42), rgba(255, 233, 194, 0.16) 46%, rgba(255, 233, 194, 0) 72%)"
+    },
+    "h1Count": 1,
+    "nextSection": {
+      "tag": "SECTION",
+      "id": "",
+      "x": 0,
+      "y": 586.77,
+      "w": 320,
+      "h": 186,
+      "right": 320,
+      "bottom": 772.77
+    },
+    "images": [
+      {
+        "src": "/assets/images/logo.webp",
+        "alt": "Logo Alam Sanggar Indah",
+        "nw": 372,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "",
+        "nw": 1376,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/hero.webp",
+        "alt": "",
+        "nw": 1920,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Logo Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Logo Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/bank/btn.webp",
+        "alt": "Bank BTN",
+        "nw": 800,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Area hunian Sanggar Indah Palastri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Detail ruang Sanggar Indah Palastri",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Tipe 31/72",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Tipe 22/60",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": true
+      },
+      {
+        "src": "/assets/images/bank/bca.webp",
+        "alt": "Bank BCA",
+        "nw": 1220,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-small.jpg",
+        "alt": "Akses Dekat Pintu Tol",
+        "nw": 700,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/about-main.jpg",
+        "alt": "Bebas Banjir & Udara Asri",
+        "nw": 1200,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/hero.jpg",
+        "alt": "Fasilitas Kawasan Mandiri",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/3172-3d.webp",
+        "alt": "Keamanan 24 Jam & One Gate",
+        "nw": 1975,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/palastri/rumah/2260-3d.webp",
+        "alt": "Nilai Investasi Menjanjikan",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor KPR Untuk Masyarakat.webp",
+        "alt": "Pelopor KPR Untuk Masyarakat",
+        "nw": 353,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Pelopor Pembangunan Rumah Sederhana Sehat.webp",
+        "alt": "Pelopor Pembangunan Rumah Sederhana Sehat",
+        "nw": 395,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/FIABCI Indonesia - BNI.webp",
+        "alt": "FIABCI Indonesia - BNI Prix D'Excellence Award",
+        "nw": 349,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/BTN PROPERTY AWARD.webp",
+        "alt": "BTN Property Award",
+        "nw": 259,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/INDONESIA MY HOME AWARDS.webp",
+        "alt": "Indonesia My Home Awards",
+        "nw": 277,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/GOLD WINNER FIABCI.webp",
+        "alt": "Gold Winner FIABCI Affordable Housing Category",
+        "nw": 485,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/awards/Peringkat 1 Realisasi KPR.webp",
+        "alt": "Peringkat 1 Realisasi KPR Subsidi Terbanyak",
+        "nw": 496,
+        "complete": true,
+        "ariaHiddenAncestor": false
+      },
+      {
+        "src": "/assets/images/proyek-timeline.webp",
+        "alt": "Timeline proyek Sanggar Indah Group 1996-2025",
+        "nw": 0,
+        "complete": false,
+        "ariaHiddenAncestor": false
+      }
+    ],
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "pointer-events-none absolute -bottom-24 z-10 w-[max(92vh,140vw)] -left-[16%] select-none will-change",
+        "right": 471.4
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-auto w-full [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_22%)] [filter:bright",
+        "right": 471.4
+      },
+      {
+        "tag": "DIV",
+        "cls": "awards-marquee",
+        "right": 2078.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card-wrap",
+        "right": 362.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-card",
+        "right": 362.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-img-box",
+        "right": 349.5
+      },
+      {
+        "tag": "IMG",
+        "cls": "award-img",
+        "right": 343.5
+      },
+      {
+        "tag": "DIV",
+        "cls": "award-info",
+        "right": 349.5
+      }
+    ],
+    "name": "mobile-320x568",
+    "overlay": "gone@6",
+    "bgShot": "bg-mobile-320x568.png"
+  }
+]

@@ -13,13 +13,14 @@ export default {
         'green-soft': 'var(--green-soft)',
         'sage-pale': 'var(--sage-pale)',
         sand: 'var(--sand)',
+        olive: 'var(--olive)',
         line: 'var(--line)',
       },
       fontFamily: {
-        display: ['"Dream Orphans"', 'Georgia', 'sans-serif'],
-        serif: ['"Dream Orphans"', 'Georgia', 'sans-serif'],
-        body: ['Poppins', 'sans-serif'],
-        sans: ['Poppins', 'sans-serif'],
+        display: ['"Ptarmigan"', '"Bricolage Grotesque"', 'sans-serif'],
+        serif: ['Fraunces', 'Georgia', 'serif'],
+        body: ['"Bricolage Grotesque"', 'sans-serif'],
+        sans: ['"Bricolage Grotesque"', 'sans-serif'],
       },
       fontSize: {
         'size-1': ['4.125rem',   { lineHeight: '1.05', letterSpacing: '-0.02em', fontWeight: '800' }],

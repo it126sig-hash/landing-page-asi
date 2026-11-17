@@ -1,0 +1,94 @@
+[
+  {
+    "mq": true,
+    "els": {
+      "badge": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "h1": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "sub": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "cta": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "bank": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      }
+    },
+    "heroH": 900,
+    "vh": 900,
+    "skyTransform": "none",
+    "skyRect": {
+      "x": 0,
+      "y": -162,
+      "width": 1440,
+      "height": 1224,
+      "top": -162,
+      "right": 1440,
+      "bottom": 1062,
+      "left": 0
+    },
+    "scrollWidth": 1440,
+    "vw": 1440,
+    "name": "desktop"
+  },
+  {
+    "mq": true,
+    "els": {
+      "badge": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "h1": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "sub": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "cta": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      },
+      "bank": {
+        "opacity": "1",
+        "transform": "none",
+        "visible": true
+      }
+    },
+    "heroH": 667,
+    "vh": 667,
+    "skyTransform": "none",
+    "skyRect": {
+      "x": 0,
+      "y": -120.046875,
+      "width": 375,
+      "height": 907.109375,
+      "top": -120.046875,
+      "right": 375,
+      "bottom": 787.0625,
+      "left": 0
+    },
+    "scrollWidth": 375,
+    "vw": 375,
+    "name": "mobile"
+  }
+]

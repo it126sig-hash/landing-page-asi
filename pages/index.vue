@@ -65,17 +65,14 @@ onUnmounted(() => {
   <div>
     <TheHeader />
 
-    <main>
+    <main class="overflow-x-clip">
       <HeroSection />
-      <TrustStrip />
-      <KprPartnerStrip />
-
-      <!-- Section Lanjutan (Diakses dengan Scroll) -->
       <AboutSection />
       <ProductsSection />
-      <MortgageCalculatorSection id="kalkulator" />
-      <WhySection />
       <LocationSection />
+      <FacilitiesSection />
+      <MortgageCalculatorSection id="kalkulator" />
+      <ArticlesSection />
       <FaqSection />
       <FinalCtaSection />
     </main>

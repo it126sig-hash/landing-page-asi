@@ -1,31 +1,15 @@
 @font-face {
-  font-family: 'Dream Orphans';
-  src: url('../fonts/Dream Orphans.otf') format('opentype');
-  font-weight: 400;
+  font-family: 'Ptarmigan';
+  src: url('../fonts/ptarm__.ttf') format('truetype');
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Dream Orphans';
-  src: url('../fonts/Dream Orphans Bd.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Dream Orphans';
-  src: url('../fonts/Dream Orphans It.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Dream Orphans';
-  src: url('../fonts/Dream Orphans Bd It.otf') format('opentype');
-  font-weight: 700;
+  font-family: 'Ptarmigan';
+  src: url('../fonts/ptarmi_.ttf') format('truetype');
+  font-weight: 400 700;
   font-style: italic;
   font-display: swap;
 }
@@ -104,7 +88,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--green);
+  color: var(--olive);
   font-size: 10px;
   letter-spacing: .16em;
   font-weight: 700;
@@ -121,19 +105,19 @@ img {
 .serif {
   font-family: var(--serif);
   font-weight: 500;
-  letter-spacing: -.045em;
+  letter-spacing: -0.025em;
 }
 
 .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   border: 1px solid transparent;
   border-radius: 999px;
-  padding: 15px 21px;
-  font-size: 12px;
-  font-weight: 700;
+  padding: 13px 24px;
+  font-size: 13px;
+  font-weight: 600;
   transition: .25s ease;
   cursor: pointer;
 }
@@ -141,24 +125,25 @@ img {
 .btn-primary {
   color: #fff;
   background: var(--green);
-  box-shadow: 0 8px 20px rgba(60, 83, 65, .18);
+  box-shadow: 0 10px 24px rgba(43, 108, 196, .22);
 }
 
 .btn-primary:hover {
   background: var(--green-deep);
   transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(60, 83, 65, .22);
+  box-shadow: 0 14px 28px rgba(23, 60, 114, .28);
 }
 
 .btn-outline {
-  color: var(--ink);
-  border-color: var(--line);
-  background: rgba(255, 255, 255, .36);
+  color: var(--green);
+  border-color: rgba(43, 108, 196, 0.35);
+  background: transparent;
 }
 
 .btn-outline:hover {
+  color: var(--green-deep);
   border-color: var(--green);
-  background: var(--white);
+  background: rgba(43, 108, 196, 0.08);
 }
 
 .arrow {

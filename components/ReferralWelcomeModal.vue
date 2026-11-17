@@ -112,7 +112,7 @@ onUnmounted(() => {
 
             <template v-if="urlStatus === 'valid'">
               <!-- Kop undangan -->
-              <div class="relative bg-[#26382E] px-7 pb-8 pt-7 text-center">
+              <div class="relative bg-[var(--green-deep)] px-7 pb-8 pt-7 text-center">
                 <button type="button" :aria-label="copy.closeLabel"
                   class="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-white/50 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/60"
                   @click="dismiss">
@@ -127,7 +127,7 @@ onUnmounted(() => {
 
                 <p class="mt-6 font-sans text-xs text-white/70">{{ copy.invitedBy }}</p>
                 <p id="referral-welcome-name"
-                  class="mt-1 font-display font-serif text-[2rem] font-bold leading-tight text-white">
+                  class="mt-1 font-serif text-[2rem] font-bold leading-tight text-white">
                   {{ urlData?.nama_konsumen }}
                 </p>
 
@@ -177,7 +177,7 @@ onUnmounted(() => {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
-                <p id="referral-welcome-name" class="font-display font-serif text-xl font-bold leading-tight text-red-900">
+                <p id="referral-welcome-name" class="font-serif text-xl font-bold leading-tight text-red-900">
                   Kode Referal Tidak Valid
                 </p>
               </div>

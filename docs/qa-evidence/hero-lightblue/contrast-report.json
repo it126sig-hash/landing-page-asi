@@ -1,0 +1,2674 @@
+{
+  "desktop-1440x900": {
+    "viewport": {
+      "w": 1440,
+      "h": 900
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 130,
+          "y": 163,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1026,
+        "worstRatio": 11.22,
+        "p5Ratio": 11.47,
+        "meanRatio": 11.8,
+        "meanBgLum": 0.9126,
+        "maxBgLum": 0.9315,
+        "bgMeanRGB": [
+          234,
+          247,
+          255
+        ],
+        "worstPixel": {
+          "x": 290,
+          "y": 182,
+          "bgRGB": [
+            224,
+            242,
+            254
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 130,
+          "y": 241,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 14295,
+        "worstRatio": 9.44,
+        "p5Ratio": 10.28,
+        "meanRatio": 11.31,
+        "meanBgLum": 0.8721,
+        "maxBgLum": 0.9253,
+        "bgMeanRGB": [
+          225,
+          243,
+          254
+        ],
+        "worstPixel": {
+          "x": 592,
+          "y": 288,
+          "bgRGB": [
+            195,
+            225,
+            244
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 130,
+          "y": 314,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 12844,
+        "worstRatio": 9.57,
+        "p5Ratio": 9.93,
+        "meanRatio": 10.93,
+        "meanBgLum": 0.841,
+        "maxBgLum": 0.9236,
+        "bgMeanRGB": [
+          219,
+          239,
+          252
+        ],
+        "worstPixel": {
+          "x": 290,
+          "y": 342,
+          "bgRGB": [
+            200,
+            226,
+            242
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 130,
+          "y": 388,
+          "w": 640,
+          "h": 74
+        },
+        "fontPx": 82.08,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 17549,
+        "worstRatio": 1.0,
+        "p5Ratio": 9.07,
+        "meanRatio": 10.32,
+        "meanBgLum": 0.792,
+        "maxBgLum": 0.9046,
+        "bgMeanRGB": [
+          210,
+          233,
+          247
+        ],
+        "worstPixel": {
+          "x": 732,
+          "y": 458,
+          "bgRGB": [
+            47,
+            50,
+            51
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "subline",
+        "rect": {
+          "x": 130,
+          "y": 491,
+          "w": 480,
+          "h": 65
+        },
+        "fontPx": 22.32,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 4446,
+        "worstRatio": 2.22,
+        "p5Ratio": 3.93,
+        "meanRatio": 5.52,
+        "meanBgLum": 0.7134,
+        "maxBgLum": 0.8134,
+        "bgMeanRGB": [
+          197,
+          223,
+          239
+        ],
+        "worstPixel": {
+          "x": 609,
+          "y": 500,
+          "bgRGB": [
+            101,
+            117,
+            125
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "KPR label",
+        "rect": {
+          "x": 130,
+          "y": 733,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 212,
+        "worstRatio": 1.16,
+        "p5Ratio": 1.33,
+        "meanRatio": 2.57,
+        "meanBgLum": 0.214,
+        "maxBgLum": 0.4724,
+        "bgMeanRGB": [
+          151,
+          75,
+          120
+        ],
+        "worstPixel": {
+          "x": 147,
+          "y": 748,
+          "bgRGB": [
+            7,
+            48,
+            154
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "x": 482,
+          "y": 22,
+          "w": 89,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 370,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.54,
+        "meanRatio": 1.7,
+        "meanBgLum": 0.5393,
+        "maxBgLum": 0.6108,
+        "bgMeanRGB": [
+          174,
+          197,
+          212
+        ],
+        "worstPixel": {
+          "x": 568,
+          "y": 39,
+          "bgRGB": [
+            195,
+            207,
+            214
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "x": 599,
+          "y": 22,
+          "w": 92,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 272,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.54,
+        "meanBgLum": 0.6044,
+        "maxBgLum": 0.6117,
+        "bgMeanRGB": [
+          195,
+          206,
+          212
+        ],
+        "worstPixel": {
+          "x": 600,
+          "y": 41,
+          "bgRGB": [
+            196,
+            207,
+            213
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "x": 718,
+          "y": 22,
+          "w": 81,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 312,
+        "worstRatio": 1.59,
+        "p5Ratio": 1.61,
+        "meanRatio": 1.66,
+        "meanBgLum": 0.5526,
+        "maxBgLum": 0.5813,
+        "bgMeanRGB": [
+          181,
+          199,
+          207
+        ],
+        "worstPixel": {
+          "x": 727,
+          "y": 33,
+          "bgRGB": [
+            189,
+            203,
+            209
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "x": 828,
+          "y": 22,
+          "w": 77,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 376,
+        "worstRatio": 1.73,
+        "p5Ratio": 1.73,
+        "meanRatio": 1.78,
+        "meanBgLum": 0.507,
+        "maxBgLum": 0.5259,
+        "bgMeanRGB": [
+          172,
+          192,
+          200
+        ],
+        "worstPixel": {
+          "x": 901,
+          "y": 35,
+          "bgRGB": [
+            177,
+            195,
+            201
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "x": 933,
+          "y": 22,
+          "w": 25,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 123,
+        "worstRatio": 1.84,
+        "p5Ratio": 1.84,
+        "meanRatio": 1.87,
+        "meanBgLum": 0.4791,
+        "maxBgLum": 0.4877,
+        "bgMeanRGB": [
+          168,
+          187,
+          194
+        ],
+        "worstPixel": {
+          "x": 934,
+          "y": 33,
+          "bgRGB": [
+            169,
+            189,
+            195
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 174,
+          "y": 24,
+          "w": 137,
+          "h": 28
+        },
+        "fontPx": 19.599999999999998,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1050,
+        "worstRatio": 1.59,
+        "p5Ratio": 1.61,
+        "meanRatio": 1.67,
+        "meanBgLum": 0.5799,
+        "maxBgLum": 0.6097,
+        "bgMeanRGB": [
+          184,
+          203,
+          215
+        ],
+        "worstPixel": {
+          "x": 174,
+          "y": 45,
+          "bgRGB": [
+            193,
+            207,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "laptop-1280x800": {
+    "viewport": {
+      "w": 1280,
+      "h": 800
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 50,
+          "y": 129,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1026,
+        "worstRatio": 11.33,
+        "p5Ratio": 11.68,
+        "meanRatio": 11.92,
+        "meanBgLum": 0.9224,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          237,
+          248,
+          255
+        ],
+        "worstPixel": {
+          "x": 242,
+          "y": 166,
+          "bgRGB": [
+            226,
+            243,
+            254
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 50,
+          "y": 195,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 11466,
+        "worstRatio": 10.13,
+        "p5Ratio": 10.59,
+        "meanRatio": 11.55,
+        "meanBgLum": 0.8921,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          229,
+          245,
+          255
+        ],
+        "worstPixel": {
+          "x": 466,
+          "y": 240,
+          "bgRGB": [
+            200,
+            233,
+            252
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 50,
+          "y": 261,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 10204,
+        "worstRatio": 9.56,
+        "p5Ratio": 9.94,
+        "meanRatio": 10.98,
+        "meanBgLum": 0.8455,
+        "maxBgLum": 0.9332,
+        "bgMeanRGB": [
+          219,
+          240,
+          253
+        ],
+        "worstPixel": {
+          "x": 265,
+          "y": 305,
+          "bgRGB": [
+            199,
+            226,
+            242
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 50,
+          "y": 327,
+          "w": 640,
+          "h": 66
+        },
+        "fontPx": 72.96,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 13710,
+        "worstRatio": 8.89,
+        "p5Ratio": 9.67,
+        "meanRatio": 10.49,
+        "meanBgLum": 0.8054,
+        "maxBgLum": 0.9219,
+        "bgMeanRGB": [
+          211,
+          235,
+          250
+        ],
+        "worstPixel": {
+          "x": 495,
+          "y": 384,
+          "bgRGB": [
+            187,
+            219,
+            240
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 50,
+          "y": 416,
+          "w": 480,
+          "h": 58
+        },
+        "fontPx": 19.84,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 3779,
+        "worstRatio": 5.11,
+        "p5Ratio": 5.27,
+        "meanRatio": 5.78,
+        "meanBgLum": 0.7646,
+        "maxBgLum": 0.8902,
+        "bgMeanRGB": [
+          205,
+          230,
+          246
+        ],
+        "worstPixel": {
+          "x": 492,
+          "y": 432,
+          "bgRGB": [
+            181,
+            212,
+            234
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "KPR label",
+        "rect": {
+          "x": 50,
+          "y": 641,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 652,
+        "worstRatio": 4.58,
+        "p5Ratio": 4.66,
+        "meanRatio": 4.77,
+        "meanBgLum": 0.6916,
+        "maxBgLum": 0.726,
+        "bgMeanRGB": [
+          202,
+          219,
+          230
+        ],
+        "worstPixel": {
+          "x": 270,
+          "y": 646,
+          "bgRGB": [
+            193,
+            213,
+            226
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "x": 402,
+          "y": 22,
+          "w": 89,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 384,
+        "worstRatio": 1.54,
+        "p5Ratio": 1.58,
+        "meanRatio": 1.75,
+        "meanBgLum": 0.5184,
+        "maxBgLum": 0.6034,
+        "bgMeanRGB": [
+          169,
+          194,
+          210
+        ],
+        "worstPixel": {
+          "x": 489,
+          "y": 40,
+          "bgRGB": [
+            193,
+            206,
+            214
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "x": 519,
+          "y": 22,
+          "w": 92,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 255,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.53,
+        "meanBgLum": 0.6071,
+        "maxBgLum": 0.6117,
+        "bgMeanRGB": [
+          196,
+          206,
+          212
+        ],
+        "worstPixel": {
+          "x": 531,
+          "y": 37,
+          "bgRGB": [
+            196,
+            207,
+            213
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "x": 638,
+          "y": 22,
+          "w": 81,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 318,
+        "worstRatio": 1.62,
+        "p5Ratio": 1.64,
+        "meanRatio": 1.68,
+        "meanBgLum": 0.543,
+        "maxBgLum": 0.5657,
+        "bgMeanRGB": [
+          178,
+          198,
+          207
+        ],
+        "worstPixel": {
+          "x": 647,
+          "y": 33,
+          "bgRGB": [
+            184,
+            201,
+            209
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "x": 748,
+          "y": 22,
+          "w": 77,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 379,
+        "worstRatio": 1.76,
+        "p5Ratio": 1.78,
+        "meanRatio": 1.81,
+        "meanBgLum": 0.4961,
+        "maxBgLum": 0.5136,
+        "bgMeanRGB": [
+          171,
+          190,
+          198
+        ],
+        "worstPixel": {
+          "x": 769,
+          "y": 35,
+          "bgRGB": [
+            174,
+            193,
+            201
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "x": 853,
+          "y": 22,
+          "w": 25,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 126,
+        "worstRatio": 1.89,
+        "p5Ratio": 1.89,
+        "meanRatio": 1.9,
+        "meanBgLum": 0.4703,
+        "maxBgLum": 0.4725,
+        "bgMeanRGB": [
+          167,
+          186,
+          192
+        ],
+        "worstPixel": {
+          "x": 853,
+          "y": 41,
+          "bgRGB": [
+            168,
+            186,
+            192
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 94,
+          "y": 24,
+          "w": 137,
+          "h": 28
+        },
+        "fontPx": 19.599999999999998,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 915,
+        "worstRatio": 1.5,
+        "p5Ratio": 1.5,
+        "meanRatio": 1.59,
+        "meanBgLum": 0.6127,
+        "maxBgLum": 0.6479,
+        "bgMeanRGB": [
+          193,
+          208,
+          217
+        ],
+        "worstPixel": {
+          "x": 97,
+          "y": 31,
+          "bgRGB": [
+            203,
+            212,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "tablet-1024x768": {
+    "viewport": {
+      "w": 1024,
+      "h": 768
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 32,
+          "y": 138,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 834,
+        "worstRatio": 11.43,
+        "p5Ratio": 11.64,
+        "meanRatio": 11.88,
+        "meanBgLum": 0.9191,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          236,
+          248,
+          255
+        ],
+        "worstPixel": {
+          "x": 129,
+          "y": 155,
+          "bgRGB": [
+            227,
+            244,
+            254
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 32,
+          "y": 205,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 7341,
+        "worstRatio": 9.51,
+        "p5Ratio": 10.48,
+        "meanRatio": 11.42,
+        "meanBgLum": 0.8814,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          227,
+          244,
+          255
+        ],
+        "worstPixel": {
+          "x": 386,
+          "y": 246,
+          "bgRGB": [
+            195,
+            226,
+            245
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 32,
+          "y": 257,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 6598,
+        "worstRatio": 9.87,
+        "p5Ratio": 10.17,
+        "meanRatio": 11.19,
+        "meanBgLum": 0.8625,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          223,
+          242,
+          253
+        ],
+        "worstPixel": {
+          "x": 150,
+          "y": 278,
+          "bgRGB": [
+            205,
+            229,
+            243
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 32,
+          "y": 310,
+          "w": 640,
+          "h": 53
+        },
+        "fontPx": 58.368,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 8828,
+        "worstRatio": 9.41,
+        "p5Ratio": 10.06,
+        "meanRatio": 10.75,
+        "meanBgLum": 0.8267,
+        "maxBgLum": 0.9253,
+        "bgMeanRGB": [
+          215,
+          238,
+          252
+        ],
+        "worstPixel": {
+          "x": 350,
+          "y": 348,
+          "bgRGB": [
+            193,
+            225,
+            244
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 32,
+          "y": 386,
+          "w": 480,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 2621,
+        "worstRatio": 5.14,
+        "p5Ratio": 5.24,
+        "meanRatio": 5.82,
+        "meanBgLum": 0.774,
+        "maxBgLum": 0.914,
+        "bgMeanRGB": [
+          206,
+          231,
+          247
+        ],
+        "worstPixel": {
+          "x": 400,
+          "y": 402,
+          "bgRGB": [
+            181,
+            213,
+            234
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "KPR label",
+        "rect": {
+          "x": 32,
+          "y": 599,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 655,
+        "worstRatio": 4.58,
+        "p5Ratio": 4.64,
+        "meanRatio": 4.85,
+        "meanBgLum": 0.7125,
+        "maxBgLum": 0.7866,
+        "bgMeanRGB": [
+          204,
+          222,
+          234
+        ],
+        "worstPixel": {
+          "x": 184,
+          "y": 608,
+          "bgRGB": [
+            193,
+            213,
+            225
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "x": 274,
+          "y": 22,
+          "w": 89,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 375,
+        "worstRatio": 1.51,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.7,
+        "meanBgLum": 0.5394,
+        "maxBgLum": 0.6181,
+        "bgMeanRGB": [
+          174,
+          197,
+          212
+        ],
+        "worstPixel": {
+          "x": 360,
+          "y": 40,
+          "bgRGB": [
+            196,
+            208,
+            216
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "x": 391,
+          "y": 22,
+          "w": 92,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 269,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.53,
+        "meanBgLum": 0.6073,
+        "maxBgLum": 0.6122,
+        "bgMeanRGB": [
+          195,
+          206,
+          213
+        ],
+        "worstPixel": {
+          "x": 392,
+          "y": 37,
+          "bgRGB": [
+            196,
+            207,
+            214
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "x": 510,
+          "y": 22,
+          "w": 81,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 334,
+        "worstRatio": 1.64,
+        "p5Ratio": 1.65,
+        "meanRatio": 1.71,
+        "meanBgLum": 0.5312,
+        "maxBgLum": 0.5598,
+        "bgMeanRGB": [
+          176,
+          196,
+          205
+        ],
+        "worstPixel": {
+          "x": 512,
+          "y": 34,
+          "bgRGB": [
+            183,
+            200,
+            209
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "x": 620,
+          "y": 22,
+          "w": 77,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 382,
+        "worstRatio": 1.76,
+        "p5Ratio": 1.78,
+        "meanRatio": 1.84,
+        "meanBgLum": 0.4889,
+        "maxBgLum": 0.5131,
+        "bgMeanRGB": [
+          170,
+          189,
+          195
+        ],
+        "worstPixel": {
+          "x": 621,
+          "y": 33,
+          "bgRGB": [
+            174,
+            193,
+            200
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "x": 725,
+          "y": 22,
+          "w": 25,
+          "h": 32
+        },
+        "fontPx": 12.0,
+        "textColor": "rgba(255, 255, 255, 0.9)",
+        "alpha": 0.9,
+        "threshold": 4.5,
+        "samples": 126,
+        "worstRatio": 1.89,
+        "p5Ratio": 1.9,
+        "meanRatio": 1.91,
+        "meanBgLum": 0.4651,
+        "maxBgLum": 0.4709,
+        "bgMeanRGB": [
+          166,
+          185,
+          190
+        ],
+        "worstPixel": {
+          "x": 726,
+          "y": 33,
+          "bgRGB": [
+            167,
+            186,
+            191
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 76,
+          "y": 24,
+          "w": 137,
+          "h": 28
+        },
+        "fontPx": 19.599999999999998,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1078,
+        "worstRatio": 1.57,
+        "p5Ratio": 1.58,
+        "meanRatio": 1.73,
+        "meanBgLum": 0.5602,
+        "maxBgLum": 0.6172,
+        "bgMeanRGB": [
+          181,
+          200,
+          212
+        ],
+        "worstPixel": {
+          "x": 94,
+          "y": 40,
+          "bgRGB": [
+            195,
+            208,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "tablet-portrait-768x1024": {
+    "viewport": {
+      "w": 768,
+      "h": 1024
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 24,
+          "y": 286,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1026,
+        "worstRatio": 10.35,
+        "p5Ratio": 10.65,
+        "meanRatio": 11.56,
+        "meanBgLum": 0.8928,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          230,
+          245,
+          255
+        ],
+        "worstPixel": {
+          "x": 222,
+          "y": 322,
+          "bgRGB": [
+            210,
+            234,
+            249
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 24,
+          "y": 352,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 4299,
+        "worstRatio": 10.52,
+        "p5Ratio": 10.72,
+        "meanRatio": 11.73,
+        "meanBgLum": 0.9066,
+        "maxBgLum": 0.9367,
+        "bgMeanRGB": [
+          233,
+          246,
+          255
+        ],
+        "worstPixel": {
+          "x": 270,
+          "y": 356,
+          "bgRGB": [
+            211,
+            236,
+            251
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 24,
+          "y": 392,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3772,
+        "worstRatio": 10.97,
+        "p5Ratio": 11.22,
+        "meanRatio": 11.82,
+        "meanBgLum": 0.9136,
+        "maxBgLum": 0.9367,
+        "bgMeanRGB": [
+          235,
+          247,
+          255
+        ],
+        "worstPixel": {
+          "x": 122,
+          "y": 424,
+          "bgRGB": [
+            219,
+            240,
+            253
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 24,
+          "y": 431,
+          "w": 640,
+          "h": 39
+        },
+        "fontPx": 43.776,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 5090,
+        "worstRatio": 10.48,
+        "p5Ratio": 11.05,
+        "meanRatio": 11.64,
+        "meanBgLum": 0.8989,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          231,
+          246,
+          255
+        ],
+        "worstPixel": {
+          "x": 114,
+          "y": 465,
+          "bgRGB": [
+            214,
+            235,
+            248
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 24,
+          "y": 494,
+          "w": 480,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 2621,
+        "worstRatio": 5.47,
+        "p5Ratio": 5.57,
+        "meanRatio": 6.01,
+        "meanBgLum": 0.8149,
+        "maxBgLum": 0.9367,
+        "bgMeanRGB": [
+          215,
+          236,
+          249
+        ],
+        "worstPixel": {
+          "x": 364,
+          "y": 504,
+          "bgRGB": [
+            194,
+            222,
+            239
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "KPR label",
+        "rect": {
+          "x": 24,
+          "y": 708,
+          "w": 352,
+          "h": 16
+        },
+        "fontPx": 11.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 708,
+        "worstRatio": 4.95,
+        "p5Ratio": 5.07,
+        "meanRatio": 5.26,
+        "meanBgLum": 0.8266,
+        "maxBgLum": 0.8547,
+        "bgMeanRGB": [
+          218,
+          238,
+          250
+        ],
+        "worstPixel": {
+          "x": 66,
+          "y": 718,
+          "bgRGB": [
+            208,
+            226,
+            237
+          ]
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "text": "Tentang Kami",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "text": "Pilihan Rumah",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "text": "Simulasi KPR",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "text": "Keunggulan",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "text": "FAQ",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 68,
+          "y": 22,
+          "w": 122,
+          "h": 24
+        },
+        "fontPx": 16.799999999999997,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 806,
+        "worstRatio": 1.54,
+        "p5Ratio": 1.54,
+        "meanRatio": 1.63,
+        "meanBgLum": 0.5967,
+        "maxBgLum": 0.6338,
+        "bgMeanRGB": [
+          190,
+          205,
+          215
+        ],
+        "worstPixel": {
+          "x": 140,
+          "y": 39,
+          "bgRGB": [
+            200,
+            210,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 16.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "mobile-390x844": {
+    "viewport": {
+      "w": 390,
+      "h": 844
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 19,
+          "y": 220,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 1017,
+        "worstRatio": 10.44,
+        "p5Ratio": 10.84,
+        "meanRatio": 11.67,
+        "meanBgLum": 0.9016,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          233,
+          246,
+          253
+        ],
+        "worstPixel": {
+          "x": 93,
+          "y": 257,
+          "bgRGB": [
+            211,
+            235,
+            250
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 19,
+          "y": 282,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3625,
+        "worstRatio": 10.22,
+        "p5Ratio": 10.55,
+        "meanRatio": 11.27,
+        "meanBgLum": 0.8689,
+        "maxBgLum": 0.9332,
+        "bgMeanRGB": [
+          226,
+          242,
+          252
+        ],
+        "worstPixel": {
+          "x": 126,
+          "y": 285,
+          "bgRGB": [
+            207,
+            233,
+            249
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 19,
+          "y": 318,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3189,
+        "worstRatio": 10.69,
+        "p5Ratio": 11.1,
+        "meanRatio": 11.72,
+        "meanBgLum": 0.9056,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          234,
+          246,
+          253
+        ],
+        "worstPixel": {
+          "x": 244,
+          "y": 346,
+          "bgRGB": [
+            218,
+            237,
+            247
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 19,
+          "y": 354,
+          "w": 352,
+          "h": 36
+        },
+        "fontPx": 39.78,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 4335,
+        "worstRatio": 9.7,
+        "p5Ratio": 11.16,
+        "meanRatio": 11.57,
+        "meanBgLum": 0.8938,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          231,
+          245,
+          253
+        ],
+        "worstPixel": {
+          "x": 210,
+          "y": 384,
+          "bgRGB": [
+            198,
+            228,
+            246
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 19,
+          "y": 410,
+          "w": 352,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 2619,
+        "worstRatio": 5.42,
+        "p5Ratio": 5.54,
+        "meanRatio": 5.93,
+        "meanBgLum": 0.7963,
+        "maxBgLum": 0.9332,
+        "bgMeanRGB": [
+          210,
+          234,
+          249
+        ],
+        "worstPixel": {
+          "x": 228,
+          "y": 426,
+          "bgRGB": [
+            189,
+            221,
+            241
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "KPR label",
+        "rect": {
+          "x": 19,
+          "y": 595,
+          "w": 352,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 595,
+        "worstRatio": 4.85,
+        "p5Ratio": 4.89,
+        "meanRatio": 5.1,
+        "meanBgLum": 0.7804,
+        "maxBgLum": 0.8628,
+        "bgMeanRGB": [
+          209,
+          232,
+          246
+        ],
+        "worstPixel": {
+          "x": 219,
+          "y": 599,
+          "bgRGB": [
+            195,
+            224,
+            241
+          ]
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "text": "Tentang Kami",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "text": "Pilihan Rumah",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "text": "Simulasi KPR",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "text": "Keunggulan",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "text": "FAQ",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 57,
+          "y": 24,
+          "w": 107,
+          "h": 20
+        },
+        "fontPx": 14.0,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 621,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.61,
+        "meanBgLum": 0.6027,
+        "maxBgLum": 0.6415,
+        "bgMeanRGB": [
+          191,
+          206,
+          216
+        ],
+        "worstPixel": {
+          "x": 60,
+          "y": 28,
+          "bgRGB": [
+            202,
+            211,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "mobile-375x667": {
+    "viewport": {
+      "w": 375,
+      "h": 667
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 15,
+          "y": 133,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 826,
+        "worstRatio": 10.76,
+        "p5Ratio": 11.09,
+        "meanRatio": 11.68,
+        "meanBgLum": 0.9029,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          234,
+          246,
+          252
+        ],
+        "worstPixel": {
+          "x": 205,
+          "y": 133,
+          "bgRGB": [
+            223,
+            237,
+            243
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 15,
+          "y": 196,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3309,
+        "worstRatio": 9.94,
+        "p5Ratio": 10.19,
+        "meanRatio": 10.85,
+        "meanBgLum": 0.8349,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          219,
+          239,
+          250
+        ],
+        "worstPixel": {
+          "x": 148,
+          "y": 214,
+          "bgRGB": [
+            204,
+            230,
+            246
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 15,
+          "y": 230,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2971,
+        "worstRatio": 10.47,
+        "p5Ratio": 10.93,
+        "meanRatio": 11.64,
+        "meanBgLum": 0.8993,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          233,
+          245,
+          253
+        ],
+        "worstPixel": {
+          "x": 205,
+          "y": 233,
+          "bgRGB": [
+            214,
+            235,
+            247
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 15,
+          "y": 265,
+          "w": 345,
+          "h": 34
+        },
+        "fontPx": 38.25,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 4001,
+        "worstRatio": 10.45,
+        "p5Ratio": 10.81,
+        "meanRatio": 11.43,
+        "meanBgLum": 0.8821,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          229,
+          244,
+          252
+        ],
+        "worstPixel": {
+          "x": 234,
+          "y": 282,
+          "bgRGB": [
+            212,
+            235,
+            248
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 15,
+          "y": 319,
+          "w": 345,
+          "h": 46
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 2619,
+        "worstRatio": 5.39,
+        "p5Ratio": 5.51,
+        "meanRatio": 5.94,
+        "meanBgLum": 0.7998,
+        "maxBgLum": 0.9253,
+        "bgMeanRGB": [
+          211,
+          234,
+          249
+        ],
+        "worstPixel": {
+          "x": 170,
+          "y": 330,
+          "bgRGB": [
+            190,
+            220,
+            238
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "KPR label",
+        "rect": {
+          "x": 15,
+          "y": 505,
+          "w": 345,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 573,
+        "worstRatio": 2.52,
+        "p5Ratio": 3.52,
+        "meanRatio": 4.94,
+        "meanBgLum": 0.7426,
+        "maxBgLum": 0.8186,
+        "bgMeanRGB": [
+          207,
+          226,
+          238
+        ],
+        "worstPixel": {
+          "x": 104,
+          "y": 511,
+          "bgRGB": [
+            133,
+            132,
+            133
+          ]
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "text": "Tentang Kami",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "text": "Pilihan Rumah",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "text": "Simulasi KPR",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "text": "Keunggulan",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "text": "FAQ",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 53,
+          "y": 24,
+          "w": 107,
+          "h": 20
+        },
+        "fontPx": 14.0,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 600,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.59,
+        "meanBgLum": 0.6101,
+        "maxBgLum": 0.6415,
+        "bgMeanRGB": [
+          193,
+          207,
+          216
+        ],
+        "worstPixel": {
+          "x": 55,
+          "y": 32,
+          "bgRGB": [
+            202,
+            211,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  },
+  "mobile-320x568": {
+    "viewport": {
+      "w": 320,
+      "h": 568
+    },
+    "checks": [
+      {
+        "status": "PASS",
+        "target": "badge (11px)",
+        "rect": {
+          "x": 15,
+          "y": 88,
+          "w": 211,
+          "h": 38
+        },
+        "fontPx": 11.0,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 824,
+        "worstRatio": 10.21,
+        "p5Ratio": 10.59,
+        "meanRatio": 11.41,
+        "meanBgLum": 0.8809,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          230,
+          243,
+          250
+        ],
+        "worstPixel": {
+          "x": 225,
+          "y": 105,
+          "bgRGB": [
+            217,
+            232,
+            232
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L1 'HUNIAN ASRI'",
+        "rect": {
+          "x": 15,
+          "y": 150,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2600,
+        "worstRatio": 10.7,
+        "p5Ratio": 11.32,
+        "meanRatio": 11.65,
+        "meanBgLum": 0.9005,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          234,
+          245,
+          251
+        ],
+        "worstPixel": {
+          "x": 96,
+          "y": 176,
+          "bgRGB": [
+            212,
+            238,
+            254
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L2 'DI JANTUNG'",
+        "rect": {
+          "x": 15,
+          "y": 181,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 2322,
+        "worstRatio": 9.85,
+        "p5Ratio": 10.19,
+        "meanRatio": 10.72,
+        "meanBgLum": 0.8247,
+        "maxBgLum": 0.9332,
+        "bgMeanRGB": [
+          216,
+          238,
+          250
+        ],
+        "worstPixel": {
+          "x": 132,
+          "y": 188,
+          "bgRGB": [
+            203,
+            229,
+            245
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "headline L3 'PARAHYANGAN'",
+        "rect": {
+          "x": 15,
+          "y": 211,
+          "w": 290,
+          "h": 30
+        },
+        "fontPx": 33.6,
+        "textColor": "rgb(38, 53, 46)",
+        "alpha": 1.0,
+        "threshold": 3.0,
+        "samples": 3126,
+        "worstRatio": 10.01,
+        "p5Ratio": 10.53,
+        "meanRatio": 11.57,
+        "meanBgLum": 0.8939,
+        "maxBgLum": 0.935,
+        "bgMeanRGB": [
+          232,
+          245,
+          251
+        ],
+        "worstPixel": {
+          "x": 234,
+          "y": 228,
+          "bgRGB": [
+            205,
+            231,
+            243
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "target": "subline",
+        "rect": {
+          "x": 15,
+          "y": 261,
+          "w": 290,
+          "h": 70
+        },
+        "fontPx": 16.0,
+        "textColor": "rgba(38, 53, 46, 0.8)",
+        "alpha": 0.8,
+        "threshold": 4.5,
+        "samples": 2618,
+        "worstRatio": 5.33,
+        "p5Ratio": 5.51,
+        "meanRatio": 6.02,
+        "meanBgLum": 0.8172,
+        "maxBgLum": 0.9332,
+        "bgMeanRGB": [
+          216,
+          236,
+          249
+        ],
+        "worstPixel": {
+          "x": 132,
+          "y": 323,
+          "bgRGB": [
+            190,
+            218,
+            237
+          ]
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "KPR label",
+        "rect": {
+          "x": 15,
+          "y": 470,
+          "w": 290,
+          "h": 15
+        },
+        "fontPx": 10.0,
+        "textColor": "rgba(38, 53, 46, 0.75)",
+        "alpha": 0.75,
+        "threshold": 4.5,
+        "samples": 539,
+        "worstRatio": 1.79,
+        "p5Ratio": 3.33,
+        "meanRatio": 4.63,
+        "meanBgLum": 0.6673,
+        "maxBgLum": 0.8053,
+        "bgMeanRGB": [
+          197,
+          214,
+          225
+        ],
+        "worstPixel": {
+          "x": 89,
+          "y": 477,
+          "bgRGB": [
+            100,
+            99,
+            98
+          ]
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Tentang Kami'",
+        "rect": {
+          "text": "Tentang Kami",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Pilihan Rumah'",
+        "rect": {
+          "text": "Pilihan Rumah",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Simulasi KPR'",
+        "rect": {
+          "text": "Simulasi KPR",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'Keunggulan'",
+        "rect": {
+          "text": "Keunggulan",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "SKIP",
+        "reason": "rect offscreen/clipped",
+        "target": "nav 'FAQ'",
+        "rect": {
+          "text": "FAQ",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "color": "rgba(255, 255, 255, 0.9)"
+        }
+      },
+      {
+        "status": "FAIL",
+        "target": "header logo text",
+        "rect": {
+          "x": 53,
+          "y": 24,
+          "w": 107,
+          "h": 20
+        },
+        "fontPx": 14.0,
+        "textColor": "rgb(255, 255, 255)",
+        "alpha": 1.0,
+        "threshold": 4.5,
+        "samples": 633,
+        "worstRatio": 1.52,
+        "p5Ratio": 1.52,
+        "meanRatio": 1.64,
+        "meanBgLum": 0.5907,
+        "maxBgLum": 0.6415,
+        "bgMeanRGB": [
+          188,
+          205,
+          214
+        ],
+        "worstPixel": {
+          "x": 55,
+          "y": 31,
+          "bgRGB": [
+            202,
+            211,
+            217
+          ]
+        }
+      },
+      {
+        "target": "CTA hero (#fff on #344B3C)",
+        "status": "PASS",
+        "fontPx": 15.0,
+        "threshold": 4.5,
+        "worstRatio": 9.47,
+        "p5Ratio": 9.47,
+        "meanRatio": 9.47,
+        "method": "analytic"
+      },
+      {
+        "target": "header Kontak pill (#111 on #fff)",
+        "status": "PASS",
+        "fontPx": 12.0,
+        "threshold": 4.5,
+        "worstRatio": 18.88,
+        "p5Ratio": 18.88,
+        "meanRatio": 18.88,
+        "method": "analytic"
+      }
+    ]
+  }
+}

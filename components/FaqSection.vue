@@ -15,25 +15,26 @@ const consultasiLink = wa('konsultasi');
 </script>
 
 <template>
-  <section id="faq" class="scroll-mt-20 relative bg-[var(--white)] py-[105px] max-[680px]:py-[76px]">
-    <div class="container faq-grid grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] gap-10 lg:gap-[95px] items-start">
+  <section id="faq" class="scroll-mt-20 relative bg-white py-20 lg:py-28">
+    <div class="container faq-grid grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] gap-10 lg:gap-[88px] items-start">
       <!-- Kiri: Intro Sticky -->
       <div class="faq-intro reveal lg:sticky lg:top-28">
-        <span class="eyebrow mb-4 block">{{ content.faqSection.eyebrow }}</span>
+        <div class="mb-4 h-0.5 w-10 rounded-full bg-[var(--green)]" aria-hidden="true" />
         <h2
-          class="serif text-3xl sm:text-4xl lg:text-[52px] leading-tight text-[var(--ink)] mb-4"
+          class="font-sans font-bold text-3xl sm:text-4xl lg:text-[42px] tracking-[-0.02em] leading-[1.18] text-[var(--ink)] mb-4 [&_em]:not-italic [&_em]:font-bold [&_em]:text-[var(--green)]"
           v-html="content.faqSection.titleHtml || content.faqSection.title"
         />
-        <p class="text-xs sm:text-sm text-[var(--muted)] leading-relaxed mb-6 max-w-[320px]">
+        <p class="text-sm sm:text-[15px] text-[var(--muted)] leading-relaxed mb-7 max-w-[340px]">
           {{ content.faqSection.subtitle }}
         </p>
         <a
           :href="consultasiLink"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-outline text-xs"
+          class="btn btn-outline"
         >
-          {{ content.faqSection.ctaLabel }} <span class="arrow">↗</span>
+          <span>{{ content.faqSection.ctaLabel }}</span>
+          <span class="arrow" aria-hidden="true">→</span>
         </a>
       </div>
 

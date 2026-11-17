@@ -118,28 +118,16 @@ const waConsultLink = computed(() => {
 </script>
 
 <template>
-  <section class="calc-section relative py-[100px] max-[680px]:py-[72px] scroll-mt-20 overflow-hidden bg-[var(--paper)]" id="kalkulator">
-    <!-- Background Image with Fade Effect -->
-    <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
-      <img
-        :src="calc.image"
-        alt=""
-        aria-hidden="true"
-        class="h-full w-full object-cover object-center opacity-10 lg:opacity-15"
-      />
-      <div class="absolute inset-0 bg-gradient-to-b from-[var(--paper)] via-transparent to-[var(--paper)]"></div>
-    </div>
-
+  <section class="calc-section relative py-20 lg:py-28 scroll-mt-20 bg-white" id="kalkulator">
     <div class="container relative z-10">
       <!-- Section Heading -->
       <div class="section-top mb-10 lg:mb-12 reveal">
         <div class="section-heading max-w-[680px]">
-          <span class="eyebrow mb-3">{{ calc.eyebrow }}</span>
-          <h2 class="serif text-3xl sm:text-4xl lg:text-[44px] leading-tight text-[var(--ink)] mb-3">
-            {{ calc.titleLines?.[0] || 'Hitung Simulasi' }}<br>
-            <em>{{ calc.titleLines?.[1] || 'Cicilan Rumah Anda' }}</em>
+          <div class="mb-4 h-0.5 w-10 rounded-full bg-[var(--green)]" aria-hidden="true" />
+          <h2 class="font-sans font-bold text-3xl sm:text-4xl tracking-[-0.02em] leading-[1.18] text-[var(--ink)] mb-3">
+            {{ calc.title || (calc.titleLines || []).join(' ') }}
           </h2>
-          <p class="text-xs sm:text-sm text-[var(--muted)] leading-relaxed">
+          <p class="text-sm sm:text-[15px] text-[var(--muted)] leading-relaxed">
             {{ calc.subtitle }}
           </p>
         </div>
@@ -304,7 +292,7 @@ const waConsultLink = computed(() => {
                   {{ labels.installment || 'Estimasi Cicilan per Bulan' }}
                 </span>
                 <div class="flex items-baseline justify-center sm:justify-start gap-1.5 mt-1">
-                  <span class="serif text-3xl sm:text-4xl text-[var(--green-deep)] font-bold tracking-tight">
+                  <span class="font-sans text-3xl sm:text-4xl text-[var(--green-deep)] font-bold tracking-tight">
                     {{ formatCurrency(monthlyInstallment) }}
                   </span>
                   <span class="text-xs sm:text-sm font-semibold text-[var(--muted)]">

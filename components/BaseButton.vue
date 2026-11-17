@@ -5,8 +5,8 @@ defineProps({
 });
 
 const variants = {
-  primary: 'text-white bg-green hover:bg-green-deep shadow-[0_8px_20px_rgba(60,83,65,.18)] hover:shadow-[0_12px_25px_rgba(60,83,65,.22)] hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50',
-  primaryGradient: 'text-white bg-green hover:bg-green-deep shadow-[0_8px_20px_rgba(60,83,65,.18)] hover:shadow-[0_12px_25px_rgba(60,83,65,.22)] hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50',
+  primary: 'text-white bg-green hover:bg-green-deep shadow-[0_8px_20px_rgba(42,99,180,.20)] hover:shadow-[0_12px_25px_rgba(30,70,128,.26)] hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50',
+  primaryGradient: 'text-white bg-green hover:bg-green-deep shadow-[0_8px_20px_rgba(42,99,180,.20)] hover:shadow-[0_12px_25px_rgba(30,70,128,.26)] hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50',
   outline: 'text-ink border border-line bg-white/35 hover:border-green hover:bg-white active:bg-white/80 disabled:opacity-50',
   secondary: 'text-ink border border-line bg-white/35 hover:border-green hover:bg-white active:bg-white/80 disabled:opacity-50',
   ghost: 'text-ink bg-transparent hover:bg-white/60 hover:text-green active:bg-white/80 disabled:opacity-50',

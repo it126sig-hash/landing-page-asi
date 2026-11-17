@@ -1,0 +1,364 @@
+[
+  {
+    "name": "desktop",
+    "states": [
+      {
+        "scrollY": 0,
+        "hero": {
+          "top": 0,
+          "bottom": 900,
+          "x": 0,
+          "right": 1440
+        },
+        "next": {
+          "top": 900,
+          "bottom": 978,
+          "x": 0,
+          "right": 1440
+        },
+        "heroBottom": 900,
+        "nextTop": 900,
+        "sky": {
+          "top": -162,
+          "bottom": 1062,
+          "x": 0,
+          "right": 1440
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "house": {
+          "top": 226.5,
+          "bottom": 996,
+          "x": 432,
+          "right": 1800
+        },
+        "houseTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "content": {
+          "top": 162.86,
+          "bottom": 785.13,
+          "x": 130,
+          "right": 770
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "gap": 0,
+        "houseGapBelowHero": 96,
+        "skyTopAboveHero": -162,
+        "target": 0
+      },
+      {
+        "scrollY": 200,
+        "hero": {
+          "top": -200,
+          "bottom": 700,
+          "x": 0,
+          "right": 1440
+        },
+        "next": {
+          "top": 700,
+          "bottom": 778,
+          "x": 0,
+          "right": 1440
+        },
+        "heroBottom": 900,
+        "nextTop": 900,
+        "sky": {
+          "top": -302.16,
+          "bottom": 921.84,
+          "x": 0,
+          "right": 1440
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 59.8401)",
+        "house": {
+          "top": 5.25,
+          "bottom": 778.14,
+          "x": 428.99,
+          "right": 1803.01
+        },
+        "houseTransform": "matrix(1.0044, 0, 0, 1.0044, 0, -19.5555)",
+        "content": {
+          "top": -21.59,
+          "bottom": 600.68,
+          "x": 130,
+          "right": 770
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 15.5555)",
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "gap": 0,
+        "houseGapBelowHero": 78.14,
+        "skyTopAboveHero": -102.16,
+        "target": 200
+      },
+      {
+        "scrollY": 450,
+        "hero": {
+          "top": -450,
+          "bottom": 450,
+          "x": 0,
+          "right": 1440
+        },
+        "next": {
+          "top": 450,
+          "bottom": 528,
+          "x": 0,
+          "right": 1440
+        },
+        "heroBottom": 900,
+        "nextTop": 900,
+        "sky": {
+          "top": -477.36,
+          "bottom": 746.64,
+          "x": 0,
+          "right": 1440
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 134.64)",
+        "house": {
+          "top": -271.35,
+          "bottom": 505.85,
+          "x": 425.16,
+          "right": 1806.84
+        },
+        "houseTransform": "matrix(1.01, 0, 0, 1.01, 0, -44)",
+        "content": {
+          "top": -252.14,
+          "bottom": 370.13,
+          "x": 130,
+          "right": 770
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 35)",
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "gap": 0,
+        "houseGapBelowHero": 55.85,
+        "skyTopAboveHero": -27.36,
+        "target": 450
+      },
+      {
+        "scrollY": 700,
+        "hero": {
+          "top": -700,
+          "bottom": 200,
+          "x": 0,
+          "right": 1440
+        },
+        "next": {
+          "top": 200,
+          "bottom": 278,
+          "x": 0,
+          "right": 1440
+        },
+        "heroBottom": 900,
+        "nextTop": 900,
+        "sky": {
+          "top": -652.56,
+          "bottom": 571.44,
+          "x": 0,
+          "right": 1440
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 209.44)",
+        "house": {
+          "top": -547.95,
+          "bottom": 233.56,
+          "x": 421.33,
+          "right": 1810.67
+        },
+        "houseTransform": "matrix(1.0156, 0, 0, 1.0156, 0, -68.4445)",
+        "content": {
+          "top": -482.7,
+          "bottom": 139.57,
+          "x": 130,
+          "right": 770
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 54.4445)",
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "gap": 0,
+        "houseGapBelowHero": 33.56,
+        "skyTopAboveHero": 47.44,
+        "target": 700
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "states": [
+      {
+        "scrollY": 0,
+        "hero": {
+          "top": 0,
+          "bottom": 667,
+          "x": 0,
+          "right": 375
+        },
+        "next": {
+          "top": 667,
+          "bottom": 811.5,
+          "x": 0,
+          "right": 375
+        },
+        "heroBottom": 667,
+        "nextTop": 667,
+        "sky": {
+          "top": -120.05,
+          "bottom": 787.06,
+          "x": 0,
+          "right": 375
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "house": {
+          "top": 417.84,
+          "bottom": 763,
+          "x": -60,
+          "right": 553.63
+        },
+        "houseTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "content": {
+          "top": 133.42,
+          "bottom": 581.56,
+          "x": 15,
+          "right": 360
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "scrollWidth": 375,
+        "vw": 375,
+        "gap": 0,
+        "houseGapBelowHero": 96,
+        "skyTopAboveHero": -120.05,
+        "target": 0
+      },
+      {
+        "scrollY": 200,
+        "hero": {
+          "top": -200,
+          "bottom": 467,
+          "x": 0,
+          "right": 375
+        },
+        "next": {
+          "top": 467,
+          "bottom": 611.5,
+          "x": 0,
+          "right": 375
+        },
+        "heroBottom": 667,
+        "nextTop": 667,
+        "sky": {
+          "top": -260.21,
+          "bottom": 646.9,
+          "x": 0,
+          "right": 375
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 59.8393)",
+        "house": {
+          "top": 190.42,
+          "bottom": 537.65,
+          "x": -61.84,
+          "right": 555.47
+        },
+        "houseTransform": "matrix(1.006, 0, 0, 1.006, 0, -26.3868)",
+        "content": {
+          "top": -45.59,
+          "bottom": 402.55,
+          "x": 15,
+          "right": 360
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 20.9895)",
+        "scrollWidth": 375,
+        "vw": 375,
+        "gap": 0,
+        "houseGapBelowHero": 70.65,
+        "skyTopAboveHero": -60.21,
+        "target": 200
+      },
+      {
+        "scrollY": 450,
+        "hero": {
+          "top": -450,
+          "bottom": 217,
+          "x": 0,
+          "right": 375
+        },
+        "next": {
+          "top": 217,
+          "bottom": 361.5,
+          "x": 0,
+          "right": 375
+        },
+        "heroBottom": 667,
+        "nextTop": 667,
+        "sky": {
+          "top": -435.41,
+          "bottom": 471.7,
+          "x": 0,
+          "right": 375
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 134.639)",
+        "house": {
+          "top": -93.86,
+          "bottom": 255.96,
+          "x": -64.14,
+          "right": 557.77
+        },
+        "houseTransform": "matrix(1.0135, 0, 0, 1.0135, 0, -59.3703)",
+        "content": {
+          "top": -269.35,
+          "bottom": 178.79,
+          "x": 15,
+          "right": 360
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 47.2264)",
+        "scrollWidth": 375,
+        "vw": 375,
+        "gap": 0,
+        "houseGapBelowHero": 38.96,
+        "skyTopAboveHero": 14.59,
+        "target": 450
+      },
+      {
+        "scrollY": 700,
+        "hero": {
+          "top": -700,
+          "bottom": -33,
+          "x": 0,
+          "right": 375
+        },
+        "next": {
+          "top": -33,
+          "bottom": 111.5,
+          "x": 0,
+          "right": 375
+        },
+        "heroBottom": 667,
+        "nextTop": 667,
+        "sky": {
+          "top": -620.48,
+          "bottom": 286.63,
+          "x": 0,
+          "right": 375
+        },
+        "skyTransform": "matrix(1, 0, 0, 1, 0, 199.564)",
+        "house": {
+          "top": -373.61,
+          "bottom": -21.55,
+          "x": -66.14,
+          "right": 559.76
+        },
+        "houseTransform": "matrix(1.02, 0, 0, 1.02, 0, -88)",
+        "content": {
+          "top": -496.58,
+          "bottom": -48.44,
+          "x": 15,
+          "right": 360
+        },
+        "contentTransform": "matrix(1, 0, 0, 1, 0, 70)",
+        "scrollWidth": 375,
+        "vw": 375,
+        "gap": 0,
+        "houseGapBelowHero": 11.45,
+        "skyTopAboveHero": 79.52,
+        "target": 700
+      }
+    ]
+  }
+]

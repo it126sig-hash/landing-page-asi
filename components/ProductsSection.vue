@@ -6,7 +6,7 @@ const { content, houseTypes } = useContent();
 
 const selectedTypeId = ref(null);
 const modalOpen = ref(false);
-const selectedType = computed(() => houseTypes.find(t => t.id === selectedTypeId.value) || null);
+const selectedType = computed(() => houseTypes.find((t) => t.id === selectedTypeId.value) || null);
 
 function openType(id) {
   selectedTypeId.value = id;
@@ -19,308 +19,108 @@ function closeModal() {
 </script>
 
 <template>
-  <section class="section types-section" id="tipe">
+  <section id="tipe" class="bg-[var(--sage-pale)] py-20 lg:py-28 scroll-mt-20">
     <div class="container">
-      <!-- Section Header -->
-      <div class="section-top reveal">
-        <div class="section-heading">
-          <span class="eyebrow">{{ content.products.eyebrow }}</span>
-          <h2 class="serif">
-            {{ content.products.titleLines?.[0] || 'Pilihan rumah,' }}<br>
-            <em>{{ content.products.titleLines?.[1] || 'pilihan cerita.' }}</em>
+      <div class="grid grid-cols-1 lg:grid-cols-[0.34fr_0.66fr] gap-8 lg:gap-12 items-center">
+        <!-- Kiri: Heading + Copy + CTA Outlined Pill -->
+        <div class="reveal">
+          <div class="mb-4 h-0.5 w-10 rounded-full bg-[var(--green)]" aria-hidden="true" />
+          <h2 class="font-sans text-3xl sm:text-4xl font-bold tracking-[-0.02em] leading-[1.18] text-[var(--ink)]">
+            {{ content.products.title }}
           </h2>
-          <p>{{ content.products.subtitle }}</p>
+          <p class="mt-4 text-sm sm:text-[15px] leading-[1.7] text-[var(--muted)]">
+            {{ content.products.subtitle }}
+          </p>
+          <div class="mt-7">
+            <a
+              :href="content.products.ctaHref || '#kalkulator'"
+              class="btn btn-outline"
+            >
+              <span>{{ content.products.ctaLabel }}</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
-        <a class="btn btn-outline" :href="content.products.ctaHref || '#kontak'">
-          {{ content.products.ctaLabel }} <span class="arrow">↗</span>
-        </a>
-      </div>
 
-      <!-- House Types Grid -->
-      <div class="type-grid">
-        <article
-          v-for="t in houseTypes"
-          :key="t.id"
-          class="type-card reveal"
-        >
-          <!-- Thumbnail -->
-          <div
-            class="type-image"
-            role="button"
-            tabindex="0"
-            :aria-label="`Buka detail ${t.name}`"
-            @click="openType(t.id)"
-            @keydown.enter="openType(t.id)"
-          >
-            <img
-              :src="t.thumbnail || t.gallery?.[0]"
-              :alt="t.name"
-              loading="lazy"
-            />
-            <span class="type-tag">{{ t.category || t.tag }}</span>
-            <span v-if="t.count" class="type-count">{{ t.count }}</span>
+        <!-- Kanan: Grid Kartu Produk -->
+        <div class="reveal">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <article
+              v-for="t in houseTypes"
+              :key="t.id"
+              role="button"
+              tabindex="0"
+              :aria-label="`Buka detail ${t.name}`"
+              class="group rounded-2xl bg-white border border-[var(--line)] shadow-sm overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-[var(--shadow)] transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green)]"
+              @click="openType(t.id)"
+              @keydown.enter.prevent="openType(t.id)"
+              @keydown.space.prevent="openType(t.id)"
+            >
+              <div class="aspect-[16/10] w-full overflow-hidden bg-[var(--paper-deep)]">
+                <img
+                  :src="t.thumbnail || t.gallery?.[0]"
+                  :alt="t.name"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <h3 class="font-sans text-lg font-bold tracking-tight text-[var(--ink)]">
+                  {{ t.name }}
+                </h3>
+
+                <div class="mt-3 flex items-center justify-between gap-2">
+                  <span class="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--muted)]">
+                    <svg
+                      class="w-3.5 h-3.5 shrink-0 text-[var(--green)]"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M3 10.5 12 3l9 7.5" />
+                      <path d="M5 9.5V20h14V9.5" />
+                    </svg>
+                    <span>LB {{ t.lb }}m² · LT {{ t.lt }}m² · {{ t.tag }}</span>
+                  </span>
+
+                  <button
+                    type="button"
+                    class="w-9 h-9 shrink-0 rounded-full bg-[var(--sage-pale)] text-[var(--green)] grid place-items-center group-hover:bg-[var(--green)] group-hover:text-white transition-colors duration-200 cursor-pointer"
+                    :aria-label="`Lihat detail ${t.name}`"
+                    @click.stop="openType(t.id)"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m13 6 6 6-6 6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <!-- Content -->
-          <div class="type-content">
-            <div v-if="t.meta && t.meta.length" class="type-meta">
-              <span v-for="m in t.meta" :key="m">{{ m }}</span>
-            </div>
-            <h3>{{ t.headline || t.name }}</h3>
-            <p>{{ t.desc }}</p>
-
-            <div class="type-bottom">
-              <button
-                type="button"
-                class="btn-detail"
-                @click="openType(t.id)"
-              >
-                {{ content.products.detailCtaLabel }}
-              </button>
-              <a
-                :href="t.waLink"
-                target="_blank"
-                rel="noopener"
-                class="text-link"
-              >
-                {{ content.products.discussCtaLabel }} <span class="arrow">→</span>
-              </a>
-            </div>
-          </div>
-        </article>
+          <p v-if="content.products.footnote" class="mt-4 text-[11px] leading-relaxed text-[var(--muted)]">
+            {{ content.products.footnote }}
+          </p>
+        </div>
       </div>
-
-      <!-- Footnote -->
-      <p v-if="content.products.footnote" class="type-footnote">
-        {{ content.products.footnote }}
-      </p>
     </div>
 
     <!-- Modal Detail Unit -->
     <HouseTypeModal :type="modalOpen ? selectedType : null" @close="closeModal" />
   </section>
 </template>
-
-<style scoped>
-.section {
-  padding: 116px 0;
-}
-
-.types-section {
-  background: var(--sage-pale);
-  position: relative;
-  overflow: hidden;
-}
-
-.types-section::before {
-  content: 'PALASTRI';
-  position: absolute;
-  left: -15px;
-  bottom: -70px;
-  font-family: var(--serif);
-  font-size: clamp(130px, 21vw, 280px);
-  color: rgba(83, 107, 85, 0.045);
-  letter-spacing: -0.08em;
-  pointer-events: none;
-}
-
-.section-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 28px;
-  margin-bottom: 42px;
-}
-
-.section-heading .eyebrow {
-  margin-bottom: 20px;
-}
-
-.section-heading h2 {
-  margin: 0;
-  font-size: clamp(39px, 4.2vw, 58px);
-  line-height: 1.06;
-}
-
-.section-heading h2 em {
-  color: var(--green);
-  font-style: normal;
-}
-
-.section-heading p {
-  margin: 15px 0 0;
-  max-width: 410px;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-.type-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  position: relative;
-}
-
-.type-card {
-  overflow: hidden;
-  border-radius: 17px;
-  background: var(--white);
-  box-shadow: 0 10px 35px rgba(39, 54, 45, 0.055);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.type-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow);
-}
-
-.type-image {
-  height: 285px;
-  position: relative;
-  overflow: hidden;
-  background: #d5dfd1;
-  cursor: pointer;
-}
-
-.type-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.6s;
-}
-
-.type-card:hover .type-image img {
-  transform: scale(1.04);
-}
-
-.type-tag {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  padding: 8px 12px;
-  border-radius: 99px;
-  background: rgba(255, 254, 250, 0.92);
-  color: var(--green-deep);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.type-count {
-  position: absolute;
-  right: 18px;
-  bottom: 17px;
-  color: white;
-  font-family: var(--serif);
-  font-size: 13px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.type-content {
-  padding: 24px 25px 23px;
-}
-
-.type-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--muted);
-  font-size: 9px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.type-meta span {
-  display: inline-flex;
-  align-items: center;
-}
-
-.type-meta span:not(:last-child)::after {
-  content: '•';
-  margin-left: 12px;
-  opacity: 0.5;
-}
-
-.type-content h3 {
-  margin: 13px 0 8px;
-  font-family: var(--serif);
-  font-size: 29px;
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  color: var(--ink);
-}
-
-.type-content p {
-  margin: 0;
-  max-width: 430px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.8;
-}
-
-.type-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 22px;
-  padding-top: 17px;
-  border-top: 1px solid var(--line);
-}
-
-.btn-detail {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  color: var(--ink);
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.btn-detail:hover {
-  background: var(--white);
-  border-color: var(--green);
-  color: var(--green-deep);
-  transform: translateY(-1px);
-}
-
-.type-footnote {
-  margin: 24px 0 0;
-  color: #778078;
-  font-size: 9px;
-  line-height: 1.6;
-}
-
-@media (max-width: 680px) {
-  .types-section {
-    padding: 77px 0;
-  }
-  .section-top {
-    display: block;
-    margin-bottom: 28px;
-  }
-  .section-top > .btn {
-    margin-top: 20px;
-  }
-  .type-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .type-image {
-    height: 240px;
-  }
-  .type-content {
-    padding: 20px;
-  }
-  .type-content h3 {
-    font-size: 26px;
-  }
-}
-</style>

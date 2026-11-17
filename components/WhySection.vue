@@ -104,7 +104,7 @@ const { content } = useContent();
 }
 
 .why-no {
-  color: #9ca79b;
+  color: var(--muted);
   font-family: var(--serif);
   font-size: 22px;
 }
@@ -134,7 +134,7 @@ const { content } = useContent();
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--paper-deep);
-  box-shadow: 0 4px 14px rgba(39, 54, 45, 0.06);
+  box-shadow: 0 4px 14px rgba(26, 25, 22, 0.06);
   flex-shrink: 0;
 }
 

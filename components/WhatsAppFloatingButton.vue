@@ -78,7 +78,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 1. Syarat KPR BCA -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(38,53,46,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
           @click="openKprModal('Syarat KPR BCA')"
         >
           <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-0.5 border border-[var(--line)]" aria-hidden="true">
@@ -90,7 +90,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 2. Syarat KPR BTN -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(38,53,46,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--white)] text-[var(--ink)] border border-[var(--line)] px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(26,25,22,0.08)] hover:bg-[var(--sage-pale)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
           @click="openKprModal('Syarat KPR BTN')"
         >
           <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-0.5 border border-[var(--line)]" aria-hidden="true">
@@ -102,7 +102,7 @@ watch([isKprModalOpen, isMemberModalOpen], () => {
         <!-- 3. Isi Form Member Get Member -->
         <button
           type="button"
-          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[#26382E] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(38,56,46,0.2)] hover:bg-[#1e2c24] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
+          class="inline-flex items-center gap-2.5 font-sans rounded-full bg-[var(--green-deep)] text-white px-4 py-2.5 text-xs font-bold shadow-[0_4px_16px_rgba(30,70,128,0.2)] hover:bg-[var(--green)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 whitespace-nowrap"
           @click="openMemberModal"
         >
           <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24" stroke="currentColor">

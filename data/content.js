@@ -30,12 +30,12 @@ const meta = {
     },
   },
   nav: [
+    { id: 'beranda', label: 'Beranda' },
     { id: 'tentang', label: 'Tentang Kami' },
     { id: 'tipe', label: 'Pilihan Rumah' },
-    { id: 'kalkulator', label: 'Simulasi KPR' },
-    { id: 'keunggulan', label: 'Keunggulan' },
-    { id: 'faq', label: 'FAQ' },
-    { id: 'kontak', label: 'Kontak', isCta: true },
+    { id: 'lokasi', label: 'Lokasi' },
+    { id: 'artikel', label: 'Artikel' },
+    { id: 'kontak', label: 'Hubungi Kami', isCta: true },
   ],
 };
 
@@ -46,12 +46,13 @@ export default {
     bgImage: '/assets/images/hero-bg.jpg',
     image: '/assets/images/hero.webp',
     giantTitle: 'ALAM SANGGAR INDAH',
-    headline: 'Hunian Asri di Jantung Parahyangan',
-    headlineLines: ['HUNIAN ASRI', 'DI JANTUNG', 'PARAHYANGAN'],
-    subline: 'Temukan kenyamanan hunian modern yang berpadu dengan suasana alam.',
+    headline: 'Hunian Nyaman, Investasi Terbaik di Parahyangan',
+    headlineLines: ['Hunian Nyaman,', 'Investasi Terbaik', 'di Parahyangan'],
+    subline: 'Temukan kenyamanan hunian modern yang berpadu dengan suasana alam asri di lokasi strategis.',
     tagline: meta.tagline,
     primaryTypeId: '22-60',
     primaryCta: 'Jelajahi Pilihan Rumah',
+    scrollLabel: 'Scroll untuk menjelajah',
     bankInfo: {
       label: 'Mitra Pembiayaan KPR Resmi',
       desc: 'Tersedia KPR Subsidi & Komersial dengan proses pendampingan hingga akad.',
@@ -137,6 +138,58 @@ export default {
         desc: 'Potensi kenaikan nilai properti yang terus bertumbuh seiring pesatnya perkembangan wilayah Bandung Selatan.',
         symbol: '↗',
         image: '/assets/images/palastri/rumah/2260-3d.webp',
+      },
+    ],
+  },
+
+  whyCards: [
+    { id: 'lokasi', iconKey: 'location', title: 'Lokasi Strategis & Akses Mudah' },
+    { id: 'lingkungan', iconKey: 'nature', title: 'Lingkungan Asri & Sejuk' },
+    { id: 'kualitas', iconKey: 'shield', title: 'Kualitas Bangunan Terpercaya' },
+    { id: 'investasi', iconKey: 'chart', title: 'Nilai Investasi Jangka Panjang' },
+  ],
+
+  facilities: {
+    title: 'Fasilitas Lengkap',
+    subtitle: 'Nikmati berbagai fasilitas penunjang yang mendukung kenyamanan keluarga.',
+    image: '/assets/images/palastri/about-main.jpg',
+    items: [
+      { id: 'rth', iconKey: 'tree', label: 'Ruang Terbuka Hijau' },
+      { id: 'playground', iconKey: 'playground', label: 'Taman Bermain' },
+      { id: 'security', iconKey: 'security', label: 'Keamanan 24 Jam' },
+      { id: 'mosque', iconKey: 'mosque', label: 'Masjid' },
+      { id: 'sport', iconKey: 'sport', label: 'Fasilitas Olahraga' },
+    ],
+  },
+
+  articlesSection: {
+    title: 'Berita & Artikel Terbaru',
+    subtitle: 'Informasi, tips, dan berita menarik seputar properti dan gaya hidup.',
+    ctaLabel: 'Lihat Semua',
+    items: [
+      {
+        id: 'tips-memilih-rumah',
+        date: '10 Nov 2024',
+        title: 'Tips Memilih Rumah untuk Keluarga Milenial',
+        excerpt: 'Pertimbangkan akses transportasi, tata ruang yang fungsional, dan lingkungan aman sebelum menentukan pilihan hunian pertama.',
+        content: 'Memilih rumah pertama merupakan keputusan penting bagi keluarga muda. Pastikan lokasi memiliki akses mudah menuju fasilitas pendidikan, kesehatan, dan jalur komuter harian. Selain itu, perhatikan kualitas konstruksi serta tata ruang yang mendukung aktivitas kerja dan tumbuh kembang anak.',
+        image: '/assets/images/palastri/about-small.jpg',
+      },
+      {
+        id: 'lingkungan-asri',
+        date: '02 Nov 2024',
+        title: 'Keuntungan Tinggal di Lingkungan Asri',
+        excerpt: 'Kawasan hunian dengan ruang terbuka hijau membantu menjaga kualitas udara, kenyamanan keluarga, dan ketenangan setelah beraktivitas.',
+        content: 'Tinggal di kawasan yang dikelilingi ruang terbuka hijau memberikan dampak positif bagi kesehatan fisik maupun mental. Udara yang lebih bersih, ruang bermain aman bagi anak, serta suasana lingkungan yang tenang menjadikan rumah tempat pulang yang ideal setiap hari.',
+        image: '/assets/images/palastri/hero.jpg',
+      },
+      {
+        id: 'investasi-properti',
+        date: '24 Okt 2024',
+        title: 'Investasi Properti: Pilihan Cerdas untuk Masa Depan',
+        excerpt: 'Nilai hunian di kawasan berkembang cenderung bertumbuh stabil seiring meningkatnya infrastruktur dan kebutuhan tempat tinggal.',
+        content: 'Properti tetap menjadi salah satu instrumen aset jangka panjang yang paling stabil. Hunian di kawasan berkembang dengan dukungan pengembang berpengalaman tidak hanya memberi manfaat tempat tinggal, tetapi juga potensi kenaikan nilai aset di masa depan.',
+        image: '/assets/images/palastri/rumah/3172-3d.webp',
       },
     ],
   },
@@ -368,6 +421,9 @@ export default {
     title: 'Satu langkah kecil menuju rumah impian.',
     titleHtml: 'Satu langkah kecil menuju <em class="text-[#d8d3b7] font-normal">rumah impian.</em>',
     desc: 'Ceritakan kebutuhanmu. Tim kami siap membantu mengenal pilihan hunian dan merencanakan kunjungan ke Palastri.',
+    bannerTitle: 'Ingin tahu lebih lanjut?',
+    bannerDesc: 'Hubungi kami sekarang untuk mendapatkan informasi terbaru dan penawaran menarik.',
+    bannerCtaLabel: 'Hubungi Kami',
     ctaLabel: 'Kirim permintaan konsultasi',
     phoneDisplay: 'WhatsApp Marketing · ' + formatPhoneNumber(meta.whatsapp.number),
     options: [
@@ -397,14 +453,26 @@ export default {
       lines: ['Jl. Sukahaji No.126 (GRHA Satria)', 'Kota Bandung, Jawa Barat'],
     },
     quickLinks: [
+      { id: 'beranda', label: 'Beranda' },
       { id: 'tentang', label: 'Tentang Kami' },
       { id: 'tipe', label: 'Pilihan Rumah' },
-      { id: 'keunggulan', label: 'Keunggulan' },
       { id: 'lokasi', label: 'Lokasi' },
-      { id: 'faq', label: 'FAQ' },
+      { id: 'fasilitas', label: 'Fasilitas' },
+      { id: 'artikel', label: 'Artikel' },
     ],
     email: 'sanggarindahgroup@gmail.com',
     phoneDisplay: formatPhoneNumber(meta.whatsapp.number),
+    socials: [
+      { id: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/@sanggarindahgroup', iconKey: 'youtube' },
+      { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/sanggarindahgroup/', iconKey: 'instagram' },
+      { id: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/sanggarindahgroup', iconKey: 'facebook' },
+      { id: 'whatsapp', label: 'WhatsApp', href: `https://wa.me/${meta.whatsapp.number}`, iconKey: 'whatsapp' },
+    ],
+    newsletter: {
+      title: 'Dapatkan Informasi Terbaru',
+      placeholder: 'Masukkan nomor WhatsApp atau email',
+      buttonLabel: 'Kirim',
+    },
   },
 
   kprRequirements: {
